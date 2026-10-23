@@ -77,6 +77,15 @@ function filter(rows,state,f={},now=Date.now()){
  }).sort((a,b)=>(a.deadline||'9999').localeCompare(b.deadline||'9999'));
 }
 
+function updateHealth(run,scan,now=Date.now()){
+ const old=Date.parse(scan),stale=!Number.isFinite(old)||now-old>36*3600000;
+ const failed=run?.status==='completed'&&['failure','timed_out','action_required','startup_failure'].includes(run.conclusion);
+ if(failed)return '更新異常：最近一次 GitHub Actions 未成功（'+run.conclusion+'）。目前保留上次公開資料；請到追蹤來源查看 Actions。';
+ if(stale)return '更新異常：超過 36 小時未取得新公開 JSON，請查看追蹤來源的最後成功時間與 Actions。';
+ if(!run)return '無法讀取最新 Actions 狀態；公開資料時間仍可查看，不能據此認定更新成功。';
+ if(run.status!=='completed')return '官方資料更新／部署執行中；目前顯示上次資料。';
+ return '';
+}
 function canonicalURL(value){try{const u=new URL(value);if(!['http:','https:'].includes(u.protocol)||u.username||u.password)return '';u.protocol='https:';u.hash='';for(const k of [...u.searchParams.keys()])if(/^(utm_|fbclid)/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.toString().replace(/\/$/,'');}catch{return '';}}
 const matchText=v=>String(v||'').normalize('NFKC').replace(/\u00ad/g,'').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
 function years(value){return [...new Set(String(value||'').match(/\b20\d{2}\b/g)||[])];}
@@ -123,5 +132,5 @@ function funding(state){const buckets={};for(const a of Object.values(state.appl
  return Object.values(buckets).map(b=>({...b,duplicateCosts:b.costKeys.filter((x,i)=>b.costKeys.indexOf(x)!==i)}));}
 function conflicts(x,calendar){const start=x.residency_start||x.fields?.residencyStart,end=x.residency_end||x.fields?.residencyEnd;if(!dateOK(start)||!dateOK(end))return null;return calendar.filter(c=>start<=c.end&&end>=c.start);}
 function summary(state,rows,sources=[],now=Date.now()){const apps=Object.values(state.applications);return {sources:sources.filter(s=>s.enabled===true).length,interested:apps.filter(a=>a.personal==='interested').length,applied:apps.filter(a=>a.personal==='applied').length,upcoming:rows.filter(x=>publicState(x,now)==='open'&&days(x.deadline,x.deadline_timezone,now)>=0&&days(x.deadline,x.deadline_timezone,now)<=30&&state.applications[x.id]?.personal!=='skipped').length};}
-return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,canonicalURL,candidateMatches,confirmOfficialLink,linkedOfficial,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
+return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,updateHealth,canonicalURL,candidateMatches,confirmOfficialLink,linkedOfficial,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
 });
