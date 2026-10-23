@@ -1,0 +1,116 @@
+{
+  "changes": [
+    {
+      "opportunity_id": "fonds-soziokultur-36729ca2f741214b3cd2-2026-10",
+      "at": "2026-10-23T09:39:40.167463+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Allgemeine Projektförderung",
+      "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick"
+    },
+    {
+      "opportunity_id": "berlin-kultur-24375706edd455158edc",
+      "at": "2026-10-23T09:39:40.167463+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "IMPACT-Förderung",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php"
+    },
+    {
+      "opportunity_id": "solitude-a8aba5b303e452e78f13",
+      "at": "2026-10-23T09:39:40.167463+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Solitude Fellowship",
+      "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/"
+    },
+    {
+      "opportunity_id": "moc-2265febedb6cd62103cb",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "116年度「文化部推動表演藝術青少年節目開發計畫」",
+      "url": "https://grants.moc.gov.tw/Web/Normal.jsp?__viewstate=fjlFerXav8cAGmuLz8rnx2sWdcqR9xU%2FW5XCmIQ707w%3D"
+    },
+    {
+      "opportunity_id": "moc-86292e9a5b70e56ae973",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "文化部116年度「表演藝術類補助作業要點」",
+      "url": "https://grants.moc.gov.tw/Web/Normal.jsp?__viewstate=trTvROlKChEAGmuLz8rnx2sWdcqR9xU%2FW5XCmIQ707w%3D"
+    },
+    {
+      "opportunity_id": "moc-bdf0689e97e7939984d8",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "116年文化部漫畫創作及出版行銷獎勵",
+      "url": "https://grants.moc.gov.tw/Web/Normal.jsp?__viewstate=936S27CMwSYAGmuLz8rnx2sWdcqR9xU%2FW5XCmIQ707w%3D"
+    },
+    {
+      "opportunity_id": "moc-c91e6df61d10ffe5421c",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "文化部繪本及圖文書創作及出版行銷獎勵要點",
+      "url": "https://grants.moc.gov.tw/Web/Normal.jsp?__viewstate=sdDpdLuFgRQAGmuLz8rnx2sWdcqR9xU%2FW5XCmIQ707w%3D"
+    },
+    {
+      "opportunity_id": "berlin-kultur-05754c630606904c4900",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kulturaustauschstipendien des Landes Berlin: Istanbul, Paris, New York, Tokio",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82059.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-69a7443cb96061ff2a9d",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kulturaustauschstipendien des Landes Berlin Global – Bildende Kunst",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82023.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-7353997f2189b3f08fd0",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Zweijährige Basisförderung Bildende Kunst",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.836301.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-24375706edd455158edc",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "eligibility",
+      "old_value": "Kulturpolitik Statistik / Open Data Haushalt Orte / Geodaten Förderung von KünstlerInnen und Freien Gruppen Halbjahresbericht Bühnen und Orchesterbetriebe Eintrittspreise und Ermäßigungen Besucher­forschung Akteure Bezirke Bund Länder Kulturelle Teilhabe Draussenstadt Kulturelle Bildung Kulturelle Vielfalt Digitalisierung Digitalisierung von Objekten­ Wettbewerb Digitalisierung Förderprogramm digitale Entwicklung Barriere­freiheit in der Kultur Teilhabeforschung Ermäßigungen Kultur­wirtschaft Musicboard Kulturtourismus Kulturgut Kulturgutschutz Rückgabe NS-Raubkunst Provenienz­forschung Kulturerbe Europa",
+      "new_value": null,
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php"
+    },
+    {
+      "opportunity_id": "camargo-a6edb6690cf084e34be6",
+      "at": "2026-10-23T09:44:54.962033+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Camargo Fellowship 2027-2028: For artists, scholars and thinkers",
+      "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "kunstfonds-b513285b60e1914f6fcb",
+      "at": "2026-10-23T09:47:33.267847+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "KUNSTFONDS_Stipendium",
+      "url": "https://www.kunstfonds.de/foerderung/fuer-kuenstlerinnen/kunstfonds-stipendium/bewerbung-und-vergabe"
+    },
+    {
+      "opportunity_id": "kulturstiftung-bund-455d0c2216e7bfc14295",
+      "at": "2026-10-23T09:47:33.267847+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Allgemeine Projektförderung",
+      "url": "https://www.kulturstiftung-des-bundes.de/de/themen_foerderschwerpunkte/allgemeine_projektfoerderung.html"
+    }
+  ]
+}
