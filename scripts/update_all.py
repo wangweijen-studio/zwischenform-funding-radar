@@ -9,7 +9,7 @@ from official_http import OfficialHTTP, Blocked
 from validate_data import validate
 
 ROOT=Path(__file__).resolve().parents[1]
-FIELDS=('application_start','deadline','eligibility','cash_support','support','status','cofunding','results_urls','cancellation_evidence','reopening_evidence')
+FIELDS=('application_start','deadline','eligibility','cash_support','support','status','cofunding','results_urls','results_announcements','cancellation_evidence','reopening_evidence')
 
 def reconcile(previous, fresh, history, now):
     old={x['id']:x for x in previous}
@@ -30,7 +30,10 @@ def reconcile(previous, fresh, history, now):
         for field in FIELDS if p else ('new_announcement',):
             before=p.get(field) if p else None
             after=x.get(field) if p else x['name']
-            if field=='results_urls' and not before and not after:continue
+            if field in ('results_urls','results_announcements') and not before and not after:continue
+            if field=='results_announcements':
+                clean=lambda values:[{k:v for k,v in item.items() if k!='verified_at'} for item in (values or [])]
+                if clean(before)==clean(after):continue
             if before!=after:
                 history.append({'opportunity_id':x['id'],'at':now.isoformat(),'field':field,'old_value':before,'new_value':after,'url':x['url']})
     return fresh,history

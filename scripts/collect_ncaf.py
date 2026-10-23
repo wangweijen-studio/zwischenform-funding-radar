@@ -363,6 +363,21 @@ def collect(fetch, previous, now):
                     candidate['id'] = 'ncaf-' + digest(match['url'] + '|' + rng[0].isoformat() + '|' + rng[1].isoformat())[:20]
                     rows = [x for x in rows if not (x['url'] == match['url'] and x['record_kind'] == 'program')]
                 candidate['announcement_urls'] = [url]
+                if '海外藝遊' in candidate.get('name',''):
+                    # This article separates its 2026 application round from
+                    # 2027 execution and from the scheduled interview date.
+                    body=section.text()
+                    if rng:candidate['funding_year']=str(rng[0].year)
+                    candidate['description']=body[:1600]
+                    eligibility=re.search(r'歡迎(.+?)。',body)
+                    if eligibility:candidate['eligibility']=eligibility[0]
+                    support=re.search(r'補助項目包括(.+?)。',body)
+                    if support:candidate['cash_support']=support[0]
+                    exact=re.search(r'收件截止日.{0,25}23[：:]59',body)
+                    if exact and rng:
+                        candidate['deadline']=rng[1].isoformat()+'T23:59:00+08:00'
+                        candidate['deadline_precision']='datetime'
+                    candidate['review_reasons']=['官方公告已讀取；完整辦法、個人資格、確切金額及評選結果仍須人工核對']
                 rows.append(candidate)
     except Exception as exc:
         errors.append({'url': NEWS, 'stage': 'news', 'error': type(exc).__name__ + ': ' + str(exc)[:120]})
