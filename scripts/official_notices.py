@@ -31,6 +31,10 @@ def apply_cached(records,client,now):
     for record in records:
         raw=cache.get(record.get('url'))
         if not raw:out.append(record);continue
+        # Dedicated PDF adapters already extracted their official facts. A PDF
+        # must not be decoded as HTML by this optional cancellation scanner.
+        if raw.lstrip().startswith(b'%PDF-'):
+            out.append(record);continue
         root=content(Document(raw.decode('utf-8-sig')).root)
         evidence=statement(root.text())
         reopening=statement(root.text(),REOPEN)

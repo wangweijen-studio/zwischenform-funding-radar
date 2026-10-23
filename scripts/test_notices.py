@@ -7,6 +7,10 @@ from test_cme import Fake, SOURCE, HTML, collect
 NOW=dt.datetime(2026,10,23,10,tzinfo=dt.timezone.utc)
 
 class NoticeTests(unittest.TestCase):
+    def test_pdf_adapter_record_survives_optional_html_notice_scan(self):
+        client=type('Client',(),{'cache':{'https://official.example/rules.pdf':b'%PDF-1.7\n\xc4\xff'}})()
+        record={'url':'https://official.example/rules.pdf','name':'Funded historical residency','status':'closed'}
+        self.assertEqual(apply_cached([record],client,NOW),[record])
     def test_explicit_and_conditional_notices(self):
         self.assertIsNotNone(statement('This call has been cancelled.'))
         self.assertIsNone(statement('If this call is cancelled, applicants will be notified.'))
@@ -28,4 +32,3 @@ class NoticeTests(unittest.TestCase):
     def test_semantic_eu_cancellation(self):
         result=collect(Fake(HTML.replace('status="open"','status="cancelled"')),SOURCE,NOW)[0][0]
         self.assertEqual(result['status'],'cancelled')
-
