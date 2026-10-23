@@ -30,7 +30,9 @@ jobs:
         with:
           node-version: '22'
       - name: Test private application model
-        run: node scripts/test_core.cjs
+        run: |
+          node scripts/test_core.cjs
+          node scripts/test_linking.cjs
       - name: Test extraction and verification rules
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Extract official sources with robots checks
