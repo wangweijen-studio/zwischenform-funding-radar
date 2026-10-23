@@ -207,6 +207,126 @@
       "old_value": null,
       "new_value": "2027-01-15",
       "url": "https://www.kunstfonds.de/foerderung/fuer-kuenstlerinnen/kunstfonds-stipendium/bewerbung-und-vergabe"
+    },
+    {
+      "opportunity_id": "berlin-kultur-fd518b0fa515094fe2c2",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Förder­ergebnisse",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/foerderergebnisse/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-b1b0f13374e8fa8c70c5",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Künstlerinnen­förderung",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/foerderergebnisse/kuenstlerinnenfoerderung/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-fba2add75cd1b4292a6d",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Spartenoffene Förderung",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/foerderergebnisse/spartenoffene-foerderung/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-3781fad4766c00dd064f",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Wiederaufnahme­förderung",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/foerderergebnisse/wiederaufnahmefoerderung/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-a14ae5b672e3081a4cd7",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Diversitätsfonds-­IMPACT-Förderung",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/diversitaetsfonds-impact-foerderung/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-d3a1aaf6adecac695995",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kofinanzierungs­fonds",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-201dfff477e3ea03eb7f",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Künstlerinnen­förderung",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kuenstlerinnenfoerderung/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-e2c6d72e48c6032d0487",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Projektfonds Zeit­geschichte und Erinnerungs­kultur",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/projektfonds-zeitgeschichte-und-erinnerungskultur/"
+    },
+    {
+      "opportunity_id": "berlin-kultur-b3b2add24fc36613cae0",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Arbeitsstipendien",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.59934.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-d8025b419bdbdf8804b9",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Recherchestipendien",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.467404.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-38165671b0eac8eb0fb2",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kofinanzierungsfonds (spartenoffen)",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/artikel.1563270.php"
+    },
+    {
+      "opportunity_id": "ba-treptow-koepenick-b392f0a2ce6d9fad8b39",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Wirtschafts­förderung",
+      "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/wirtschaftsfoerderung/"
+    },
+    {
+      "opportunity_id": "ba-treptow-koepenick-fa6e4777da0705bd6814",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Leistungen nach dem Asylbewerber­leistungsgesetz",
+      "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-soziales/artikel.83345.php"
+    },
+    {
+      "opportunity_id": "ba-treptow-koepenick-a92a397ea046fb2b5dad",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kiezkassen/ Förderprogramme",
+      "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/kiezkassen-foerderprogramme/artikel.940953.php"
+    },
+    {
+      "opportunity_id": "ba-treptow-koepenick-fb1f2b541153f279af52",
+      "at": "2026-10-23T10:16:46.331570+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Gesundheits­förderung",
+      "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/qualitaetsentwicklung-planung-und-koordination-des-oeffentlichen-gesundheitsdienstes/artikel.87793.php"
     }
   ]
 }
