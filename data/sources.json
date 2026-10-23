@@ -24,13 +24,13 @@
   {
     "id": "taipei",
     "name": "Taipei Cultural Affairs",
-    "url": "https://culture.gov.taipei/Content_List.aspx?n=81A3DAC5186DC3EA",
+    "url": "https://eculture.gov.taipei/artgrants/zh-tw/news",
     "enabled": true,
     "region": "臺灣",
     "kind": "官方補助",
-    "scope": "官方補助申請索引，最多8個相關細節頁；未核實資料不標開放",
+    "scope": "臺北市文化局藝文補助資訊平臺最新消息索引及相關公告；未知當期金額、日期與資格維持人工核實",
     "hosts": [
-      "culture.gov.taipei"
+      "eculture.gov.taipei"
     ],
     "module": "adapter_regional",
     "country": "臺灣",
@@ -40,11 +40,11 @@
   {
     "id": "taichung",
     "name": "Taichung Cultural Affairs",
-    "url": "https://www.culture.taichung.gov.tw/",
+    "url": "https://www.culture.taichung.gov.tw/2104994/Lpsimplelist",
     "enabled": true,
     "region": "臺灣",
     "kind": "官方補助",
-    "scope": "官方入口；目前 robots 回應重新導向，遵守限制並顯示失敗，不繞過",
+    "scope": "官方視覺藝術補助專區；遵守官方 robots 的 HTTPS 安全對應重新導向，非付費 API",
     "hosts": [
       "www.culture.taichung.gov.tw"
     ],
@@ -131,7 +131,11 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "programme_pages": [
+      "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/artikel.1015147.php",
+      "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/kulturbeirat/"
+    ]
   },
   {
     "id": "ba-friedrichshain-kreuzberg",
@@ -140,7 +144,8 @@
     "enabled": true,
     "module": "adapter_district",
     "hosts": [
-      "www.berlin.de"
+      "www.berlin.de",
+      "kultur-friedrichshain-kreuzberg.de"
     ],
     "district_path": "/ba-friedrichshain-kreuzberg/",
     "region": "德國",
@@ -148,7 +153,15 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "funding_indexes": [
+      "https://kultur-friedrichshain-kreuzberg.de/foerderung/"
+    ],
+    "link_prefixes": [
+      "/foerderung/",
+      "/foerderfonds/"
+    ],
+    "authority_url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/aktuelles/pressemitteilungen/2026/pressemitteilung.1700044.php"
   },
   {
     "id": "ba-lichtenberg",
@@ -174,7 +187,8 @@
     "enabled": true,
     "module": "adapter_district",
     "hosts": [
-      "www.berlin.de"
+      "www.berlin.de",
+      "www.kultur-marzahn-hellersdorf.de"
     ],
     "district_path": "/ba-marzahn-hellersdorf/",
     "region": "德國",
@@ -182,7 +196,11 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "funding_indexes": [
+      "https://www.kultur-marzahn-hellersdorf.de/dezentr-kulturarbeit-/-projektfoerderung"
+    ],
+    "authority_url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/"
   },
   {
     "id": "ba-mitte",
@@ -216,7 +234,13 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "funding_indexes": [
+      "https://www.berlin.de/kunst-und-kultur-neukoelln/foerderung/"
+    ],
+    "programme_pages": [
+      "https://www.berlin.de/kunst-und-kultur-neukoelln/foerderung/kulturfoerderung/"
+    ]
   },
   {
     "id": "ba-pankow",
@@ -233,7 +257,13 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "funding_indexes": [
+      "https://www.berlin.de/kunst-und-kultur-pankow/foerderung/"
+    ],
+    "programme_pages": [
+      "https://www.berlin.de/kunst-und-kultur-pankow/foerderung/projektfoerderung/informationen-antragstellung/"
+    ]
   },
   {
     "id": "ba-reinickendorf",
@@ -250,7 +280,10 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "programme_pages": [
+      "https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1717204.php"
+    ]
   },
   {
     "id": "ba-spandau",
@@ -267,7 +300,13 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "funding_indexes": [
+      "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/artikel.292929.php"
+    ],
+    "link_prefixes": [
+      "/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/"
+    ]
   },
   {
     "id": "ba-steglitz-zehlendorf",
@@ -301,7 +340,13 @@
     "city": "柏林",
     "timezone": "Europe/Berlin",
     "kind": "區級藝術補助",
-    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態"
+    "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+    "programme_pages": [
+      "https://www.berlin.de/ba-tempelhof-schoeneberg/aktuelles/pressemitteilungen/2025/pressemitteilung.1609804.php"
+    ],
+    "funding_indexes": [
+      "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kunst-und-kultur/dezentrale-kulturarbeit/"
+    ]
   },
   {
     "id": "ba-treptow-koepenick",
@@ -351,15 +396,53 @@
   {
     "id": "culture-moves-europe",
     "name": "Culture Moves Europe",
-    "url": "https://culture.ec.europa.eu/culture-moves-europe",
+    "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility",
     "enabled": true,
-    "module": "adapter_program",
+    "module": "adapter_cme",
     "hosts": [
       "culture.ec.europa.eu"
     ],
     "region": "歐洲",
     "timezone": "Europe/Berlin",
     "kind": "官方藝術補助",
-    "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放"
+    "scope": "歐盟本期個人移動補助的官方語意欄位與分年批次表；下一批日期不推定時分，日額不當總額",
+    "country": "Creative Europe 參與國（跨國執行）"
+  },
+  {
+    "id": "hong-foundation",
+    "name": "洪建全基金會",
+    "url": "https://www.hongfoundation.org.tw/",
+    "enabled": true,
+    "module": "adapter_foundation",
+    "hosts": [
+      "www.hongfoundation.org.tw"
+    ],
+    "region": "臺灣",
+    "country": "臺灣",
+    "timezone": "Asia/Taipei",
+    "kind": "私人藝術支持方案",
+    "program_names": [
+      "雨棚計畫",
+      "認養計畫",
+      "問問題計畫"
+    ],
+    "scope": "官方雨棚、認養與問問題藝術支持方案；當期公開受理與資助條件仍需逐項核實"
+  },
+  {
+    "id": "taishin-art",
+    "name": "台新銀行文化藝術基金會",
+    "url": "https://www.taishinart.org.tw/news.html",
+    "enabled": true,
+    "module": "adapter_foundation",
+    "hosts": [
+      "www.taishinart.org.tw",
+      "taishinart.org.tw"
+    ],
+    "region": "臺灣",
+    "country": "臺灣",
+    "timezone": "Asia/Taipei",
+    "kind": "私人藝術基金會公告",
+    "news_path": "news-detail/",
+    "scope": "最新消息索引；活動參加及藝術獎提名不當成公開補助申請"
   }
 ]
