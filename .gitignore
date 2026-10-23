@@ -1,0 +1,8 @@
+private/
+backups/
+.env*
+*.local.json
+*private*.json
+*backup*.json
+__pycache__/
+_site/
