@@ -9,7 +9,7 @@ from official_http import OfficialHTTP, Blocked
 from validate_data import validate
 
 ROOT=Path(__file__).resolve().parents[1]
-FIELDS=('application_start','deadline','eligibility','cash_support','support','status','cofunding','results_urls')
+FIELDS=('application_start','deadline','eligibility','cash_support','support','status','cofunding','results_urls','cancellation_evidence','reopening_evidence')
 
 def reconcile(previous, fresh, history, now):
     old={x['id']:x for x in previous}
@@ -20,6 +20,13 @@ def reconcile(previous, fresh, history, now):
             matches=[p for p in previous if p.get('url')==x.get('url') and p.get('name')==x.get('name') and p.get('record_kind')==x.get('record_kind')]
             if len(matches)==1:x['id']=matches[0]['id']
         p=old.get(x['id'])
+        if p and p.get('cancellation_evidence') and not x.get('cancellation_evidence') and not x.get('reopening_evidence') and x.get('official_call_state')!='open':
+            x['cancellation_evidence']=p['cancellation_evidence']
+            x['cancellation_scope_uncertain']=p.get('cancellation_scope_uncertain',False)
+            if x.get('status')!='closed':
+                x['status']='needs_review' if x['cancellation_scope_uncertain'] else 'cancelled'
+                x['verification_status']='needs_review'
+                x['review_reasons']=list(dict.fromkeys(x.get('review_reasons',[])+['曾有官方取消公告；未核實重新開放前不得標示開放']))
         for field in FIELDS if p else ('new_announcement',):
             before=p.get(field) if p else None
             after=x.get(field) if p else x['name']
@@ -53,6 +60,8 @@ def main():
                 present={x['id'] for x in fresh}
                 fresh.extend(demote(x,now,'本次索引未重新取得；待人工核實') for x in prior if x['id'] not in present)
                 status['requests']=client.requests[request_start:]
+            from official_notices import apply_cached
+            fresh=apply_cached(fresh,client,now)
             status['last_success_at']=now.isoformat() if status['status']=='success' else old_status.get(sid,{}).get('last_success_at')
             rows.extend(fresh)
         except Exception as e:

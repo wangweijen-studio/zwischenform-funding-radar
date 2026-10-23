@@ -37,6 +37,7 @@ def collect(client,source,now):
     x=base(source,source['url'],attr.get('title') or attr['reference'],now)
     x['id']+='-'+digest(attr['reference'])[:8]
     x['record_kind']='rolling_call';x['application_start']=start.date().isoformat();x['overall_deadline']=end.isoformat()
+    x['official_call_state']=attr.get('status')
     x['deadline']=next_batch.isoformat() if next_batch else end.isoformat()
     x['deadline_precision']='date' if next_batch else 'minute'
     if next_batch==end.date():x.update(deadline=end.isoformat(),deadline_precision='minute')
@@ -50,7 +51,10 @@ def collect(client,source,now):
     x['relevance_tags']=[t for t in ('architecture','fashion design','visual arts','literature','create','explore') if t in text]
     x['evidence']='官方 date-opening='+attr.get('date-opening','')+'；date-deadline='+attr.get('date-deadline','')+'；明確年份的批次表：'+', '.join(x['rolling_deadlines'])
     x['review_reasons']=[] if eligible and money and windows and x['overseas_execution'] else ['日期、批次、金額或資格必要欄位未完整解析，待人工核實']
-    if now>=end or attr.get('status')=='closed':x['status']='closed'
+    if attr.get('status') in ('cancelled','canceled'):
+        from official_notices import mark
+        x=mark(x,'歐盟官方語意欄位 status='+attr['status'],now)
+    elif now>=end or attr.get('status')=='closed':x['status']='closed'
     elif now<start:x['status']='upcoming'
     elif not x['review_reasons'] and attr.get('status')=='open' and (x['deadline_precision']=='minute' or today<next_batch):
         x.update(status='open',verification_status='verified',verified_at=now.isoformat())

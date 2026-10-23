@@ -250,7 +250,7 @@ def make_record(program, root, round_info, now, facts):
 def demote(record, now, reason):
     record = dict(record)
     record['verification_status'] = 'needs_review'
-    record['status'] = 'closed' if record.get('status') == 'closed' else 'needs_review'
+    record['status'] = record['status'] if record.get('status') in ('closed','cancelled') else 'needs_review'
     record['review_reasons'] = list(dict.fromkeys(record.get('review_reasons', []) + [reason]))
     record['last_checked_at'] = now.isoformat()
     if record.get('deadline'):
@@ -303,7 +303,7 @@ def collect(fetch, previous, now):
             raise ValueError('NCAF news markup missing')
         for card in cards:
             title = first(card.find(cls='title')).text()
-            if not relevant(title) or re.search(r'名單|結果|採購|評選|詐騙', title) or not re.search(r'受理|徵件|開放收件', title):
+            if not relevant(title) or re.search(r'名單|結果|採購|評選|詐騙', title) or not re.search(r'受理|徵件|開放收件|取消|撤銷', title):
                 excluded += 1
                 continue
             anchor = first(card.find(tag='a'))
@@ -318,6 +318,16 @@ def collect(fetch, previous, now):
             # Longest match prevents generic "視覺藝術" from swallowing
             # "視覺藝術策展專案" or "視覺藝術組織營運專案".
             match = match_program(programs, title)
+            from official_notices import statement,mark
+            cancellation=statement(title+'。'+section.text())
+            if cancellation and match:
+                for i,record in enumerate(rows):
+                    if record.get('url')!=match['url'] or record.get('status')=='closed':continue
+                    period=record.get('name','').split(' · ')[-1]
+                    exact=record.get('record_kind')=='program_round' and re.sub(r'\s','',period) in re.sub(r'\s','',title+' '+section.text())
+                    rows[i]=mark(record,cancellation,now,uncertain=not exact)
+                    rows[i].setdefault('announcement_urls',[]).append(url)
+                continue
             rng = news_range(section.text())
             mapped = [x for x in rows if match and x['url'] == match['url'] and rng
                       and x.get('application_start') == rng[0].isoformat() and (x.get('deadline') or '')[:10] == rng[1].isoformat()]

@@ -21,7 +21,7 @@ def validate(payload, now=None):
             raise ValueError('Official HTTPS URL required')
         if x.get('source_id')=='ncaf' and u.hostname!='www.ncafroc.org.tw':
             raise ValueError('NCAF requires official domain')
-        if x.get('status') not in ('open','closed','upcoming','needs_review'):
+        if x.get('status') not in ('open','closed','upcoming','needs_review','cancelled'):
             raise ValueError('Unknown application state')
         if x.get('status')!='open': continue
         if x.get('verification_status')!='verified' or x.get('official_source') is not True or not x.get('evidence','').strip():
