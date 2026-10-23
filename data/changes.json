@@ -111,6 +111,102 @@
       "old_value": null,
       "new_value": "Allgemeine Projektförderung",
       "url": "https://www.kulturstiftung-des-bundes.de/de/themen_foerderschwerpunkte/allgemeine_projektfoerderung.html"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-730a676bab74bfc91fd2",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kultur­förderung",
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-7e820748c42ceb8f2e08",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Bezirkskultur­fonds",
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/bezirkskulturfonds/"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-a204d5951cd253abadce",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Projektfonds Kulturelle Bildung",
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/projektfonds-kulturelle-bildung/"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-76c0300754a03f7cb037",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Ausschreibungen",
+      "url": "https://www.berlin.de/ba-lichtenberg/aktuelles/ausschreibungen/"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-730f1c795f50880e5105",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Öffentliche Ausschreibungen",
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/wirtschaft/wirtschaft/artikel.322605.php"
+    },
+    {
+      "opportunity_id": "ba-mitte-e518514f0fec8d5717ac",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Förderung",
+      "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/"
+    },
+    {
+      "opportunity_id": "ba-mitte-4bc0f051a217cc24d032",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Bezirks­kulturfonds",
+      "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/bezirkskulturfonds/"
+    },
+    {
+      "opportunity_id": "ba-mitte-1edeeb4debfef28756f0",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Projektfonds Kulturelle Bildung",
+      "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/"
+    },
+    {
+      "opportunity_id": "ba-mitte-0aa890d2699af2e7421b",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Programmfonds Kulturelle Bildung",
+      "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/programmfonds-kulturelle-bildung/"
+    },
+    {
+      "opportunity_id": "ba-steglitz-zehlendorf-4ffb778eedcca29a5e62",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Förderung",
+      "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/"
+    },
+    {
+      "opportunity_id": "ba-steglitz-zehlendorf-71b845175b580455dc51",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Berliner Projektfonds Kulturelle Bildung bis 15. Dezember",
+      "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/berliner-projektfonds-kulturelle-bildung-752042.php"
+    },
+    {
+      "opportunity_id": "kunstfonds-b513285b60e1914f6fcb",
+      "at": "2026-10-23T10:14:39.816862+00:00",
+      "field": "deadline",
+      "old_value": null,
+      "new_value": "2027-01-15",
+      "url": "https://www.kunstfonds.de/foerderung/fuer-kuenstlerinnen/kunstfonds-stipendium/bewerbung-und-vergabe"
     }
   ]
 }

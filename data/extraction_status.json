@@ -1,16 +1,18 @@
 {
-  "generated_at": "2026-10-23T10:00:57.691350+00:00",
+  "generated_at": "2026-10-23T10:14:39.816862+00:00",
+  "timezone": "Europe/Berlin",
+  "local_date": "2026-10-23",
   "sources": [
     {
       "source_id": "ncaf",
-      "checked_at": "2026-10-23T10:00:57.691350+00:00",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
       "status": "success",
       "programs_discovered": 14,
       "programs_checked": 14,
       "announcements_checked": 4,
       "news_excluded": 8,
-      "records": 35,
-      "open_verified": 2,
+      "records": 22,
+      "open_verified": 1,
       "errors": [],
       "requests": [
         {
@@ -118,7 +120,869 @@
           "sha256": "b7cd41b6308a534b32b06c4356e3d7e55784798be0a23dde052dc78d103bf396"
         }
       ],
-      "news_scope": "官方補助訊息最新一頁；補助廣場全部相關類別"
+      "news_scope": "官方補助訊息最新一頁；補助廣場全部相關類別",
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "moc",
+      "status": "blocked",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "last_success_at": null,
+      "errors": [
+        {
+          "error": "Blocked: robots unavailable: HTTP 403"
+        }
+      ],
+      "requests": []
+    },
+    {
+      "source_id": "taipei",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "索引未辨識到可解析的相關公告；不代表沒有徵件，需人工檢查來源與解析器"
+        }
+      ],
+      "records": 0,
+      "links_discovered": 0,
+      "detail_pages_checked": 0,
+      "scope": "最新索引頁，最多 8 個相關官方細節頁；未核實欄位不推測",
+      "requests": [
+        {
+          "url": "https://culture.gov.taipei/Content_List.aspx?n=81A3DAC5186DC3EA",
+          "sha256": "b3bac060addb9c99369468fec040cc264653f4073526534959b7bac25954fe3a"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "taichung",
+      "status": "blocked",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "last_success_at": null,
+      "errors": [
+        {
+          "error": "Blocked: URL outside official HTTPS allowlist"
+        }
+      ],
+      "requests": []
+    },
+    {
+      "source_id": "fonds-soziokultur",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 1,
+      "scope": "一般計畫補助單一官方辦法頁；團體資格與 BKM 共同補助限制已列示",
+      "requests": [
+        {
+          "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick",
+          "sha256": "e86fd80ca189ecf066293b7dc94079dfba0725859a3de398d317cd145b7ed28a"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "berlin-kultur",
+      "status": "blocked",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "last_success_at": null,
+      "errors": [
+        {
+          "error": "Blocked: robots unavailable: HTTP 429"
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/",
+          "sha256": "6d952dd7a8abf376662bd86dac14a761dde693460dd2e4a50458d47be4f785f9"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/",
+          "sha256": "cc8ebef0281ea15d87a9eb2ab5c8dc053e481c30ca26edd7bdccf03a55ca4b2e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kultur/",
+          "sha256": "cc8ebef0281ea15d87a9eb2ab5c8dc053e481c30ca26edd7bdccf03a55ca4b2e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kunst-und-kultur-im-stadtraum/",
+          "sha256": "cfc20c8d2bf20fb396ceeaf94c84f06899a77e7bdc5309e4a4b00fc37314c342"
+        },
+        {
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/",
+          "sha256": "5a64608137bab9d43a94b455fb73d1e7dfd2f80d1d17062c6f6c1a6282e7887f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "54c280b3a85ed0da9bf936c481b7c96933082edfba6d2937f2ccb8de14f9e012"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/",
+          "sha256": "d8189282b932a5d975dd085f5f2769958e6e09acdf8d890dfa6865a3218b351a"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/",
+          "sha256": "afa55d2a8f7569006312017b3bd820734f076b77358e58220535036b21cafd82"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/",
+          "sha256": "6ffdae18851a0148f60ec20d9811fa0df1ff83f8124ee07fd6205cf93e4c497d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/bezirkskulturfonds/",
+          "sha256": "20773d1d6039dfc19d532c0de1b332bda9da19096c5ecfcea263bb43da10026f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "812b1372aa556e2737d7d3f0b2d1b195ea995c0fd6649e5cec6336631ee17e0f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/karriere/berufserfahrene/kultur/artikel.1346774.php",
+          "sha256": "08490535ab953c2ffa904b096add7b5d635d41fdbb7da6d9046ddc180c355815"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/aktuelles/ausschreibungen/",
+          "sha256": "35743274b22ff12e710a7da7478dfbbc89e75ee1ac52c245faa65ef0126a787d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/wirtschaft/wirtschaft/artikel.322605.php",
+          "sha256": "494d4886e01e91e088275a8d39f64218dc9d9bbc8bce8b3e8c8a7c228e210a5d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/",
+          "sha256": "7355b52f2b65e81d91db7dc5547ee1df3e90c817b21c665ac3be3b5b74cc72c6"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/",
+          "sha256": "23f7df9fc62021310c969bec134b3440f9e8f8ec85ba79bcfe0c085a82a19420"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "d3d9ad0e5f90421aae747eb7f5201f0a931178a1e3cde28e04460fb345817b04"
+        },
+        {
+          "url": "https://www.berlin.de/ba-mitte/",
+          "sha256": "fe8e74e55e01da65c65ae975d094be42c63e293dfc74bb1c6b2c150c2c5b0b9b"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/",
+          "sha256": "7468a37b62b682878f58ed1464d93cea37407a8d90a6f67755c7d75dca8636c5"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/",
+          "sha256": "1d84be59e83c5996db2bca66ba4bacdebcc7623e3af0fd45e20736473b577252"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/bezirkskulturfonds/",
+          "sha256": "ddb5d546c48e2ac97ab29ef9dea9282fa9d147c8a3ee8552448389fdcb6eba9a"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "bd7f0913954d39130ce5969982cc8484ef7697440d0a0acde0298d45629f647f"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/programmfonds-kulturelle-bildung/",
+          "sha256": "8e0367cb6b61276ca256272fa75d69ec2d170b212cf1a80a0593b68c947d5983"
+        },
+        {
+          "url": "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "2729d44956eaffac108e771de731fc904f1077174215fb6dcb9c48095d4c57eb"
+        },
+        {
+          "url": "https://www.berlin.de/ba-pankow/",
+          "sha256": "2ae733f748c3cf99ffeaa024d08b48e99575da1a604d14c1077b41da4dd6e053"
+        },
+        {
+          "url": "https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "c00824c7626578ab1c25dd2e112aba5a7680e1a6fc406acf44f3f690455021ba"
+        },
+        {
+          "url": "https://www.berlin.de/ba-reinickendorf/",
+          "sha256": "15bb16ff391ed0a1946d809447054532f343e94616dd41b24a9d44fed69d8824"
+        },
+        {
+          "url": "https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "cd968e782db87a86bb1c0587e86637d685b63f07241143846f591aca21ad7401"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/",
+          "sha256": "50741589c263730ce963129a668a8399b871cff146e3ea64038c533ff4fd660b"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/",
+          "sha256": "2acefceeb8f92b9e4a27c0d9b5dd11fa3a979a4c93e648ab9c0b887a7b3c89d6"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "cbf68134555b216da79791b1f71e09c118b161afa9f383161a8b95f2c55d7e83"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/",
+          "sha256": "958cfc30e41928a7151a5b1ca9c5d36ac9c7e54ff594b5dbce76eecbd63d7750"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/",
+          "sha256": "8bdb3502e03d651a642e34bbbf90a5faf5bbfd4d268b8237352b369a301d900c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/auf-einen-blick/kultur/",
+          "sha256": "8bdb3502e03d651a642e34bbbf90a5faf5bbfd4d268b8237352b369a301d900c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/",
+          "sha256": "1e5e9f3742cbab260126500730f1c3baff82517adeb8e71f36b1d733c7d9c4f2"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/berliner-projektfonds-kulturelle-bildung-752042.php",
+          "sha256": "c9348f5379887bab4bf43708cce97fc067787c95cb4674ad7c6e6fc4a1583820"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/",
+          "sha256": "7e050145b34418674ccca7ea8b71fe9de83de991590af30b6b471327a7399de8"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kunst-und-kultur/",
+          "sha256": "7dbebfd29005a42eb5e3a021b0a0bdfad37e2be9524ddb0ef95b02ee1b16e07c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "e96a8fc1a1410a5130b9062a58854e7e70b9e36d63e905352bda9aaf2c5ea283"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/",
+          "sha256": "1956ef0a4c564938b937578402162d1a557464320a6917033744d659c598baa9"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "beae383a46269c565293d7fc904971e767be1ae35aac74110cc790d655787415"
+        }
+      ]
+    },
+    {
+      "source_id": "solitude",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 1,
+      "scope": "Solitude 官方方案頁；核實津貼、工作室與在場要求，不推定徵件日期",
+      "requests": [
+        {
+          "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+          "sha256": "34767dd8b68d37dbd3c21abe21838cf8b6c0cd56a7e19d3a85150baa97c297cf"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "camargo",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 1,
+      "scope": "官方現有 fellowship 連結及條件頁；不從網址年份推定期別，不把補件截止當申請截止",
+      "requests": [
+        {
+          "url": "https://camargofoundation.org/en/residencies/apply",
+          "sha256": "5b547827ad52d6dee88997aa3f67788487677e332c15f8bb6c842e7848942a3c"
+        },
+        {
+          "url": "https://camargofoundation.org/en/residencies/residency-conditions",
+          "sha256": "63c6a74d5df44b2e1e5a2caa93097135c02a48e870afdb8f3d7e5db5a14c6a95"
+        },
+        {
+          "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027",
+          "sha256": "5337b5a7d3ae8c9c092c17825fe1b2bf4878cdab9d1967ca5826083d78229f06"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "ba-charlottenburg-wilmersdorf",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-charlottenburg-wilmersdorf/politik/bezirksamt/abteilung-schule-sport-weiterbildung-und-kultur/",
+        "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/",
+          "sha256": "6d952dd7a8abf376662bd86dac14a761dde693460dd2e4a50458d47be4f785f9"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/",
+          "sha256": "cc8ebef0281ea15d87a9eb2ab5c8dc053e481c30ca26edd7bdccf03a55ca4b2e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kultur/",
+          "sha256": "cc8ebef0281ea15d87a9eb2ab5c8dc053e481c30ca26edd7bdccf03a55ca4b2e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kunst-und-kultur-im-stadtraum/",
+          "sha256": "cfc20c8d2bf20fb396ceeaf94c84f06899a77e7bdc5309e4a4b00fc37314c342"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-friedrichshain-kreuzberg",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/",
+          "sha256": "5a64608137bab9d43a94b455fb73d1e7dfd2f80d1d17062c6f6c1a6282e7887f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "54c280b3a85ed0da9bf936c481b7c96933082edfba6d2937f2ccb8de14f9e012"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-lichtenberg",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 7,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/",
+        "https://www.berlin.de/ba-lichtenberg/karriere/berufserfahrene/kultur/artikel.1346774.php"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/",
+          "sha256": "d8189282b932a5d975dd085f5f2769958e6e09acdf8d890dfa6865a3218b351a"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/",
+          "sha256": "afa55d2a8f7569006312017b3bd820734f076b77358e58220535036b21cafd82"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/",
+          "sha256": "6ffdae18851a0148f60ec20d9811fa0df1ff83f8124ee07fd6205cf93e4c497d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/bezirkskulturfonds/",
+          "sha256": "20773d1d6039dfc19d532c0de1b332bda9da19096c5ecfcea263bb43da10026f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "812b1372aa556e2737d7d3f0b2d1b195ea995c0fd6649e5cec6336631ee17e0f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/karriere/berufserfahrene/kultur/artikel.1346774.php",
+          "sha256": "08490535ab953c2ffa904b096add7b5d635d41fdbb7da6d9046ddc180c355815"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/aktuelles/ausschreibungen/",
+          "sha256": "35743274b22ff12e710a7da7478dfbbc89e75ee1ac52c245faa65ef0126a787d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/wirtschaft/wirtschaft/artikel.322605.php",
+          "sha256": "494d4886e01e91e088275a8d39f64218dc9d9bbc8bce8b3e8c8a7c228e210a5d"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "ba-marzahn-hellersdorf",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+        "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/",
+          "sha256": "7355b52f2b65e81d91db7dc5547ee1df3e90c817b21c665ac3be3b5b74cc72c6"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/",
+          "sha256": "23f7df9fc62021310c969bec134b3440f9e8f8ec85ba79bcfe0c085a82a19420"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "d3d9ad0e5f90421aae747eb7f5201f0a931178a1e3cde28e04460fb345817b04"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-mitte",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 4,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+        "https://www.berlin.de/kunst-und-kultur-mitte/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-mitte/",
+          "sha256": "fe8e74e55e01da65c65ae975d094be42c63e293dfc74bb1c6b2c150c2c5b0b9b"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/",
+          "sha256": "7468a37b62b682878f58ed1464d93cea37407a8d90a6f67755c7d75dca8636c5"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/",
+          "sha256": "1d84be59e83c5996db2bca66ba4bacdebcc7623e3af0fd45e20736473b577252"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/bezirkskulturfonds/",
+          "sha256": "ddb5d546c48e2ac97ab29ef9dea9282fa9d147c8a3ee8552448389fdcb6eba9a"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "bd7f0913954d39130ce5969982cc8484ef7697440d0a0acde0298d45629f647f"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/programmfonds-kulturelle-bildung/",
+          "sha256": "8e0367cb6b61276ca256272fa75d69ec2d170b212cf1a80a0593b68c947d5983"
+        },
+        {
+          "url": "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "2729d44956eaffac108e771de731fc904f1077174215fb6dcb9c48095d4c57eb"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "ba-neukoelln",
+      "status": "failed",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "last_success_at": null,
+      "errors": [
+        {
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/",
+          "sha256": "6d952dd7a8abf376662bd86dac14a761dde693460dd2e4a50458d47be4f785f9"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/",
+          "sha256": "cc8ebef0281ea15d87a9eb2ab5c8dc053e481c30ca26edd7bdccf03a55ca4b2e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kultur/",
+          "sha256": "cc8ebef0281ea15d87a9eb2ab5c8dc053e481c30ca26edd7bdccf03a55ca4b2e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kunst-und-kultur-im-stadtraum/",
+          "sha256": "cfc20c8d2bf20fb396ceeaf94c84f06899a77e7bdc5309e4a4b00fc37314c342"
+        },
+        {
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/",
+          "sha256": "5a64608137bab9d43a94b455fb73d1e7dfd2f80d1d17062c6f6c1a6282e7887f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "54c280b3a85ed0da9bf936c481b7c96933082edfba6d2937f2ccb8de14f9e012"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/",
+          "sha256": "d8189282b932a5d975dd085f5f2769958e6e09acdf8d890dfa6865a3218b351a"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/",
+          "sha256": "afa55d2a8f7569006312017b3bd820734f076b77358e58220535036b21cafd82"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/",
+          "sha256": "6ffdae18851a0148f60ec20d9811fa0df1ff83f8124ee07fd6205cf93e4c497d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/bezirkskulturfonds/",
+          "sha256": "20773d1d6039dfc19d532c0de1b332bda9da19096c5ecfcea263bb43da10026f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "812b1372aa556e2737d7d3f0b2d1b195ea995c0fd6649e5cec6336631ee17e0f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/karriere/berufserfahrene/kultur/artikel.1346774.php",
+          "sha256": "08490535ab953c2ffa904b096add7b5d635d41fdbb7da6d9046ddc180c355815"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/aktuelles/ausschreibungen/",
+          "sha256": "35743274b22ff12e710a7da7478dfbbc89e75ee1ac52c245faa65ef0126a787d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/wirtschaft/wirtschaft/artikel.322605.php",
+          "sha256": "494d4886e01e91e088275a8d39f64218dc9d9bbc8bce8b3e8c8a7c228e210a5d"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/",
+          "sha256": "7355b52f2b65e81d91db7dc5547ee1df3e90c817b21c665ac3be3b5b74cc72c6"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/",
+          "sha256": "23f7df9fc62021310c969bec134b3440f9e8f8ec85ba79bcfe0c085a82a19420"
+        },
+        {
+          "url": "https://www.berlin.de/ba-marzahn-hellersdorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "d3d9ad0e5f90421aae747eb7f5201f0a931178a1e3cde28e04460fb345817b04"
+        },
+        {
+          "url": "https://www.berlin.de/ba-mitte/",
+          "sha256": "fe8e74e55e01da65c65ae975d094be42c63e293dfc74bb1c6b2c150c2c5b0b9b"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/",
+          "sha256": "7468a37b62b682878f58ed1464d93cea37407a8d90a6f67755c7d75dca8636c5"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/",
+          "sha256": "1d84be59e83c5996db2bca66ba4bacdebcc7623e3af0fd45e20736473b577252"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/bezirkskulturfonds/",
+          "sha256": "ddb5d546c48e2ac97ab29ef9dea9282fa9d147c8a3ee8552448389fdcb6eba9a"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "bd7f0913954d39130ce5969982cc8484ef7697440d0a0acde0298d45629f647f"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/programmfonds-kulturelle-bildung/",
+          "sha256": "8e0367cb6b61276ca256272fa75d69ec2d170b212cf1a80a0593b68c947d5983"
+        },
+        {
+          "url": "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "2729d44956eaffac108e771de731fc904f1077174215fb6dcb9c48095d4c57eb"
+        },
+        {
+          "url": "https://www.berlin.de/ba-pankow/",
+          "sha256": "2ae733f748c3cf99ffeaa024d08b48e99575da1a604d14c1077b41da4dd6e053"
+        },
+        {
+          "url": "https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "c00824c7626578ab1c25dd2e112aba5a7680e1a6fc406acf44f3f690455021ba"
+        },
+        {
+          "url": "https://www.berlin.de/ba-reinickendorf/",
+          "sha256": "15bb16ff391ed0a1946d809447054532f343e94616dd41b24a9d44fed69d8824"
+        },
+        {
+          "url": "https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "cd968e782db87a86bb1c0587e86637d685b63f07241143846f591aca21ad7401"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/",
+          "sha256": "50741589c263730ce963129a668a8399b871cff146e3ea64038c533ff4fd660b"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/",
+          "sha256": "2acefceeb8f92b9e4a27c0d9b5dd11fa3a979a4c93e648ab9c0b887a7b3c89d6"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "cbf68134555b216da79791b1f71e09c118b161afa9f383161a8b95f2c55d7e83"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/",
+          "sha256": "958cfc30e41928a7151a5b1ca9c5d36ac9c7e54ff594b5dbce76eecbd63d7750"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/",
+          "sha256": "8bdb3502e03d651a642e34bbbf90a5faf5bbfd4d268b8237352b369a301d900c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/auf-einen-blick/kultur/",
+          "sha256": "8bdb3502e03d651a642e34bbbf90a5faf5bbfd4d268b8237352b369a301d900c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/",
+          "sha256": "1e5e9f3742cbab260126500730f1c3baff82517adeb8e71f36b1d733c7d9c4f2"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/berliner-projektfonds-kulturelle-bildung-752042.php",
+          "sha256": "c9348f5379887bab4bf43708cce97fc067787c95cb4674ad7c6e6fc4a1583820"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/",
+          "sha256": "7e050145b34418674ccca7ea8b71fe9de83de991590af30b6b471327a7399de8"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kunst-und-kultur/",
+          "sha256": "7dbebfd29005a42eb5e3a021b0a0bdfad37e2be9524ddb0ef95b02ee1b16e07c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "e96a8fc1a1410a5130b9062a58854e7e70b9e36d63e905352bda9aaf2c5ea283"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/",
+          "sha256": "1956ef0a4c564938b937578402162d1a557464320a6917033744d659c598baa9"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "beae383a46269c565293d7fc904971e767be1ae35aac74110cc790d655787415"
+        }
+      ]
+    },
+    {
+      "source_id": "ba-pankow",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-pankow/",
+          "sha256": "2ae733f748c3cf99ffeaa024d08b48e99575da1a604d14c1077b41da4dd6e053"
+        },
+        {
+          "url": "https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "c00824c7626578ab1c25dd2e112aba5a7680e1a6fc406acf44f3f690455021ba"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-reinickendorf",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-reinickendorf/",
+          "sha256": "15bb16ff391ed0a1946d809447054532f343e94616dd41b24a9d44fed69d8824"
+        },
+        {
+          "url": "https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "cd968e782db87a86bb1c0587e86637d685b63f07241143846f591aca21ad7401"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-spandau",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+        "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-spandau/",
+          "sha256": "50741589c263730ce963129a668a8399b871cff146e3ea64038c533ff4fd660b"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/",
+          "sha256": "2acefceeb8f92b9e4a27c0d9b5dd11fa3a979a4c93e648ab9c0b887a7b3c89d6"
+        },
+        {
+          "url": "https://www.berlin.de/ba-spandau/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "cbf68134555b216da79791b1f71e09c118b161afa9f383161a8b95f2c55d7e83"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-steglitz-zehlendorf",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 2,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-steglitz-zehlendorf/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+        "https://www.berlin.de/ba-steglitz-zehlendorf/auf-einen-blick/kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/",
+          "sha256": "958cfc30e41928a7151a5b1ca9c5d36ac9c7e54ff594b5dbce76eecbd63d7750"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/",
+          "sha256": "8bdb3502e03d651a642e34bbbf90a5faf5bbfd4d268b8237352b369a301d900c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/auf-einen-blick/kultur/",
+          "sha256": "8bdb3502e03d651a642e34bbbf90a5faf5bbfd4d268b8237352b369a301d900c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/",
+          "sha256": "1e5e9f3742cbab260126500730f1c3baff82517adeb8e71f36b1d733c7d9c4f2"
+        },
+        {
+          "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/berliner-projektfonds-kulturelle-bildung-752042.php",
+          "sha256": "c9348f5379887bab4bf43708cce97fc067787c95cb4674ad7c6e6fc4a1583820"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "ba-tempelhof-schoeneberg",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+        "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kunst-und-kultur/"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/",
+          "sha256": "7e050145b34418674ccca7ea8b71fe9de83de991590af30b6b471327a7399de8"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kunst-und-kultur/",
+          "sha256": "7dbebfd29005a42eb5e3a021b0a0bdfad37e2be9524ddb0ef95b02ee1b16e07c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "e96a8fc1a1410a5130b9062a58854e7e70b9e36d63e905352bda9aaf2c5ea283"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "ba-treptow-koepenick",
+      "status": "partial",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/artikel.90669.php",
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        },
+        {
+          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
+        }
+      ],
+      "records": 0,
+      "scope": "區公所導覽中的藝術文化／補助入口，最多2個入口各4篇；非全站完整爬取",
+      "culture_indexes": [
+        "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+        "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/artikel.90669.php"
+      ],
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/",
+          "sha256": "1956ef0a4c564938b937578402162d1a557464320a6917033744d659c598baa9"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "beae383a46269c565293d7fc904971e767be1ae35aac74110cc790d655787415"
+        }
+      ],
+      "last_success_at": null
+    },
+    {
+      "source_id": "kunstfonds",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 1,
+      "scope": "官方單一方案文字；本期完整申請日期未經專用解析器驗證，一律待人工核實",
+      "requests": [
+        {
+          "url": "https://www.kunstfonds.de/foerderung/fuer-kuenstlerinnen/kunstfonds-stipendium/bewerbung-und-vergabe",
+          "sha256": "dbef1a066018b6231665c60e1eab7f589d8cbce022846c1c5524cd00dc8afe9d"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "kulturstiftung-bund",
+      "status": "success",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "errors": [],
+      "records": 1,
+      "scope": "官方單一方案文字；本期完整申請日期未經專用解析器驗證，一律待人工核實",
+      "requests": [
+        {
+          "url": "https://www.kulturstiftung-des-bundes.de/de/themen_foerderschwerpunkte/allgemeine_projektfoerderung.html",
+          "sha256": "435f5435774e82075cc2b85f409a9b6c1351a5411234704afabd273c5f7dd505"
+        }
+      ],
+      "last_success_at": "2026-10-23T10:14:39.816862+00:00"
+    },
+    {
+      "source_id": "culture-moves-europe",
+      "status": "failed",
+      "checked_at": "2026-10-23T10:14:39.816862+00:00",
+      "last_success_at": null,
+      "errors": [
+        {
+          "error": "ValueError: Expected official programme content missing"
+        }
+      ],
+      "requests": [
+        {
+          "url": "https://culture.ec.europa.eu/culture-moves-europe",
+          "sha256": "c8df6331d3b8f0b47943b9185821f63e81d38e804fa3c8aed7b129a043e4062b"
+        }
+      ]
     }
   ]
 }
