@@ -249,6 +249,7 @@ def make_record(program, root, round_info, now, facts):
 
 def demote(record, now, reason):
     record = dict(record)
+    if record.get('residency_policy'):record['residency_policy']={**record['residency_policy'],'fetch_status':'failed'}
     record['verification_status'] = 'needs_review'
     record['status'] = record['status'] if record.get('status') in ('closed','cancelled') else 'needs_review'
     record['review_reasons'] = list(dict.fromkeys(record.get('review_reasons', []) + [reason]))

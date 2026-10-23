@@ -9,7 +9,7 @@ from official_http import OfficialHTTP, Blocked
 from validate_data import validate
 
 ROOT=Path(__file__).resolve().parents[1]
-FIELDS=('application_start','deadline','eligibility','cash_support','support','status','cofunding','results_urls','results_announcements','cancellation_evidence','reopening_evidence')
+FIELDS=('application_start','deadline','eligibility','cash_support','support','residency_policy','status','cofunding','results_urls','results_announcements','cancellation_evidence','reopening_evidence')
 
 def reconcile(previous, fresh, history, now):
     old={x['id']:x for x in previous}
@@ -31,6 +31,12 @@ def reconcile(previous, fresh, history, now):
             before=p.get(field) if p else None
             after=x.get(field) if p else x['name']
             if field in ('results_urls','results_announcements') and not before and not after:continue
+            if field=='residency_policy':
+                def stable(value):
+                    if isinstance(value,dict):return {k:stable(v) for k,v in value.items() if k not in ('verified_at','checked_at')}
+                    if isinstance(value,list):return [stable(v) for v in value]
+                    return value
+                if stable(before)==stable(after):continue
             if field=='results_announcements':
                 clean=lambda values:[{k:v for k,v in item.items() if k!='verified_at'} for item in (values or [])]
                 if clean(before)==clean(after):continue
@@ -63,6 +69,10 @@ def main():
                 present={x['id'] for x in fresh}
                 fresh.extend(demote(x,now,'本次索引未重新取得；待人工核實') for x in prior if x['id'] not in present)
                 status['requests']=client.requests[request_start:]
+            if sid in ('solitude','camargo'):
+                from residency_policy import legacy_policy
+                for item in fresh:
+                    if item.get('type')=='residency':item['residency_policy']=legacy_policy(item,client,now,source)
             from official_notices import apply_cached
             fresh=apply_cached(fresh,client,now)
             status['last_success_at']=now.isoformat() if status['status']=='success' else old_status.get(sid,{}).get('last_success_at')

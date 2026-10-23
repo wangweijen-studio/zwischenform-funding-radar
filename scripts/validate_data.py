@@ -23,6 +23,8 @@ def validate(payload, now=None):
             raise ValueError('NCAF requires official domain')
         if x.get('status') not in ('open','closed','upcoming','needs_review','cancelled'):
             raise ValueError('Unknown application state')
+        from validate_residency_policy import validate_policy
+        validate_policy(x)
         if x.get('status')!='open': continue
         if x.get('verification_status')!='verified' or x.get('official_source') is not True or not x.get('evidence','').strip():
             raise ValueError('Open call requires official evidence')
