@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-23T09:10:53.190984+00:00",
+  "generated_at": "2026-10-23T09:12:22.217296+00:00",
   "note": "Reachability checks only; NOT verified grant opportunities or updated deadlines.",
   "sources": [
     {
       "id": "ncaf",
       "name": "NCAF Taiwan",
       "url": "https://www.ncafroc.org.tw/",
-      "checked_at": "2026-10-23T09:10:35.644520+00:00",
+      "checked_at": "2026-10-23T09:12:03.070308+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -14,7 +14,7 @@
       "id": "moc",
       "name": "Taiwan Ministry of Culture",
       "url": "https://www.moc.gov.tw/",
-      "checked_at": "2026-10-23T09:10:36.271792+00:00",
+      "checked_at": "2026-10-23T09:12:03.435698+00:00",
       "status": "check_failed",
       "error": "HTTP Error 403: Forbidden"
     },
@@ -22,7 +22,7 @@
       "id": "taipei",
       "name": "Taipei Cultural Affairs",
       "url": "https://culture.gov.taipei/",
-      "checked_at": "2026-10-23T09:10:36.463083+00:00",
+      "checked_at": "2026-10-23T09:12:03.606429+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -30,15 +30,15 @@
       "id": "taichung",
       "name": "Taichung Cultural Affairs",
       "url": "https://www.culture.taichung.gov.tw/",
-      "checked_at": "2026-10-23T09:10:37.225329+00:00",
-      "status": "reachable",
-      "http_status": 200
+      "checked_at": "2026-10-23T09:12:04.307132+00:00",
+      "status": "check_failed",
+      "error": "The read operation timed out"
     },
     {
       "id": "fonds-soziokultur",
       "name": "Fonds Soziokultur",
       "url": "https://www.fonds-soziokultur.de/",
-      "checked_at": "2026-10-23T09:10:50.998652+00:00",
+      "checked_at": "2026-10-23T09:12:20.017483+00:00",
       "status": "reachable",
       "http_status": 200
     }
