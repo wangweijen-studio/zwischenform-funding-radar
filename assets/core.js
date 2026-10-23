@@ -48,8 +48,8 @@ function days(date,zone='Europe/Berlin',now=Date.now()){if(!dateOK((date||'').sl
 function hasSubstantiveSupport(s={}){s=s&&typeof s==='object'?s:{};const unresolved=/待|未確認|unknown|不提供|沒有|自費|無(?:生活|津貼|藝術家費|製作|交通)|not provided|no (?:stipend|artist fee|production)|not available/i;const cash=['stipend','artist_fee','production','travel'].some(k=>![undefined,null,false,0,'','unknown','待確認','無'].includes(s[k])&&!unresolved.test(String(s[k])));const kind=['accommodation','studio'].some(k=>s[k]===true||(/免費|kostenlos|\bfree\b/i.test(s[k]||'')&&!unresolved.test(String(s[k]))&&!/非免費|不免費|not free|nicht kostenlos/i.test(String(s[k]))));return cash||kind;}
 function publicState(x,now=Date.now()){
  const day=today(x.deadline_timezone||'UTC',now),end=x.deadline;
- if(x.status==='closed'||(end&&(x.deadline_precision==='date'?day>end:Number.isFinite(Date.parse(end))&&Date.parse(end)<=now)))return 'closed';
  if(x.status==='cancelled')return 'cancelled';
+ if(x.status==='closed'||(end&&(x.deadline_precision==='date'?day>end:Number.isFinite(Date.parse(end))&&Date.parse(end)<=now)))return 'closed';
  if(x.application_start&&day<x.application_start)return 'upcoming';
  const verified=Date.parse(x.verified_at),fresh=Number.isFinite(verified)&&verified<=now&&now-verified<=7*86400000;
  const validEnd=x.deadline_precision==='date'?dateOK(end)&&day<end:/T.*(?:Z|[+-]\d{2}:\d{2})$/.test(end||'')&&Date.parse(end)>now;
