@@ -12,7 +12,7 @@
 
 ## 每日擷取
 GitHub Actions 每天 Europe/Berlin 09:15 執行，使用 timezone 處理夏令時間；排程可能延遲或被 GitHub 暫停，頁面顯示實際時間，可在 Actions 手動執行。
-執行順序：免費 PDF parser → 22 項私人狀態與規劃測試及 13 項官方連結與更新狀態測試 → 50 項 Python 擷取測試 → update_all.py → validate_data.py → 提交公開 JSON → allowlist 打包 → GitHub Pages。
+執行順序：免費 PDF parser → 22 項私人狀態與規劃測試及 13 項官方連結與更新狀態測試 → 51 項 Python 擷取測試 → update_all.py → validate_data.py → 提交公開 JSON → allowlist 打包 → GitHub Pages。
 HTTP client 使用明確 User-Agent、官方 HTTPS 網域 allowlist、robots.txt 檢查、至少一秒請求間隔與大小／逾時限制。重新導向逐一核對官方網域與 robots；禁止的入口不繞過。
 
 每個來源的範圍、啟用設定與模組在 data/sources.json。完整／部分成功、被阻擋、失敗、最後嘗試與最後完整成功都在 data/extraction_status.json。HTTP 可連線不代表徵件已核實。
@@ -67,4 +67,4 @@ IMPACT 結果必須在官方結果標題同時確認 IMPACT、2027 與結果語�
 全額篩選須有全部必要成本的官方證據；主辦稱 fully funded 不等於全額費用已核實。部分資助表示有實質支持，但仍有自付或未核實費用，並不推定固定自付比例。
 支援全球／歐洲／歐洲以外、柏林已核實來回機票、全額／部分資助、資格待確認與主要／待確認清單篩選，亦保留原有私人狀態與開放狀態篩選。過期徵件預設隱藏，可選「所有開放狀態」查看歷史方案。
 ARCUS funded AIR 不混入 ARCUS Research 自費方案；G.A.S. 2025 限制非洲國籍及當地居住，不能推薦臺灣／柏林情境；Bundanon 交通自付；Bemis 美國居住者條款不套用到柏林；TOKAS 官方 503／robots 無法核實時不使用第三方資訊代替。
-每日流程另執行 `node scripts/test_residencies.cjs`。目前總計 100 項測試：22 核心、13 連結與更新狀態、15 全球駐村政策、50 Python 擷取／資料驗證。
+每日流程另執行 `node scripts/test_residencies.cjs`。目前總計 101 項測試：22 核心、13 連結與更新狀態、15 全球駐村政策、51 Python 擷取／資料驗證。
