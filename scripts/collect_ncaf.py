@@ -169,7 +169,7 @@ def date_ranges(section):
 def news_range(text):
     # Require an explicit Gregorian year and application context. Never use the
     # budget/ROC year from the title or dates of an information session.
-    pattern = r'(?:自|於)?(20\d{2})年(\d{1,2})月(\d{1,2})日\s*(?:至|到)\s*(?:(\d{1,2})月)?(\d{1,2})日[^。]{0,18}(?:受理|申請|收件)'
+    pattern = r'(?:自|於)?(20\d{2})年(\d{1,2})月(\d{1,2})日\s*(?:至|到)\s*(?:(\d{1,2})月)?(\d{1,2})日\s*(?:起|期間)?\s*(?:受理(?:線上)?申請|開放(?:線上)?申請|接受申請|受理收件|開放收件)'
     m = re.search(pattern, text)
     if not m:
         return None

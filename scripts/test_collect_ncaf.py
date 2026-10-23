@@ -36,6 +36,9 @@ class ExtractionTests(unittest.TestCase):
         self.assertIsNone(news_range('116年度專案，11月1日至30日受理申請'))
         self.assertEqual(news_range('自2026年11月1日至30日開放線上申請')[1], dt.date(2026, 11, 30))
 
+    def test_information_session_dates_not_application_dates(self):
+        self.assertIsNone(news_range('2026年11月5日至6日申請說明會'))
+
     def test_official_url_canonicalization(self):
         self.assertEqual(canonical(URL + '&utm_source=x#foo'), URL)
         self.assertTrue(canonical('/news_detail.html?id=abcdef').endswith('?id=abcdef'))
