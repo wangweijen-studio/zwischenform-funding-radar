@@ -1,7 +1,7 @@
 """Small, identified, rate-limited robots-aware official-source client."""
 import hashlib
 import time
-from urllib.parse import urlsplit, quote, urljoin
+from urllib.parse import urlsplit, urlunsplit, quote, urljoin
 from urllib.request import Request, build_opener, HTTPRedirectHandler
 from urllib.error import HTTPError
 from urllib.robotparser import RobotFileParser
@@ -27,6 +27,17 @@ class OfficialHTTP:
             raise Blocked('URL outside official HTTPS allowlist')
         return p
 
+    def redirect_target(self,url,target):
+        target=urljoin(url,target)
+        p=urlsplit(target)
+        # Some official sites emit legacy HTTP redirects, including robots.
+        # Request only the secure equivalent on the same allowlisted host;
+        # never downgrade transport, broaden hosts or bypass robots rules.
+        if p.scheme=='http' and p.hostname in self.hosts and p.port is None:
+            target=urlunsplit(p._replace(scheme='https'))
+        self.allowed_url(target)
+        return target
+
     def raw(self, url, delay=1, robots=False, depth=0):
         p = self.allowed_url(url)
         time.sleep(max(0, delay - (time.monotonic()-self.last.get(p.hostname,0))))
@@ -38,8 +49,7 @@ class OfficialHTTP:
                 return data
         except HTTPError as e:
             if robots and e.code in (301,302,303,307,308) and depth<5:
-                target=urljoin(url,e.headers.get('Location',''))
-                self.allowed_url(target)
+                target=self.redirect_target(url,e.headers.get('Location',''))
                 return self.raw(target,delay,robots=True,depth=depth+1)
             raise
 
@@ -47,7 +57,10 @@ class OfficialHTTP:
         p=self.allowed_url(url)
         if p.hostname not in self.robots:
             robots='https://'+p.hostname+'/robots.txt'
-            try: lines=self.raw(robots,robots=True).decode('utf-8-sig').splitlines()
+            try:
+                body=self.raw(robots,robots=True).decode('utf-8-sig')
+                if body.lstrip().startswith('<'):raise Blocked('robots returned HTML; policy cannot be verified')
+                lines=body.splitlines()
             except HTTPError as e:
                 if e.code not in (404,410): raise Blocked('robots unavailable: HTTP '+str(e.code))
                 lines=['User-agent: *','Allow: /']
@@ -63,7 +76,7 @@ class OfficialHTTP:
         try:data=self.raw(url,delay)
         except HTTPError as e:
             if e.code not in (301,302,303,307,308) or depth>=5:raise
-            target=urljoin(url,e.headers.get('Location',''))
+            target=self.redirect_target(url,e.headers.get('Location',''))
             # Every redirect destination is checked against official hosts and
             # its own robots policy before the request is sent.
             self.allowed_url(target)

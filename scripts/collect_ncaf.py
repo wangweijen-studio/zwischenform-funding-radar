@@ -250,7 +250,7 @@ def make_record(program, root, round_info, now, facts):
 def demote(record, now, reason):
     record = dict(record)
     record['verification_status'] = 'needs_review'
-    record['status'] = 'needs_review'
+    record['status'] = 'closed' if record.get('status') == 'closed' else 'needs_review'
     record['review_reasons'] = list(dict.fromkeys(record.get('review_reasons', []) + [reason]))
     record['last_checked_at'] = now.isoformat()
     if record.get('deadline'):

@@ -41,8 +41,11 @@ def validate(payload, now=None):
             raise ValueError('NCAF unresolved required facts')
         if x['type']=='residency':
             s=x.get('support',{})
-            if not all(k in s for k in ('stipend','artist_fee','accommodation','production','travel')) or not any(s.get(k) not in (None,False,'','unknown','待確認','無') for k in ('stipend','artist_fee','production')):
-                raise ValueError('Residency requires verified cash funding')
+            unresolved=r'待|未確認|unknown|不提供|沒有|自費|無(?:生活|津貼|藝術家費|製作|交通)|not provided|no (?:stipend|artist fee|production)|not available'
+            known_cash=any(s.get(k) not in (None,False,'','unknown','待確認','無') and not re.search(unresolved,str(s.get(k)),re.I) for k in ('stipend','artist_fee','production','travel'))
+            known_kind=any(s.get(k) is True or (re.search(r'免費|kostenlos|\bfree\b',str(s.get(k) or ''),re.I) and not re.search(unresolved+r'|非免費|不免費|not free|nicht kostenlos',str(s.get(k)),re.I)) for k in ('accommodation','studio'))
+            if not all(k in s for k in ('stipend','artist_fee','accommodation','production','travel')) or not(known_cash or known_kind):
+                raise ValueError('Residency requires verified cash funding or free accommodation/studio')
     return True
 if __name__=='__main__':
     validate(json.loads((ROOT/'data/opportunities.json').read_text(encoding='utf-8')))

@@ -23,6 +23,7 @@ def reconcile(previous, fresh, history, now):
         for field in FIELDS if p else ('new_announcement',):
             before=p.get(field) if p else None
             after=x.get(field) if p else x['name']
+            if field=='results_urls' and not before and not after:continue
             if before!=after:
                 history.append({'opportunity_id':x['id'],'at':now.isoformat(),'field':field,'old_value':before,'new_value':after,'url':x['url']})
     return fresh,history

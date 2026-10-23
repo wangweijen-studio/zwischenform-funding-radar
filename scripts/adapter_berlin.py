@@ -40,6 +40,8 @@ def collect(client,source,now):
             if url.startswith('https://www.berlin.de/'):
                 detail=client.html(url)
                 if '2027' in detail.text():results.append(url)
+    x['results_urls']=sorted(set(results))
+    x['announcement_urls']=x['results_urls']
     meta.update(results_state='已辨識官方 2027 結果連結，請人工核對名單' if results else '待人工核實：本頁尚未辨識到明確 2027 結果連結',results_urls=results,
         scope=meta['scope']+'；另讀取 IMPACT 官方頁及明確標為 2027 結果的連結')
     return rows,errors,meta

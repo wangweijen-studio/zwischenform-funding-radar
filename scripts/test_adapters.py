@@ -46,5 +46,19 @@ class AdapterTests(unittest.TestCase):
         fresh={**old,'id':'new','deadline':'2026-11-01'}
         rows,history=reconcile([old],[fresh],[],NOW)
         self.assertEqual(rows[0]['id'],'old');self.assertEqual(history[0]['field'],'deadline')
+    def test_legacy_redirect_is_upgraded_without_expanding_hosts(self):
+        c=OfficialHTTP(['example.org'])
+        self.assertEqual(c.redirect_target('https://example.org/robots.txt','http://example.org/robots'),'https://example.org/robots')
+        with self.assertRaises(Blocked):c.redirect_target('https://example.org/','http://other.example/robots')
+    def test_html_error_page_cannot_become_robots_permission(self):
+        c=OfficialHTTP(['example.org'])
+        with patch.object(c,'raw',return_value=b'<html>Access denied</html>'):
+            with self.assertRaises(Blocked):c.policy('https://example.org/call')
+    def test_official_more_link_uses_its_programme_label(self):
+        from adapter_common import discover
+        c=Fake('<article><h2>Fonds Dezentrale Kulturarbeit</h2><a title="Fonds Dezentrale Kulturarbeit" href="/arts/fund">Weitere Informationen</a></article>')
+        c.hosts={'example.org'}
+        rows,errors,_=discover(c,{'id':'berlin-kultur','name':'Fixture culture department','url':'https://example.org/arts/'},NOW)
+        self.assertFalse(errors);self.assertEqual(len(rows),1);self.assertEqual(rows[0]['name'],'Fonds Dezentrale Kulturarbeit')
 
 if __name__=='__main__':unittest.main()
