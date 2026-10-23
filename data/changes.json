@@ -343,6 +343,126 @@
       "old_value": "closed",
       "new_value": "needs_review",
       "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "taichung-697ee7bb2d9702803258",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "視覺藝術補助",
+      "url": "https://www.culture.taichung.gov.tw/2104994/Lpsimplelist"
+    },
+    {
+      "opportunity_id": "taichung-4e656d4e5a7012a96817",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "表演藝術類活動補助專區",
+      "url": "https://www.culture.taichung.gov.tw/2061062/2083995/2085944?PageSize=30&type=07"
+    },
+    {
+      "opportunity_id": "taichung-3c43952ad7ef302e8b7e",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "藝文及民俗節慶補助",
+      "url": "https://www.culture.taichung.gov.tw/2105761/Lpsimplelist"
+    },
+    {
+      "opportunity_id": "taichung-f527f733d3b8eae94269",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "115/4 30 【公告】「2026年臺中表演藝術場館升級-演出徵選計畫」暨「2026年演藝孵育創作徵選計畫」入選名單",
+      "url": "https://www.culture.taichung.gov.tw/3265209/post"
+    },
+    {
+      "opportunity_id": "taichung-4a7424a2dd66b0122ba8",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "115/2 22 【徵件公告】2026年臺中表演藝術場館升級-演出徵選計畫 (115/03/31收件截止)",
+      "url": "https://www.culture.taichung.gov.tw/3216965/post"
+    },
+    {
+      "opportunity_id": "camargo-a6edb6690cf084e34be6",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "status",
+      "old_value": "needs_review",
+      "new_value": "closed",
+      "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "ba-charlottenburg-wilmersdorf-14eaa9f635f00aa00144",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kunst- und Kulturförderung",
+      "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kultur/kulturfoerderung/artikel.1165350.php"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-fde7939432efb214da22",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kulturförderung Lichtenberg - Hohenschönhausen",
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/artikel.1545688.php"
+    },
+    {
+      "opportunity_id": "ba-neukoelln-c23de96c93a52ca3eac8",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Förderung",
+      "url": "https://www.berlin.de/kunst-und-kultur-neukoelln/foerderung/"
+    },
+    {
+      "opportunity_id": "ba-neukoelln-a586493c7f4e991f8572",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kultur­förderung",
+      "url": "https://www.berlin.de/kunst-und-kultur-neukoelln/foerderung/kulturfoerderung/"
+    },
+    {
+      "opportunity_id": "ba-neukoelln-ce6019f704b896140565",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "JungeKunst­Förderung",
+      "url": "https://www.berlin.de/kunst-und-kultur-neukoelln/foerderung/jungekunstfoerderung/"
+    },
+    {
+      "opportunity_id": "ba-neukoelln-770e1fd4a00aede304bb",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Kunstförderung 48 h Neukölln",
+      "url": "https://www.berlin.de/kunst-und-kultur-neukoelln/foerderung/kunstfoerderung-48-h-neukoelln/"
+    },
+    {
+      "opportunity_id": "ba-tempelhof-schoeneberg-99ee6c69a5b7743a61d0",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Berliner Autorenlesefonds",
+      "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/artikel.402102.php"
+    },
+    {
+      "opportunity_id": "kunstfonds-b513285b60e1914f6fcb",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "cash_support",
+      "old_value": "5.1. Die Höhe des Stipendiums beträgt 18.000 Euro.",
+      "new_value": "5. Fördersumme",
+      "url": "https://www.kunstfonds.de/foerderung/fuer-kuenstlerinnen/kunstfonds-stipendium/bewerbung-und-vergabe"
+    },
+    {
+      "opportunity_id": "kulturstiftung-bund-455d0c2216e7bfc14295",
+      "at": "2026-10-23T10:56:12.243879+00:00",
+      "field": "eligibility",
+      "old_value": "Einzelpersonen als Antragsteller, Doppelförderung oder ein unvollständiger Finanzierungsplan: In unserem Erklärvideo zeigen wir Ihnen die fünf häufigsten Fehler – und wie Sie diese ganz einfach vermeiden können.",
+      "new_value": "In unserem Förder-Check können Sie in wenigen Minuten prüfen, ob Sie die Voraussetzungen für unsere Allgemeine Projektförderung erfüllen.",
+      "url": "https://www.kulturstiftung-des-bundes.de/de/themen_foerderschwerpunkte/allgemeine_projektfoerderung.html"
     }
   ]
 }
