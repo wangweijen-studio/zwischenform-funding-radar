@@ -2,7 +2,7 @@
 'use strict';
 const KEY='funding-radar-private-v2',LEGACY='funding-radar-records';
 const PERSONAL=['','interested','applied','skipped'];
-const FIELDS=['name','category','project','submittedDate','expectedResultDate','amount','currency','confirmedAmount','progress','url','contact','notes','nextAction','preparationDate','invitationDate','budgetDate','portfolioDate','submissionTarget','costKey','residencyStart','residencyEnd','cofunding','cofundingEvidence'];
+const FIELDS=['organizer','year','type','announcementId','name','category','project','submittedDate','expectedResultDate','amount','currency','confirmedAmount','progress','url','contact','notes','nextAction','preparationDate','invitationDate','budgetDate','portfolioDate','submissionTarget','costKey','residencyStart','residencyEnd','cofunding','cofundingEvidence'];
 const CHECKS=['臺灣國籍','德國居留／柏林工作場域','個人藝術家','須非營利組織','戶籍／居住證明','海外執行','合作機構／邀請函','年齡／學歷／年資','語言文件'];
 const RESULTS=['等待公告','需要補件','通過','未通過','撤回'];
 const uid=()=>globalThis.crypto?.randomUUID?.()||Date.now().toString(36)+Math.random().toString(36).slice(2);
@@ -22,6 +22,8 @@ function normalize(raw){
  for(const h of Array.isArray(raw.history)?raw.history.slice(-200):[])if(h&&h.at)a.history.push({at:text(h.at),from:text(h.from),to:text(h.to),event:text(h.event)});
  const publicKeys=['id','name','organizer','type','url','deadline','deadline_timezone','deadline_precision','application_start','location','country','city','status','verification_status','verified_at','source_id','eligibility','cash_support','rules_url','residency_start','residency_end','support','relevance_tags','review_reasons','cofunding'];
  for(const k of publicKeys)if(raw.snapshot?.[k]!=null)a.snapshot[k]=clone(raw.snapshot[k]);
+ if(raw.officialLink&&safeId(raw.officialLink.id))a.officialLink={id:raw.officialLink.id,url:text(raw.officialLink.url,2000),confirmedAt:text(raw.officialLink.confirmedAt)};
+ if(raw.officialSnapshot&&typeof raw.officialSnapshot==='object')a.officialSnapshot=clone(raw.officialSnapshot);
  if(raw.legacyRecord)a.legacyRecord=clone(raw.legacyRecord);return a;
 }
 function migrateLegacy(rows){return (Array.isArray(rows)?rows:[]).filter(r=>r&&safeId(r.id)).map(r=>{
@@ -74,7 +76,46 @@ function filter(rows,state,f={},now=Date.now()){
  return true;
  }).sort((a,b)=>(a.deadline||'9999').localeCompare(b.deadline||'9999'));
 }
-function fingerprint(a){return [a.fields?.name||a.name||'',a.fields?.category||a.category||''].map(s=>s.normalize('NFKC').replace(/\s+/g,'').toLowerCase()).join('|');}
+
+function canonicalURL(value){try{const u=new URL(value);if(!['http:','https:'].includes(u.protocol)||u.username||u.password)return '';u.protocol='https:';u.hash='';for(const k of [...u.searchParams.keys()])if(/^(utm_|fbclid)/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.toString().replace(/\/$/,'');}catch{return '';}}
+const matchText=v=>String(v||'').normalize('NFKC').replace(/\u00ad/g,'').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
+function years(value){return [...new Set(String(value||'').match(/\b20\d{2}\b/g)||[])];}
+function candidateMatches(a,publicRows){
+ const f=a.fields||{},wanted=years(f.year||f.name),name=matchText(f.name).replace(/20\d{2}/g,''),org=matchText(f.organizer),url=canonicalURL(f.url),announcement=matchText(f.announcementId);
+ return publicRows.filter(x=>x.official_source===true).map(x=>{
+  const found=years(x.funding_year||x.year||x.name),xn=matchText(x.program_name||x.name).replace(/20\d{2}/g,''),xo=matchText(x.organizer);
+  if(wanted.length&&found.length&&!wanted.some(y=>found.includes(y)))return null;
+  if(f.type&&f.type!==x.type)return null;
+  const sameURL=!!url&&[x.url,x.rules_url,...(x.announcement_urls||[])].some(u=>canonicalURL(u)===url);
+  const sameID=!!announcement&&[x.id,x.announcement_id].some(v=>matchText(v)===announcement);
+  const distinctive=v=>v.replace(/förderung|funding|grants?|補助|專案|program(?:me)?/g,'');
+  const n=distinctive(name),other=distinctive(xn);
+  const sameName=n.length>=4&&other.length>=4&&(n===other||n.includes(other)||other.includes(n));
+  const sameOrg=org.length>=3&&xo.length>=3&&(org.includes(xo)||xo.includes(org));
+  const sameYear=wanted.length===1&&found.length===1&&wanted[0]===found[0];
+  if(!(sameURL||sameID||sameName))return null;
+  const reasons=[sameURL?'官方網址相同':'',sameID?'官方公告 ID 相同':'',sameName?'方案名稱相符':'',sameOrg?'主辦單位相符':'',sameYear?'年度相符':''].filter(Boolean);
+  const warnings=[];
+  if(!sameYear)warnings.push('年度尚未完整對應，請核對本期公告');
+  if(!sameURL&&!sameID&&!sameOrg)warnings.push('目前主要依名稱提出候選，不能視為已連結');
+  if(x.verification_status!=='verified')warnings.push('官方內容仍有欄位待核實；連結不代表資格或開放狀態已核實');
+  if(f.category&&x.category&&matchText(f.category)!==matchText(x.category))warnings.push('類別不同，請核對是否同一計畫');
+  return {record:x,reasons,warnings,rank:(sameID?8:0)+(sameURL?6:0)+(sameYear?3:0)+(sameOrg?2:0)+(sameName?1:0)};
+ }).filter(Boolean).sort((a,b)=>b.rank-a.rank||a.record.id.localeCompare(b.record.id)).slice(0,8);
+}
+function confirmOfficialLink(a,id,publicRows,now=new Date().toISOString()){
+ const candidate=candidateMatches(a,publicRows).find(c=>c.record.id===id);
+ if(!candidate)throw Error('候選已變更、年度不符或不是官方資料，請重新檢查');
+ a.officialLink={id,url:candidate.record.url,confirmedAt:now};a.officialSnapshot=clone(candidate.record);
+ a.history.push({at:now,event:'official_link',from:'',to:id});return a;
+}
+function linkedOfficial(a,publicRows){
+ if(a.officialLink){let x=publicRows.find(x=>x.id===a.officialLink.id&&x.official_source===true);const expected=years(a.fields.year||a.fields.name),actual=years(x?.funding_year||x?.year||x?.name);const yearConflict=!!(expected.length&&actual.length&&!expected.some(y=>actual.includes(y)));if(yearConflict)x=null;return {record:x||a.officialSnapshot||null,missing:!x,yearConflict,confirmed:true};}
+ // Selecting a public card directly already identifies that announcement.
+ const direct=publicRows.find(x=>x.id===a.id&&x.official_source===true);
+ return {record:direct||null,missing:false,confirmed:!!direct};
+}
+function fingerprint(a){return [a.fields?.name||a.name||'',a.fields?.category||a.category||'',a.fields?.year||''].map(s=>s.normalize('NFKC').replace(/\s+/g,'').toLowerCase()).join('|');}
 function previewImport(input,state){if(!input||input.format!=='funding-radar-private'||![1,2].includes(input.version))throw Error('請選擇 Funding Radar 私人 JSON 備份');const raw=Array.isArray(input.applications)?input.applications:Object.values(input.applications||{});if(raw.length>2000)throw Error('匯入紀錄過多');const rows=raw.map(normalize),ids=new Set(Object.keys(state.applications)),fps=new Set(Object.values(state.applications).map(fingerprint)),added=[],duplicates=[];for(const a of rows){if(ids.has(a.id)||fps.has(fingerprint(a)))duplicates.push(a);else{ids.add(a.id);fps.add(fingerprint(a));added.push(a);}}return {added,duplicates,calendar:normalizeCalendar(input.calendar),budgets:normalizeBudgets(input.budgets)};}
 function mergeImport(state,preview){for(const a of preview.added)if(!state.applications[a.id])state.applications[a.id]=clone(a);for(const k of ['calendar','budgets']){const ids=new Set(state[k].map(x=>x.id));for(const x of preview[k])if(!ids.has(x.id)){state[k].push(clone(x));ids.add(x.id);}}return state;}
 function funding(state){const buckets={};for(const a of Object.values(state.applications)){const f=a.fields,key=[f.project||'未指定計畫',f.currency||'未指定幣別'].join('|');const b=buckets[key]||(buckets[key]={project:f.project||'未指定計畫',currency:f.currency||'未指定幣別',requested:0,pending:0,confirmed:0,unknown:0,confirmedUnknown:0,costKeys:[]});if(a.personal==='skipped'||a.result==='撤回')continue;const amount=f.amount===''?null:Number(f.amount);if(Number.isFinite(amount)&&amount>=0){b.requested+=amount;if(a.submitted&&['等待公告','需要補件'].includes(a.result))b.pending+=amount;}else b.unknown++;if(a.result==='通過'&&f.confirmedAmount!==''&&Number.isFinite(Number(f.confirmedAmount)))b.confirmed+=Math.max(0,Number(f.confirmedAmount));else if(a.result==='通過')b.confirmedUnknown++;if(f.costKey)b.costKeys.push(f.costKey);}
@@ -82,5 +123,5 @@ function funding(state){const buckets={};for(const a of Object.values(state.appl
  return Object.values(buckets).map(b=>({...b,duplicateCosts:b.costKeys.filter((x,i)=>b.costKeys.indexOf(x)!==i)}));}
 function conflicts(x,calendar){const start=x.residency_start||x.fields?.residencyStart,end=x.residency_end||x.fields?.residencyEnd;if(!dateOK(start)||!dateOK(end))return null;return calendar.filter(c=>start<=c.end&&end>=c.start);}
 function summary(state,rows,sources=[],now=Date.now()){const apps=Object.values(state.applications);return {sources:sources.filter(s=>s.enabled===true).length,interested:apps.filter(a=>a.personal==='interested').length,applied:apps.filter(a=>a.personal==='applied').length,upcoming:rows.filter(x=>publicState(x,now)==='open'&&days(x.deadline,x.deadline_timezone,now)>=0&&days(x.deadline,x.deadline_timezone,now)<=30&&state.applications[x.id]?.personal!=='skipped').length};}
-return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
+return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,canonicalURL,candidateMatches,confirmOfficialLink,linkedOfficial,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
 });
