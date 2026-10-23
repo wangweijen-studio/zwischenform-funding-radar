@@ -1075,6 +1075,14 @@
       "old_value": null,
       "new_value": "ARCUS funded Artist-in-Residence（非自費 Research）",
       "url": "https://www.arcus-project.com/en/residence-program/artist-in-residence-program/"
+    },
+    {
+      "opportunity_id": "gas-fellowship-2025-1a6689a27cee2b23fb1f",
+      "at": "2026-10-23T12:20:52.839096+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "G.A.S. Fellowship Award 2025（歷史方案）",
+      "url": "https://www.guestartistsspace.com/Portals/0/G.A.S%20Fellowship%202025%20%28Final%29.pdf"
     }
   ]
 }
