@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T09:57:26.329881+00:00",
+  "generated_at": "2026-10-23T09:59:49.678300+00:00",
   "note": "Reachability checks only; NOT verified grant opportunities or updated deadlines.",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "region": "臺灣",
       "kind": "官方補助",
       "scope": "NCAF 官方補助廣場與最新公告",
-      "checked_at": "2026-10-23T09:57:14.228854+00:00",
+      "checked_at": "2026-10-23T09:59:08.292242+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -26,7 +26,7 @@
         "www.moc.gov.tw"
       ],
       "module": "adapter_moc",
-      "checked_at": "2026-10-23T09:57:15.067336+00:00",
+      "checked_at": "2026-10-23T09:59:08.809541+00:00",
       "status": "check_failed",
       "error": "HTTP Error 403: Forbidden"
     },
@@ -45,7 +45,7 @@
       "country": "臺灣",
       "city": "臺北",
       "timezone": "Asia/Taipei",
-      "checked_at": "2026-10-23T09:57:15.288491+00:00",
+      "checked_at": "2026-10-23T09:59:09.021122+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -64,9 +64,9 @@
       "country": "臺灣",
       "city": "臺中",
       "timezone": "Asia/Taipei",
-      "checked_at": "2026-10-23T09:57:16.042236+00:00",
-      "status": "reachable",
-      "http_status": 200
+      "checked_at": "2026-10-23T09:59:09.851816+00:00",
+      "status": "check_failed",
+      "error": "The read operation timed out"
     },
     {
       "id": "fonds-soziokultur",
@@ -82,7 +82,7 @@
       "module": "adapter_fonds",
       "timezone": "Europe/Berlin",
       "country": "德國",
-      "checked_at": "2026-10-23T09:57:17.158326+00:00",
+      "checked_at": "2026-10-23T09:59:25.682399+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -101,7 +101,7 @@
       "timezone": "Europe/Berlin",
       "kind": "官方補助",
       "scope": "藝術補助索引最多8個相關細節頁；IMPACT結果另行辨識，未識別不代表未公告",
-      "checked_at": "2026-10-23T09:57:17.940310+00:00",
+      "checked_at": "2026-10-23T09:59:26.374209+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -120,7 +120,7 @@
       "timezone": "Europe/Berlin",
       "kind": "有資助藝術駐村",
       "scope": "官方方案資助、資格與居住要求；本期起訖日未核實不標開放",
-      "checked_at": "2026-10-23T09:57:18.423977+00:00",
+      "checked_at": "2026-10-23T09:59:26.864679+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -139,9 +139,9 @@
       "timezone": "Europe/Paris",
       "kind": "有資助藝術駐村",
       "scope": "官方 fellowship 現有徵件與駐村條件頁；金額未知不推測",
-      "checked_at": "2026-10-23T09:57:19.429177+00:00",
-      "status": "reachable",
-      "http_status": 200
+      "checked_at": "2026-10-23T09:59:27.931502+00:00",
+      "status": "check_failed",
+      "error": "<urlopen error timed out>"
     },
     {
       "id": "ba-charlottenburg-wilmersdorf",
@@ -159,7 +159,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:20.197667+00:00",
+      "checked_at": "2026-10-23T09:59:43.340010+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -179,7 +179,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:20.512382+00:00",
+      "checked_at": "2026-10-23T09:59:43.654237+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -199,7 +199,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:20.971177+00:00",
+      "checked_at": "2026-10-23T09:59:44.105607+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -219,7 +219,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:21.305240+00:00",
+      "checked_at": "2026-10-23T09:59:44.422835+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -239,7 +239,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:21.615763+00:00",
+      "checked_at": "2026-10-23T09:59:44.858179+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -259,7 +259,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:21.938078+00:00",
+      "checked_at": "2026-10-23T09:59:45.173668+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -279,7 +279,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:22.255606+00:00",
+      "checked_at": "2026-10-23T09:59:45.490064+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -299,7 +299,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:22.568270+00:00",
+      "checked_at": "2026-10-23T09:59:45.902487+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -319,7 +319,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:23.002650+00:00",
+      "checked_at": "2026-10-23T09:59:46.220769+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -339,7 +339,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:23.317428+00:00",
+      "checked_at": "2026-10-23T09:59:46.640377+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -359,7 +359,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:23.751397+00:00",
+      "checked_at": "2026-10-23T09:59:47.071970+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -379,7 +379,7 @@
       "timezone": "Europe/Berlin",
       "kind": "區級藝術補助",
       "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
-      "checked_at": "2026-10-23T09:57:24.069998+00:00",
+      "checked_at": "2026-10-23T09:59:47.545141+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -396,7 +396,7 @@
       "timezone": "Europe/Berlin",
       "kind": "官方藝術補助",
       "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放",
-      "checked_at": "2026-10-23T09:57:24.387591+00:00",
+      "checked_at": "2026-10-23T09:59:47.863584+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -413,7 +413,7 @@
       "timezone": "Europe/Berlin",
       "kind": "官方藝術補助",
       "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放",
-      "checked_at": "2026-10-23T09:57:24.943246+00:00",
+      "checked_at": "2026-10-23T09:59:48.428136+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -430,7 +430,7 @@
       "timezone": "Europe/Berlin",
       "kind": "官方藝術補助",
       "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放",
-      "checked_at": "2026-10-23T09:57:25.665015+00:00",
+      "checked_at": "2026-10-23T09:59:48.996505+00:00",
       "status": "reachable",
       "http_status": 200
     }
