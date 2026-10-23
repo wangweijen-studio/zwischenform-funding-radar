@@ -839,6 +839,242 @@
       "old_value": "Die Senatsverwaltung für Kultur und Gesellschaftlichen Zusammenhalt vergibt – vorbehaltlich verfügbarer Mittel – Projektförderungen im Bereich Diversitätsfonds: IMPACT-Förderung.",
       "new_value": "官方方案整體預算（不是個別申請金額）：Es stehen insgesamt ca. 500.000 Euro zur Vergabe zur Verfügung. Diese Summe steht unter dem Vorbehalt der tatsächlichen Verfügbarkeit der Haushaltsmittel für das Jahr 2027. Förderfähig sind Sach- und Personalkosten, welche für die Durchführung des gesamten Projekts notwendig sind.",
       "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php"
+    },
+    {
+      "opportunity_id": "solitude-a8aba5b303e452e78f13",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "residency_policy",
+      "old_value": null,
+      "new_value": {
+        "version": 1,
+        "region": "europe",
+        "country_code": "DE",
+        "checked_at": "2026-10-23T12:13:39.863062+00:00",
+        "components": {
+          "stipend": {
+            "status": "confirmed",
+            "text": "每月 EUR 1,300 生活津貼",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "artist_fee": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "accommodation": {
+            "status": "confirmed",
+            "text": "提供居住／工作室，含水電暖氣",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "studio": {
+            "status": "confirmed",
+            "text": "提供帶家具的居住／工作室",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "production": {
+            "status": "needs_review",
+            "text": "視主辦預算另行提供，非保證核定",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "airfare": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "visa": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "other_transport": {
+            "status": "confirmed",
+            "text": "抵達與離開的交通費可一次性報銷；上限及核准方式待確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          }
+        },
+        "eligibility": {
+          "nationality": {
+            "status": "needs_review",
+            "text": "申請對象條款面向世界各地從業者；未逐項列明臺灣國籍／柏林居住條件，須按最終辦法確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "residence": {
+            "status": "needs_review",
+            "text": "申請對象條款面向世界各地從業者；未逐項列明臺灣國籍／柏林居住條件，須按最終辦法確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "departure": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          }
+        },
+        "airfare": {
+          "coverage": "unknown",
+          "mode": "unknown",
+          "origin_rule": "unknown",
+          "berlin_eligible": false,
+          "cap": null,
+          "currency": null,
+          "conditions": "柏林／德國出發、來回範圍與報銷額度待主辦確認",
+          "possible_shortfall": "待確認；沒有即時柏林來回票價證據，不估算差額",
+          "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+          "verified_at": null
+        },
+        "funding_level": "partial",
+        "full_cost_coverage_verified": false,
+        "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對"
+      },
+      "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/"
+    },
+    {
+      "opportunity_id": "camargo-a6edb6690cf084e34be6",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "residency_policy",
+      "old_value": null,
+      "new_value": {
+        "version": 1,
+        "region": "europe",
+        "country_code": "FR",
+        "checked_at": "2026-10-23T12:13:39.863062+00:00",
+        "components": {
+          "stipend": {
+            "status": "needs_review",
+            "text": "一般條件提及津貼，但本期支持尚未核實",
+            "url": "https://camargofoundation.org/en/residencies/residency-conditions",
+            "verified_at": "2026-10-23T12:13:39.863062+00:00"
+          },
+          "artist_fee": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "accommodation": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "studio": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "production": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "airfare": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "visa": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "other_transport": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          }
+        },
+        "eligibility": {
+          "nationality": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "residence": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "departure": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          }
+        },
+        "airfare": {
+          "coverage": "unknown",
+          "mode": "unknown",
+          "origin_rule": "unknown",
+          "berlin_eligible": false,
+          "cap": null,
+          "currency": null,
+          "conditions": "柏林／德國出發、來回範圍與報銷額度待主辦確認",
+          "possible_shortfall": "待確認；沒有即時柏林來回票價證據，不估算差額",
+          "url": "https://camargofoundation.org/en/residencies/apply",
+          "verified_at": null
+        },
+        "funding_level": "partial",
+        "full_cost_coverage_verified": false,
+        "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對"
+      },
+      "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "sam-residency-37a00a479475a115df60",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "SAM Artist / Curatorial & Research Residencies",
+      "url": "https://www.singaporeartmuseum.sg/residencies/about"
+    },
+    {
+      "opportunity_id": "esplanade-residency-930cb2a70a757fc34bd3",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Contemporary Performing Arts Research Residency 2026",
+      "url": "https://www.esplanade.com/learn/creative-development/mentorships-and-artist-development/artist-development-platforms/contemporary-performing-arts-research-residency"
+    },
+    {
+      "opportunity_id": "headlands-air-bd79b61dda5c85cb402a",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Headlands Artist in Residence 2027",
+      "url": "https://www.headlands.org/programs/"
+    },
+    {
+      "opportunity_id": "bundanon-air-ca2e76e48fc0b8ef6379",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Bundanon Artists in Residence 2027",
+      "url": "https://www.bundanon.com.au/residencies/apply/frequently-asked-questions/"
+    },
+    {
+      "opportunity_id": "arcus-funded-air-26c9f253f6f5f588fc39",
+      "at": "2026-10-23T12:13:39.863062+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "ARCUS funded Artist-in-Residence（非自費 Research）",
+      "url": "https://www.arcus-project.com/en/residence-program/artist-in-residence-program/"
     }
   ]
 }
