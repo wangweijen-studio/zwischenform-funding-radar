@@ -19,10 +19,13 @@ class ResultTests(unittest.TestCase):
         self.assertIsNone(self.proof('<main><h1>IMPACT Juryentscheidung 2027</h1></main>'))
         self.assertIsNone(self.proof('<main><h1>IMPACT Förderung 2027</h1><time datetime="2026-10-20"></time></main>'))
     def test_result_proof_carries_date_link_document_and_verification(self):
-        proof=self.proof('<main><h1>IMPACT Juryentscheidung 2027</h1><time datetime="2026-10-20"></time><a href="/list.pdf">Liste</a></main>')
+        proof=self.proof('<h1>IMPACT Juryentscheidung 2027</h1><main><time itemprop="datePublished" datetime="2026-10-20"></time><a href="/list.pdf">Liste</a></main>')
         self.assertTrue(proof['verified']);self.assertEqual(proof['published_at'],'2026-10-20');self.assertEqual(proof['document_urls'],['https://www.berlin.de/list.pdf'])
+    def test_unlabelled_or_modified_time_is_not_a_publication_date(self):
+        for attrs in ['', 'itemprop="dateModified"']:
+            self.assertIsNone(self.proof('<main><h1>IMPACT Juryentscheidung 2027</h1><time '+attrs+' datetime="2026-10-20"></time></main>'))
     def test_future_or_conflicting_dates_are_not_claimed_as_published(self):
-        for dates in ['<time datetime="2027-01-01"></time>','<time datetime="2026-10-20"></time><time datetime="2026-10-21"></time>']:
+        for dates in ['<time itemprop="datePublished" datetime="2027-01-01"></time>','<time itemprop="datePublished" datetime="2026-10-20"></time><time itemprop="datePublished" datetime="2026-10-21"></time>']:
             self.assertIsNone(self.proof('<main><h1>IMPACT Ergebnis 2027</h1>'+dates+'</main>'))
     def test_missing_body_proof_stays_pending(self):
         class Fake:

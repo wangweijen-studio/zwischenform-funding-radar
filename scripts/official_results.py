@@ -9,11 +9,12 @@ RESULT=re.compile(r'Ergebnis|Juryentscheidung|geförderte.{0,20}Projekte|Förder
 def result_proof(root,url,year,now):
     main=content(root)
     # Navigation years cannot establish the year of this result announcement.
-    titles=[n.text() for n in main.find(tag='h1')]+[n.text() for n in main.find(tag='h2')]
+    titles=[n.text() for n in root.find(tag='h1')]+[n.text() for n in main.find(tag='h2')]
     heading=next((t for t in titles if re.search(r'\bIMPACT\b',t,re.I) and RESULT.search(t) and re.search(r'\b'+str(year)+r'\b',t)),None)
     if not heading:return None
     dates=[]
     for n in main.find(tag='time'):
+        if n.attrs.get('itemprop')!='datePublished' and 'published' not in n.attrs.get('class','').lower():continue
         value=n.attrs.get('datetime','')
         if re.fullmatch(r'\d{4}-\d{2}-\d{2}(?:T.*)?',value):dates.append(value[:10])
     for n in root.find(tag='meta'):
