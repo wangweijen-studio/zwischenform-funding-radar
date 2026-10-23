@@ -327,6 +327,22 @@
       "old_value": null,
       "new_value": "Gesundheits­förderung",
       "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/qualitaetsentwicklung-planung-und-koordination-des-oeffentlichen-gesundheitsdienstes/artikel.87793.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-e9020fa8262543d06307",
+      "at": "2026-10-23T10:27:26.471873+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Hannah-Höch-Förderpreis",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.60220.php"
+    },
+    {
+      "opportunity_id": "camargo-a6edb6690cf084e34be6",
+      "at": "2026-10-23T10:27:26.471873+00:00",
+      "field": "status",
+      "old_value": "closed",
+      "new_value": "needs_review",
+      "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
     }
   ]
 }
