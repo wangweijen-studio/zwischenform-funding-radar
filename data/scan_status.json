@@ -1,28 +1,51 @@
 {
-  "generated_at": "2026-10-23T09:53:45.047146+00:00",
+  "generated_at": "2026-10-23T09:57:26.329881+00:00",
   "note": "Reachability checks only; NOT verified grant opportunities or updated deadlines.",
   "sources": [
     {
       "id": "ncaf",
       "name": "NCAF Taiwan",
       "url": "https://www.ncafroc.org.tw/",
-      "checked_at": "2026-10-23T09:53:40.301694+00:00",
+      "enabled": true,
+      "region": "臺灣",
+      "kind": "官方補助",
+      "scope": "NCAF 官方補助廣場與最新公告",
+      "checked_at": "2026-10-23T09:57:14.228854+00:00",
       "status": "reachable",
       "http_status": 200
     },
     {
       "id": "moc",
       "name": "Taiwan Ministry of Culture",
-      "url": "https://www.moc.gov.tw/",
-      "checked_at": "2026-10-23T09:53:41.150250+00:00",
+      "url": "https://www.moc.gov.tw/News.aspx?n=1039&sms=10691",
+      "enabled": true,
+      "region": "臺灣",
+      "kind": "官方補助",
+      "scope": "文化部主站補助公告最新頁，最多8篇；不讀取禁止爬取的 grants.moc.gov.tw",
+      "hosts": [
+        "www.moc.gov.tw"
+      ],
+      "module": "adapter_moc",
+      "checked_at": "2026-10-23T09:57:15.067336+00:00",
       "status": "check_failed",
       "error": "HTTP Error 403: Forbidden"
     },
     {
       "id": "taipei",
       "name": "Taipei Cultural Affairs",
-      "url": "https://culture.gov.taipei/",
-      "checked_at": "2026-10-23T09:53:41.173710+00:00",
+      "url": "https://culture.gov.taipei/Content_List.aspx?n=81A3DAC5186DC3EA",
+      "enabled": true,
+      "region": "臺灣",
+      "kind": "官方補助",
+      "scope": "官方補助申請索引，最多8個相關細節頁；未核實資料不標開放",
+      "hosts": [
+        "culture.gov.taipei"
+      ],
+      "module": "adapter_regional",
+      "country": "臺灣",
+      "city": "臺北",
+      "timezone": "Asia/Taipei",
+      "checked_at": "2026-10-23T09:57:15.288491+00:00",
       "status": "reachable",
       "http_status": 200
     },
@@ -30,15 +53,384 @@
       "id": "taichung",
       "name": "Taichung Cultural Affairs",
       "url": "https://www.culture.taichung.gov.tw/",
-      "checked_at": "2026-10-23T09:53:41.881954+00:00",
+      "enabled": true,
+      "region": "臺灣",
+      "kind": "官方補助",
+      "scope": "官方入口；目前 robots 回應重新導向，遵守限制並顯示失敗，不繞過",
+      "hosts": [
+        "www.culture.taichung.gov.tw"
+      ],
+      "module": "adapter_regional",
+      "country": "臺灣",
+      "city": "臺中",
+      "timezone": "Asia/Taipei",
+      "checked_at": "2026-10-23T09:57:16.042236+00:00",
       "status": "reachable",
       "http_status": 200
     },
     {
       "id": "fonds-soziokultur",
       "name": "Fonds Soziokultur",
-      "url": "https://www.fonds-soziokultur.de/",
-      "checked_at": "2026-10-23T09:53:43.540010+00:00",
+      "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick",
+      "enabled": true,
+      "region": "德國",
+      "kind": "官方補助",
+      "scope": "一般計畫補助本期日期與團體資格；不適用個人單獨申請",
+      "hosts": [
+        "www.fonds-soziokultur.de"
+      ],
+      "module": "adapter_fonds",
+      "timezone": "Europe/Berlin",
+      "country": "德國",
+      "checked_at": "2026-10-23T09:57:17.158326+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "berlin-kultur",
+      "name": "Berlin Senatsverwaltung für Kultur",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/",
+      "enabled": true,
+      "module": "adapter_berlin",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "官方補助",
+      "scope": "藝術補助索引最多8個相關細節頁；IMPACT結果另行辨識，未識別不代表未公告",
+      "checked_at": "2026-10-23T09:57:17.940310+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "solitude",
+      "name": "Akademie Schloss Solitude",
+      "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+      "enabled": true,
+      "module": "adapter_solitude",
+      "hosts": [
+        "www.akademie-solitude.de"
+      ],
+      "region": "國際",
+      "country": "德國",
+      "city": "Stuttgart",
+      "timezone": "Europe/Berlin",
+      "kind": "有資助藝術駐村",
+      "scope": "官方方案資助、資格與居住要求；本期起訖日未核實不標開放",
+      "checked_at": "2026-10-23T09:57:18.423977+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "camargo",
+      "name": "Fondation Camargo",
+      "url": "https://camargofoundation.org/en/residencies/apply",
+      "enabled": true,
+      "module": "adapter_camargo",
+      "hosts": [
+        "camargofoundation.org"
+      ],
+      "region": "國際",
+      "country": "法國",
+      "city": "Cassis",
+      "timezone": "Europe/Paris",
+      "kind": "有資助藝術駐村",
+      "scope": "官方 fellowship 現有徵件與駐村條件頁；金額未知不推測",
+      "checked_at": "2026-10-23T09:57:19.429177+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-charlottenburg-wilmersdorf",
+      "name": "Berlin Charlottenburg Wilmersdorf",
+      "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-charlottenburg-wilmersdorf/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:20.197667+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-friedrichshain-kreuzberg",
+      "name": "Berlin Friedrichshain Kreuzberg",
+      "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-friedrichshain-kreuzberg/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:20.512382+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-lichtenberg",
+      "name": "Berlin Lichtenberg",
+      "url": "https://www.berlin.de/ba-lichtenberg/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-lichtenberg/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:20.971177+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-marzahn-hellersdorf",
+      "name": "Berlin Marzahn Hellersdorf",
+      "url": "https://www.berlin.de/ba-marzahn-hellersdorf/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-marzahn-hellersdorf/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:21.305240+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-mitte",
+      "name": "Berlin Mitte",
+      "url": "https://www.berlin.de/ba-mitte/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-mitte/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:21.615763+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-neukoelln",
+      "name": "Berlin Neukoelln",
+      "url": "https://www.berlin.de/ba-neukoelln/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-neukoelln/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:21.938078+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-pankow",
+      "name": "Berlin Pankow",
+      "url": "https://www.berlin.de/ba-pankow/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-pankow/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:22.255606+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-reinickendorf",
+      "name": "Berlin Reinickendorf",
+      "url": "https://www.berlin.de/ba-reinickendorf/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-reinickendorf/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:22.568270+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-spandau",
+      "name": "Berlin Spandau",
+      "url": "https://www.berlin.de/ba-spandau/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-spandau/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:23.002650+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-steglitz-zehlendorf",
+      "name": "Berlin Steglitz Zehlendorf",
+      "url": "https://www.berlin.de/ba-steglitz-zehlendorf/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-steglitz-zehlendorf/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:23.317428+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-tempelhof-schoeneberg",
+      "name": "Berlin Tempelhof Schoeneberg",
+      "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-tempelhof-schoeneberg/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:23.751397+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "ba-treptow-koepenick",
+      "name": "Berlin Treptow Koepenick",
+      "url": "https://www.berlin.de/ba-treptow-koepenick/",
+      "enabled": true,
+      "module": "adapter_district",
+      "hosts": [
+        "www.berlin.de"
+      ],
+      "district_path": "/ba-treptow-koepenick/",
+      "region": "德國",
+      "country": "德國",
+      "city": "柏林",
+      "timezone": "Europe/Berlin",
+      "kind": "區級藝術補助",
+      "scope": "區級官方文化導覽入口及相關公告；不推定完整覆蓋，不從連線成功判斷徵件狀態",
+      "checked_at": "2026-10-23T09:57:24.069998+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "kunstfonds",
+      "name": "Stiftung Kunstfonds",
+      "url": "https://www.kunstfonds.de/foerderung/fuer-kuenstlerinnen/kunstfonds-stipendium/bewerbung-und-vergabe",
+      "enabled": true,
+      "module": "adapter_program",
+      "hosts": [
+        "www.kunstfonds.de"
+      ],
+      "region": "德國",
+      "timezone": "Europe/Berlin",
+      "kind": "官方藝術補助",
+      "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放",
+      "checked_at": "2026-10-23T09:57:24.387591+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "kulturstiftung-bund",
+      "name": "Kulturstiftung des Bundes",
+      "url": "https://www.kulturstiftung-des-bundes.de/de/themen_foerderschwerpunkte/allgemeine_projektfoerderung.html",
+      "enabled": true,
+      "module": "adapter_program",
+      "hosts": [
+        "www.kulturstiftung-des-bundes.de"
+      ],
+      "region": "德國",
+      "timezone": "Europe/Berlin",
+      "kind": "官方藝術補助",
+      "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放",
+      "checked_at": "2026-10-23T09:57:24.943246+00:00",
+      "status": "reachable",
+      "http_status": 200
+    },
+    {
+      "id": "culture-moves-europe",
+      "name": "Culture Moves Europe",
+      "url": "https://culture.ec.europa.eu/culture-moves-europe",
+      "enabled": true,
+      "module": "adapter_program",
+      "hosts": [
+        "culture.ec.europa.eu"
+      ],
+      "region": "歐洲",
+      "timezone": "Europe/Berlin",
+      "kind": "官方藝術補助",
+      "scope": "官方方案內容及資格／共同補助限制；完整本期日期未核實時不標開放",
+      "checked_at": "2026-10-23T09:57:25.665015+00:00",
       "status": "reachable",
       "http_status": 200
     }
