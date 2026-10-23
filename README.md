@@ -12,7 +12,7 @@
 
 ## 每日擷取
 GitHub Actions 每天 Europe/Berlin 09:15 執行，使用 timezone 處理夏令時間；排程可能延遲或被 GitHub 暫停，頁面顯示實際時間，可在 Actions 手動執行。
-執行順序：免費 PDF parser → 22 項私人狀態與規劃測試 → 29 項 Python 擷取測試 → update_all.py → validate_data.py → 提交公開 JSON → allowlist 打包 → GitHub Pages。
+執行順序：免費 PDF parser → 22 項私人狀態與規劃測試 → 33 項 Python 擷取測試 → update_all.py → validate_data.py → 提交公開 JSON → allowlist 打包 → GitHub Pages。
 HTTP client 使用明確 User-Agent、官方 HTTPS 網域 allowlist、robots.txt 檢查、至少一秒請求間隔與大小／逾時限制。重新導向逐一核對官方網域與 robots；禁止的入口不繞過。
 
 每個來源的範圍、啟用設定與模組在 data/sources.json。完整／部分成功、被阻擋、失敗、最後嘗試與最後完整成功都在 data/extraction_status.json。HTTP 可連線不代表徵件已核實。
@@ -46,4 +46,6 @@ python -m http.server 8765 --directory _site
 不使用付費 API、資料庫、主機或自訂網域；使用現有公開儲存庫及標準免費 runner。
 
 臺北市改讀文化局藝文補助資訊平臺；臺中視覺藝術專區的 robots 重新導向採同官方網域的 HTTPS 對應位置，未發送 HTTP 請求。區級入口已補入區公所正式連結的文化網站；名單與金額、日期仍分別核實。
+
+已擷取的官方頁面會檢查明確取消／重新開放語句，並保存變更紀錄。條件句不當成取消；國藝會同頁多期別若無法從取消語句確認對應期別，只標示待人工核實。取消後缺少公告不代表重新開放。這是有限範圍的公告識別，不能取代人工閱讀所有附件。
 
