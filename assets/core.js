@@ -48,6 +48,32 @@ function select(state,id,target,snapshot={},confirmed=false,now=new Date().toISO
 function today(zone='Europe/Berlin',now=Date.now()){try{return new Intl.DateTimeFormat('sv-SE',{timeZone:zone,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(now));}catch{return new Date(now).toISOString().slice(0,10);}}
 function days(date,zone='Europe/Berlin',now=Date.now()){if(!dateOK((date||'').slice(0,10)))return null;return Math.ceil((Date.parse(date.slice(0,10)+'T00:00:00Z')-Date.parse(today(zone,now)+'T00:00:00Z'))/86400000);}
 function hasSubstantiveSupport(s={}){s=s&&typeof s==='object'?s:{};const unresolved=/待|未確認|unknown|不提供|沒有|自費|無(?:生活|津貼|藝術家費|製作|交通)|not provided|no (?:stipend|artist fee|production)|not available/i;const cash=['stipend','artist_fee','production','travel'].some(k=>![undefined,null,false,0,'','unknown','待確認','無'].includes(s[k])&&!unresolved.test(String(s[k])));const kind=['accommodation','studio'].some(k=>s[k]===true||(/免費|kostenlos|\bfree\b/i.test(s[k]||'')&&!unresolved.test(String(s[k]))&&!/非免費|不免費|not free|nicht kostenlos/i.test(String(s[k]))));return cash||kind;}
+
+function residencyAssessment(x,now=Date.now()){
+ const p=x.residency_policy||{},c=p.components||{},e=p.eligibility||{},a=p.airfare||{};
+ const fresh=v=>{const t=Date.parse(v);return Number.isFinite(t)&&t<=now&&now-t<=7*86400000;};
+ const proved=v=>v?.status==='confirmed'&&String(v.url||'').startsWith('https://')&&fresh(v.verified_at);
+ const substantive=['stipend','artist_fee','production','accommodation','studio'].some(k=>proved(c[k]));
+ const eligibilityProved=v=>v?.status==='eligible'&&String(v.url||'').startsWith('https://')&&fresh(v.verified_at);
+ const excluded=Object.values(e).some(v=>v?.status==='ineligible'&&fresh(v.verified_at));
+ const basicOK=['nationality','residence'].every(k=>eligibilityProved(e[k]));
+ const flightEvidence=proved(c.airfare)&&fresh(a.verified_at)&&String(a.url||'').startsWith('https://');
+ // A cap is sufficient only with a dated, evidenced Berlin return economy quote
+ // in the same currency. Actual records never invent this comparison.
+ const quote=a.berlin_fare_assessment,quoted=quote&&quote.departure==='BER'&&quote.round_trip===true&&quote.economy===true&&Number.isFinite(quote.amount)&&quote.amount>0&&quote.currency===a.currency&&String(quote.url||'').startsWith('https://')&&fresh(quote.verified_at);
+ const capEnough=a.coverage==='capped_round_trip'&&Number.isFinite(a.cap)&&quoted&&a.cap>=quote.amount;
+ const flight=!!(flightEvidence&&a.berlin_eligible===true&&eligibilityProved(e.departure)&&(a.coverage==='round_trip_full'||capEnough));
+ const region=['europe','outside_europe'].includes(p.region)?p.region:'unknown';
+ const live=p.fetch_status!=='failed'&&fresh(p.checked_at);
+ const main=!!(substantive&&live&&!excluded&&(region==='europe'||(region==='outside_europe'&&flight&&basicOK)));
+ const complete=!!(main&&p.full_cost_coverage_verified===true&&p.funding_level==='full'&&['stipend','accommodation','studio','production','visa','other_transport'].every(k=>proved(c[k])||(c[k]?.status==='not_required'&&String(c[k].url||'').startsWith('https://')&&fresh(c[k].verified_at)))&&(region==='europe'||flight));
+ const reasons=[];if(!substantive)reasons.push('尚無新鮮官方證據確認實質駐村支持，排除純付費／未核實方案');
+ if(excluded)reasons.push('官方國籍或居住條件不符合臺灣／柏林情境');
+ if(!basicOK&&!excluded)reasons.push('國籍／柏林居住資格仍待逐項確認，International 標籤不足');
+ if(region==='outside_europe'&&!flight)reasons.push('未核實可從柏林／德國出發的足額來回機票，不列主要推薦');
+ if(region==='unknown')reasons.push('駐村實際地區未核實');if(!live)reasons.push('來源讀取失敗或條款證據超過七天，降為待確認');
+ return {substantive,main,flight,region,excluded,qualificationPending:!excluded&&(!basicOK||!eligibilityProved(e.departure)),funding:complete?'full':'partial',reasons,policy:p,capEnough};
+}
 function publicState(x,now=Date.now()){
  const day=today(x.deadline_timezone||'UTC',now),end=x.deadline;
  if(x.status==='cancelled')return 'cancelled';
@@ -64,6 +90,16 @@ function filter(rows,state,f={},now=Date.now()){
  return rows.filter(x=>{const p=state.applications[x.id]?.personal||'',s=publicState(x,now),relevance=fit(x),blob=[x.name,x.organizer,x.location,x.country,x.city,x.eligibility,...(x.relevance_tags||[])].join(' ').toLowerCase();
  if(f.personal&&f.personal!=='all'&&p!==f.personal)return false;if((!f.personal||f.personal==='all')&&p==='skipped')return false;
  if(f.status==='active'||!f.status){if(['closed','cancelled'].includes(s))return false;}else if(f.status!=='all'&&s!==f.status)return false;
+ if(x.type==='residency'){
+  const assessment=residencyAssessment(x,now);
+  if(!assessment.substantive)return false;
+  if(f.geography&&f.geography!=='global'&&assessment.region!==f.geography)return false;
+  if(f.airfare==='round_trip'&&!assessment.flight)return false;
+  if(f.funding&&assessment.funding!==f.funding)return false;
+  if(f.qualification==='pending'&&!assessment.qualificationPending)return false;
+  if(f.residencyView==='main'&&!assessment.main)return false;
+  if(f.residencyView==='pending'&&assessment.main)return false;
+ }
  if(f.q&&!blob.includes(f.q.toLowerCase()))return false;
  if(f.country&&!([x.country,x.location,x.source_id==='ncaf'?'臺灣':''].join(' ').toLowerCase().includes(f.country.toLowerCase())))return false;
  if(f.city&&!([x.city,x.location].join(' ').toLowerCase().includes(f.city.toLowerCase())))return false;
@@ -132,5 +168,5 @@ function funding(state){const buckets={};for(const a of Object.values(state.appl
  return Object.values(buckets).map(b=>({...b,duplicateCosts:b.costKeys.filter((x,i)=>b.costKeys.indexOf(x)!==i)}));}
 function conflicts(x,calendar){const start=x.residency_start||x.fields?.residencyStart,end=x.residency_end||x.fields?.residencyEnd;if(!dateOK(start)||!dateOK(end))return null;return calendar.filter(c=>start<=c.end&&end>=c.start);}
 function summary(state,rows,sources=[],now=Date.now()){const apps=Object.values(state.applications);return {sources:sources.filter(s=>s.enabled===true).length,interested:apps.filter(a=>a.personal==='interested').length,applied:apps.filter(a=>a.personal==='applied').length,upcoming:rows.filter(x=>publicState(x,now)==='open'&&days(x.deadline,x.deadline_timezone,now)>=0&&days(x.deadline,x.deadline_timezone,now)<=30&&state.applications[x.id]?.personal!=='skipped').length};}
-return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,updateHealth,canonicalURL,candidateMatches,confirmOfficialLink,linkedOfficial,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
+return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,residencyAssessment,updateHealth,canonicalURL,candidateMatches,confirmOfficialLink,linkedOfficial,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
 });
