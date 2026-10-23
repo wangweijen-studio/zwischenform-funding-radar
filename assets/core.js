@@ -59,7 +59,7 @@ function publicState(x,now=Date.now()){
 }
 function fit(x){const t=[x.name,x.eligibility,...(x.relevance_tags||[])].join(' ').toLowerCase(),groups={Research:/研究|調查|城市|建築|research|urban|architec/,Production:/創作|製作|雕塑|服裝|跨域|多元藝術|production|sculpt|textile|interdisciplin/,Exhibition:/展覽|策展|視覺藝術|exhibit|curat|visual|bildend/,Publication:/出版|藝評|書寫|publish|publication|writing/,Workshop:/工作坊|共融|參與|workshop|participat|soziokultur/,Travel:/國際交流|藝遊|駐村|出國|residen|travel|exchange/};const matched=Object.keys(groups).filter(k=>groups[k].test(t));return {level:matched.length>=2?'高':matched.length===1?'中':'待確認',matched,explanation:matched.length?'官方主題文字涉及 '+matched.join('、')+'，可對應 IMPOSED 的相關工作。這是主題適配推論；國籍、居留、海外執行及邀請文件仍須按官方辦法核對。':'目前官方文字不足以判斷與 IMPOSED 的關係；主題與個人資格皆待確認。'};}
 function filter(rows,state,f={},now=Date.now()){
- return rows.filter(x=>{const p=state.applications[x.id]?.personal||'',s=publicState(x,now),relevance=fit(x),blob=[x.name,x.organizer,x.location,x.eligibility,...(x.relevance_tags||[])].join(' ').toLowerCase();
+ return rows.filter(x=>{const p=state.applications[x.id]?.personal||'',s=publicState(x,now),relevance=fit(x),blob=[x.name,x.organizer,x.location,x.country,x.city,x.eligibility,...(x.relevance_tags||[])].join(' ').toLowerCase();
  if(f.personal&&f.personal!=='all'&&p!==f.personal)return false;if((!f.personal||f.personal==='all')&&p==='skipped')return false;
  if(f.status==='active'||!f.status){if(['closed','cancelled'].includes(s))return false;}else if(f.status!=='all'&&s!==f.status)return false;
  if(f.q&&!blob.includes(f.q.toLowerCase()))return false;
