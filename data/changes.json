@@ -799,6 +799,46 @@
       "old_value": null,
       "new_value": "認養計畫",
       "url": "https://www.hongfoundation.org.tw/catalyst-project"
+    },
+    {
+      "opportunity_id": "ncaf-f5f782d88b194531d601",
+      "at": "2026-10-23T11:41:23.564199+00:00",
+      "field": "deadline",
+      "old_value": "2026-09-30",
+      "new_value": "2026-09-30T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/news_detail.html?sid=859"
+    },
+    {
+      "opportunity_id": "ncaf-f5f782d88b194531d601",
+      "at": "2026-10-23T11:41:23.564199+00:00",
+      "field": "eligibility",
+      "old_value": "待人工核實：請閱讀官方辦法",
+      "new_value": "歡迎未滿40歲的藝術工作者（1986年9月30日後出生），結合所長，規劃旅程，汲取各地文化養分，豐富人生閱歷。",
+      "url": "https://www.ncafroc.org.tw/news_detail.html?sid=859"
+    },
+    {
+      "opportunity_id": "ncaf-f5f782d88b194531d601",
+      "at": "2026-10-23T11:41:23.564199+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實：請閱讀官方辦法",
+      "new_value": "補助項目包括機票、簽證、旅遊平安保險、住宿及生活費等費用。",
+      "url": "https://www.ncafroc.org.tw/news_detail.html?sid=859"
+    },
+    {
+      "opportunity_id": "berlin-kultur-24375706edd455158edc",
+      "at": "2026-10-23T11:41:23.564199+00:00",
+      "field": "eligibility",
+      "old_value": null,
+      "new_value": "Antragstellende müssen in Berlin leben. Ein Nachweis ist erforderlich. Das Projekt hat noch nicht begonnen. Die Projekte können auch Co-Produktionen sein, müssen jedoch in Berlin öffentlich präsentiert werden. Grundsätzlich ausgeschlossen ist die Förderung von CD-Produktionen und Druckkostenzuschüssen. Ebenso ausgeschlossen sind reine Workshopformate, vereinsinterne Jubiläen, Benefizveranstaltungen, Feste und Feiern jeglicher Art (z.B. Weihnachtsfeiern, Preisverleihungen u.ä.) sowie gewinnorientierte, kommerziell realisierbare Vorhaben.",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php"
+    },
+    {
+      "opportunity_id": "berlin-kultur-24375706edd455158edc",
+      "at": "2026-10-23T11:41:23.564199+00:00",
+      "field": "cash_support",
+      "old_value": "Die Senatsverwaltung für Kultur und Gesellschaftlichen Zusammenhalt vergibt – vorbehaltlich verfügbarer Mittel – Projektförderungen im Bereich Diversitätsfonds: IMPACT-Förderung.",
+      "new_value": "官方方案整體預算（不是個別申請金額）：Es stehen insgesamt ca. 500.000 Euro zur Vergabe zur Verfügung. Diese Summe steht unter dem Vorbehalt der tatsächlichen Verfügbarkeit der Haushaltsmittel für das Jahr 2027. Förderfähig sind Sach- und Personalkosten, welche für die Durchführung des gesamten Projekts notwendig sind.",
+      "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php"
     }
   ]
 }
