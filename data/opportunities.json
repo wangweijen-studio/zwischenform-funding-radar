@@ -1,4 +1,986 @@
 {
-  "last_scan_at": null,
-  "opportunities": []
+  "last_scan_at": "2026-10-23T09:07:04.213441+00:00",
+  "opportunities": [
+    {
+      "id": "ncaf-4160119685bc61ae072c",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "各類別國際文化交流(出國) · 115年 第6期",
+      "program_name": "各類別國際文化交流(出國)",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+      "official_source": true,
+      "application_start": "2026-10-16",
+      "deadline": "2026-11-16T23:59:00+08:00",
+      "deadline_precision": "minute",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "open",
+      "verification_status": "verified",
+      "verified_at": "2026-10-23T09:07:04.213441+00:00",
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2026/10/16-2026/11/16",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "(1)應邀參加國際重要藝術節、藝術節慶、展會及國際著名機構交流:得考量機票、翻譯、新作材料、運輸、保險、演出及其他必要費用之總和為上限。(2)一般出國交流活動:就相當於全額或部分機票費之總和為上限。(3)參加國際競賽或人才徵選，得考量機票、運輸、當地生活費（以三個月為上限）等。(4)出國前展演映技術測試或排練之相關經費。(5)線上活動:考量人事費、研究費、翻譯費、編輯企劃費、行銷宣傳費及其他必要費用等。",
+      "amount_status": "verified_text",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術",
+        "文化資產",
+        "視聽媒體",
+        "藝文環境",
+        "國際文化交流"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251118/a7a63e9e835c4fba8fd82f8687991069/國際文化交流項目(出國)申請基準.pdf",
+      "rules_sha256": "ff4a0c4e22a5a16cd2efe9f73cb67e4c8e9d239cb4b9f801230c0a149aa053ff",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "2026/10/16-2026/11/16"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251118/a7a63e9e835c4fba8fd82f8687991069/國際文化交流項目(出國)申請基準.pdf",
+          "text": "(1)應邀參加國際重要藝術節、藝術節慶、展會及國際著名機構交流:得考量機票、翻譯、新作材料、運輸、保險、演出及其他必要費用之總和為上限。(2)一般出國交流活動:就相當於全額或部分機票費之總和為上限。(3)參加國際競賽或人才徵選，得考量機票、運輸、當地生活費（以三個月為上限）等。(4)出國前展演映技術測試或排練之相關經費。(5)線上活動:考量人事費、研究費、翻譯費、編輯企劃費、行銷宣傳費及其他必要費用等。"
+        }
+      }
+    },
+    {
+      "id": "ncaf-9092672819010f98925b",
+      "source_id": "ncaf",
+      "record_kind": "announcement",
+      "type": "grant",
+      "name": "視覺藝術組織營運補助專案",
+      "program_name": "視覺藝術組織營運補助專案",
+      "url": "https://www.ncafroc.org.tw/news_detail.html?sid=878",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "published_at": "2026-10-22",
+      "application_start": "2026-11-01",
+      "deadline": "2026-11-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "relevance_tags": [
+        "視覺藝術"
+      ],
+      "evidence": "自2026年11月1日至30日開放線上申請",
+      "eligibility": "待人工核實：請閱讀官方辦法",
+      "cash_support": "待人工核實：請閱讀官方辦法",
+      "review_reasons": [
+        "公告已擷取；資格、金額與本期辦法尚待人工核實"
+      ],
+      "announcement_urls": [
+        "https://www.ncafroc.org.tw/news_detail.html?sid=878"
+      ]
+    },
+    {
+      "id": "ncaf-5567e9feca5e5a47a3a8",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "文化資產 · 116年 第1期",
+      "program_name": "文化資產",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+      "official_source": true,
+      "application_start": "2027-01-01",
+      "deadline": "2027-02-01",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/01/01-2027/02/01",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "文化資產"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/a9f00856c325444bbe16e5aaf3af28c7/文化資產類申請基準.pdf",
+      "rules_sha256": "9763ff5be78400a5e967a0223f88edf84f42efec04ca247b8bdf1bdd7f521662",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+          "text": "2027/01/01-2027/02/01"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/a9f00856c325444bbe16e5aaf3af28c7/文化資產類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-a1a337d3bee307c7998d",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "視覺藝術 · 116年 第1期",
+      "program_name": "視覺藝術",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+      "official_source": true,
+      "application_start": "2027-01-01",
+      "deadline": "2027-02-01",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/01/01-2027/02/01",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/18d31a7503f146baa82d4cc8978d8716/視覺藝術類申請基準.pdf",
+      "rules_sha256": "f0a29d52938e8e2051e6c53f0da7a248f754d16ea9ae54b8535760f2d0425776",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+          "text": "2027/01/01-2027/02/01"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/18d31a7503f146baa82d4cc8978d8716/視覺藝術類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-b4da77dbe48a26d7de17",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "藝文環境與發展 · 116年 第1期",
+      "program_name": "藝文環境與發展",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+      "official_source": true,
+      "application_start": "2027-01-01",
+      "deadline": "2027-02-01",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/01/01-2027/02/01",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "藝文環境"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/33945543f94448a8b7d6f444c83cc337/藝文環境與發展類申請基準.pdf",
+      "rules_sha256": "8ce0f647bd702fd8995bbb8b0c3cc32fa6fdcdbf40f07ebd04a7352ac7df8e63",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+          "text": "2027/01/01-2027/02/01"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/33945543f94448a8b7d6f444c83cc337/藝文環境與發展類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-134919751e9691f7f175",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "文化資產 · 116年 第2期",
+      "program_name": "文化資產",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+      "official_source": true,
+      "application_start": "2027-06-01",
+      "deadline": "2027-06-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/06/01-2027/06/30",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "文化資產"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/a9f00856c325444bbe16e5aaf3af28c7/文化資產類申請基準.pdf",
+      "rules_sha256": "9763ff5be78400a5e967a0223f88edf84f42efec04ca247b8bdf1bdd7f521662",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+          "text": "2027/06/01-2027/06/30"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/a9f00856c325444bbe16e5aaf3af28c7/文化資產類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-4a36b1de9892e3f6ae93",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "多元藝術 · 116年 第2期",
+      "program_name": "多元藝術",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=59",
+      "official_source": true,
+      "application_start": "2027-06-01",
+      "deadline": "2027-06-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/06/01-2027/06/30",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "多元藝術"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/7d5ca9b52f40408097a35f760b3fc5da/多元藝術類申請基準.pdf",
+      "rules_sha256": "16b38225ef40aa455bf8a78ff71e92cf53c039cb51b8b3379a0c2150682f7acb",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=59",
+          "text": "2027/06/01-2027/06/30"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=59",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/7d5ca9b52f40408097a35f760b3fc5da/多元藝術類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-6bb354261601539c345c",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "視覺藝術 · 116年 第2期",
+      "program_name": "視覺藝術",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+      "official_source": true,
+      "application_start": "2027-06-01",
+      "deadline": "2027-06-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/06/01-2027/06/30",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/18d31a7503f146baa82d4cc8978d8716/視覺藝術類申請基準.pdf",
+      "rules_sha256": "f0a29d52938e8e2051e6c53f0da7a248f754d16ea9ae54b8535760f2d0425776",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+          "text": "2027/06/01-2027/06/30"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/18d31a7503f146baa82d4cc8978d8716/視覺藝術類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-8a106cb5d71ff68064a2",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "藝文環境與發展 · 116年 第2期",
+      "program_name": "藝文環境與發展",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+      "official_source": true,
+      "application_start": "2027-06-01",
+      "deadline": "2027-06-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/06/01-2027/06/30",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "藝文環境"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/33945543f94448a8b7d6f444c83cc337/藝文環境與發展類申請基準.pdf",
+      "rules_sha256": "8ce0f647bd702fd8995bbb8b0c3cc32fa6fdcdbf40f07ebd04a7352ac7df8e63",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+          "text": "2027/06/01-2027/06/30"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/33945543f94448a8b7d6f444c83cc337/藝文環境與發展類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-91fb0a243a1064d597ab",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "視聽媒體藝術 · 116年 第2期",
+      "program_name": "視聽媒體藝術",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=70",
+      "official_source": true,
+      "application_start": "2027-06-01",
+      "deadline": "2027-06-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "upcoming",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2027/06/01-2027/06/30",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視聽媒體"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/3f8708f9f3944002b92baee883627fdf/視聽媒體藝術類申請基準.pdf",
+      "rules_sha256": "18cc9b1ab37d496311a4b04d0c90b9f67030a884fa55389ee87c77431d78b6fb",
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=70",
+          "text": "2027/06/01-2027/06/30"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=70",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/3f8708f9f3944002b92baee883627fdf/視聽媒體藝術類申請基準.pdf",
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-4b52979f43b739508dca",
+      "source_id": "ncaf",
+      "record_kind": "program",
+      "type": "grant",
+      "name": "共融藝術專案",
+      "program_name": "共融藝術專案",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=45",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "needs_review",
+      "verification_status": "needs_review",
+      "application_start": null,
+      "deadline": null,
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": null,
+      "relevance_tags": [
+        "共融藝術"
+      ],
+      "review_reasons": [
+        "官方未提供可可靠解析的收件期；待人工核實"
+      ],
+      "cash_support": "待人工核實",
+      "eligibility": "待人工核實",
+      "announcement_urls": [
+        "https://www.ncafroc.org.tw/news_detail.html?sid=866"
+      ],
+      "published_at": "2026-08-14"
+    },
+    {
+      "id": "ncaf-5b72616103c67c414f92",
+      "source_id": "ncaf",
+      "record_kind": "program",
+      "type": "grant",
+      "name": "現象書寫-視覺藝評專案",
+      "program_name": "現象書寫-視覺藝評專案",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=36",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "needs_review",
+      "verification_status": "needs_review",
+      "application_start": null,
+      "deadline": null,
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": null,
+      "relevance_tags": [
+        "現象書寫"
+      ],
+      "review_reasons": [
+        "官方未提供可可靠解析的收件期；待人工核實"
+      ],
+      "cash_support": "待人工核實",
+      "eligibility": "待人工核實"
+    },
+    {
+      "id": "ncaf-5c4c1048f4b5a08e9504",
+      "source_id": "ncaf",
+      "record_kind": "program",
+      "type": "grant",
+      "name": "跨域合創計畫補助專案",
+      "program_name": "跨域合創計畫補助專案",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=47",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "needs_review",
+      "verification_status": "needs_review",
+      "application_start": null,
+      "deadline": null,
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": null,
+      "relevance_tags": [
+        "跨域"
+      ],
+      "review_reasons": [
+        "官方未提供可可靠解析的收件期；待人工核實"
+      ],
+      "cash_support": "待人工核實",
+      "eligibility": "待人工核實"
+    },
+    {
+      "id": "ncaf-70e7ea34dc2c624614b0",
+      "source_id": "ncaf",
+      "record_kind": "program",
+      "type": "grant",
+      "name": "策展人培力@美術館專案",
+      "program_name": "策展人培力@美術館專案",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=67",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "needs_review",
+      "verification_status": "needs_review",
+      "application_start": null,
+      "deadline": null,
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": null,
+      "relevance_tags": [
+        "策展"
+      ],
+      "review_reasons": [
+        "官方未提供可可靠解析的收件期；待人工核實"
+      ],
+      "cash_support": "待人工核實",
+      "eligibility": "待人工核實"
+    },
+    {
+      "id": "ncaf-75b6f3569af044d44a17",
+      "source_id": "ncaf",
+      "record_kind": "program",
+      "type": "grant",
+      "name": "跨域創新藝術專案",
+      "program_name": "跨域創新藝術專案",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=51",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "needs_review",
+      "verification_status": "needs_review",
+      "application_start": null,
+      "deadline": null,
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": null,
+      "relevance_tags": [
+        "跨域"
+      ],
+      "review_reasons": [
+        "官方未提供可可靠解析的收件期；待人工核實"
+      ],
+      "cash_support": "待人工核實",
+      "eligibility": "待人工核實"
+    },
+    {
+      "id": "ncaf-aae0bf567bbe7a88665a",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "各類別國際文化交流(出國) · 115年 第1期",
+      "program_name": "各類別國際文化交流(出國)",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+      "official_source": true,
+      "application_start": "2025-12-16",
+      "deadline": "2026-01-15",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2025/12/16-2026/01/15",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術",
+        "文化資產",
+        "視聽媒體",
+        "藝文環境",
+        "國際文化交流"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": null,
+      "rules_sha256": null,
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "2025/12/16-2026/01/15"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": null,
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-cff89109c06f4cc7c0a2",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "各類別國際文化交流(出國) · 115年 第2期",
+      "program_name": "各類別國際文化交流(出國)",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+      "official_source": true,
+      "application_start": "2026-02-24",
+      "deadline": "2026-03-16",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2026/02/24-2026/03/16",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術",
+        "文化資產",
+        "視聽媒體",
+        "藝文環境",
+        "國際文化交流"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": null,
+      "rules_sha256": null,
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "2026/02/24-2026/03/16"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": null,
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-70cfe3e67cd61899c682",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "各類別國際文化交流(出國) · 115年 第3期",
+      "program_name": "各類別國際文化交流(出國)",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+      "official_source": true,
+      "application_start": "2026-04-16",
+      "deadline": "2026-05-15",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2026/04/16-2026/05/15",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術",
+        "文化資產",
+        "視聽媒體",
+        "藝文環境",
+        "國際文化交流"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": null,
+      "rules_sha256": null,
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "2026/04/16-2026/05/15"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": null,
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-d87a12748cc5940189db",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "各類別國際文化交流(出國) · 115年 第4期",
+      "program_name": "各類別國際文化交流(出國)",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+      "official_source": true,
+      "application_start": "2026-06-16",
+      "deadline": "2026-07-15",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2026/06/16-2026/07/15",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術",
+        "文化資產",
+        "視聽媒體",
+        "藝文環境",
+        "國際文化交流"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": null,
+      "rules_sha256": null,
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "2026/06/16-2026/07/15"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": null,
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-2f1a6f9d28c107717554",
+      "source_id": "ncaf",
+      "record_kind": "program_round",
+      "type": "grant",
+      "name": "各類別國際文化交流(出國) · 115年 第5期",
+      "program_name": "各類別國際文化交流(出國)",
+      "organizer": "國家文化藝術基金會 NCAF",
+      "location": "臺灣／國際（依官方計畫範圍）",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+      "official_source": true,
+      "application_start": "2026-08-18",
+      "deadline": "2026-09-15",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "evidence": "官方收件時間：2026/08/18-2026/09/15",
+      "eligibility": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。",
+      "restrictions": "不受理申請之計畫包含： 1. 各級政府機關、政黨、學校 及其所屬單位所主辦/合辦/承辦/策畫之計畫。 2. 學校單位主辦或出品之計畫。 3. 為學位而進行之計畫。",
+      "eligibility_match": "須自行確認國籍／居留身分、個人或團體及計畫限制",
+      "cash_support": "待人工核實；未推定補助額度",
+      "amount_status": "needs_review",
+      "application_fee": "待人工核實；不推定免費",
+      "relevance_tags": [
+        "視覺藝術",
+        "文化資產",
+        "視聽媒體",
+        "藝文環境",
+        "國際文化交流"
+      ],
+      "relevance_basis": "依計畫類別／官方受理項目比對；不代表個人資格已符合",
+      "review_reasons": [
+        "補助金額／費用上限待人工核實",
+        "本期適用辦法年度待人工核實"
+      ],
+      "rules_url": null,
+      "rules_sha256": null,
+      "announcement_urls": [],
+      "field_evidence": {
+        "application_dates": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "2026/08/18-2026/09/15"
+        },
+        "eligibility": {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "text": "經營或從事文化藝術事業且具有中華民國國籍之自然人、持永久居留證之外籍人士或經中華民國政府立案之私法人、機構或團體可提出申請。"
+        },
+        "amount": {
+          "url": null,
+          "text": null
+        }
+      }
+    },
+    {
+      "id": "ncaf-f5f782d88b194531d601",
+      "source_id": "ncaf",
+      "record_kind": "announcement",
+      "type": "grant",
+      "name": "海外藝遊專案",
+      "program_name": "海外藝遊專案",
+      "url": "https://www.ncafroc.org.tw/news_detail.html?sid=859",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "published_at": "2026-07-13",
+      "application_start": "2026-09-15",
+      "deadline": "2026-09-30",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "relevance_tags": [
+        "海外藝遊"
+      ],
+      "evidence": "於2026年9月15日至9月30日開放收件",
+      "eligibility": "待人工核實：請閱讀官方辦法",
+      "cash_support": "待人工核實：請閱讀官方辦法",
+      "review_reasons": [
+        "公告已擷取；資格、金額與本期辦法尚待人工核實"
+      ],
+      "announcement_urls": [
+        "https://www.ncafroc.org.tw/news_detail.html?sid=859"
+      ]
+    },
+    {
+      "id": "ncaf-09dfce4ae65b5512d575",
+      "source_id": "ncaf",
+      "record_kind": "announcement",
+      "type": "grant",
+      "name": "視覺藝術策展專案",
+      "program_name": "視覺藝術策展專案",
+      "url": "https://www.ncafroc.org.tw/news_detail.html?sid=867",
+      "official_source": true,
+      "organizer": "國家文化藝術基金會 NCAF",
+      "status": "closed",
+      "verification_status": "needs_review",
+      "verified_at": null,
+      "last_checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "published_at": "2026-08-18",
+      "application_start": "2026-10-01",
+      "deadline": "2026-10-15",
+      "deadline_precision": "date",
+      "deadline_timezone": "Asia/Taipei",
+      "relevance_tags": [
+        "視覺藝術",
+        "策展"
+      ],
+      "evidence": "2026年10月1日至10月15日 受理線上申請",
+      "eligibility": "待人工核實：請閱讀官方辦法",
+      "cash_support": "待人工核實：請閱讀官方辦法",
+      "review_reasons": [
+        "公告已擷取；資格、金額與本期辦法尚待人工核實"
+      ],
+      "announcement_urls": [
+        "https://www.ncafroc.org.tw/news_detail.html?sid=867"
+      ]
+    }
+  ],
+  "schema_version": 2
 }

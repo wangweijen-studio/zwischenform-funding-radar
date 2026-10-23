@@ -1,1 +1,124 @@
-{"generated_at":null,"sources":[]}
+{
+  "generated_at": "2026-10-23T09:07:04.213441+00:00",
+  "sources": [
+    {
+      "source_id": "ncaf",
+      "checked_at": "2026-10-23T09:07:04.213441+00:00",
+      "status": "success",
+      "programs_discovered": 14,
+      "programs_checked": 14,
+      "announcements_checked": 4,
+      "news_excluded": 8,
+      "records": 22,
+      "open_verified": 1,
+      "errors": [],
+      "requests": [
+        {
+          "url": "https://www.ncafroc.org.tw/founding.aspx",
+          "sha256": "2debaea4730b09c30d8121bf9a736a5f2c5e7a20544e404b1f28d62152747a46"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46",
+          "sha256": "1dfc062d006d2e7d2e8d9b28fb15cf3530623076a499d86406e17f30eb244982"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251118/a7a63e9e835c4fba8fd82f8687991069/國際文化交流項目(出國)申請基準.pdf",
+          "sha256": "ff4a0c4e22a5a16cd2efe9f73cb67e4c8e9d239cb4b9f801230c0a149aa053ff"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55",
+          "sha256": "86cb522e5682424b3c64ad85dfe1c03acef8c93ea0e0588a8370fd1429d9b676"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/18d31a7503f146baa82d4cc8978d8716/視覺藝術類申請基準.pdf",
+          "sha256": "f0a29d52938e8e2051e6c53f0da7a248f754d16ea9ae54b8535760f2d0425776"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22",
+          "sha256": "9b3933c271fcc89e4b90ffc18b78f9f13329196500fe10e3d241ceeb38c94baf"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/a9f00856c325444bbe16e5aaf3af28c7/文化資產類申請基準.pdf",
+          "sha256": "9763ff5be78400a5e967a0223f88edf84f42efec04ca247b8bdf1bdd7f521662"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=70",
+          "sha256": "ad7903f9f263a980bb0c45b52aca4d88fe95f59c24f7dc41374977c4a0bbe843"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/3f8708f9f3944002b92baee883627fdf/視聽媒體藝術類申請基準.pdf",
+          "sha256": "18cc9b1ab37d496311a4b04d0c90b9f67030a884fa55389ee87c77431d78b6fb"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69",
+          "sha256": "707a38cdb1c91c203ddf573e48da662207f1db684e193d518fe0ef8fe1991168"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/33945543f94448a8b7d6f444c83cc337/藝文環境與發展類申請基準.pdf",
+          "sha256": "8ce0f647bd702fd8995bbb8b0c3cc32fa6fdcdbf40f07ebd04a7352ac7df8e63"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=59",
+          "sha256": "8e30e62a2ab72433516f17c3b067aacb682bebd0113e3b4dc4f64bf96d08f2bd"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/files/fundingCategory/20251106/7d5ca9b52f40408097a35f760b3fc5da/多元藝術類申請基準.pdf",
+          "sha256": "16b38225ef40aa455bf8a78ff71e92cf53c039cb51b8b3379a0c2150682f7acb"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=75",
+          "sha256": "2266338ce42a5932f844e78b2ee2fbfb02a612f1d786c7c1918a0cf99be01695"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=64",
+          "sha256": "dd7a9129dea38d97501d87ffbd8a174a5afa205264382cb9d67e1a5a0240d427"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=51",
+          "sha256": "4806f9164caf9999ac43bfbbe5a58caabbb9209190e1c71b652e34810b003b53"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=36",
+          "sha256": "19a1818d67b2007f4e71258a3554ede99538542ec0d1801fd6983b977d4fad6b"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=45",
+          "sha256": "b5f9bfeab0689ca8be13202ceba102af63885ad703a0eed4a62f0fb1d530c6e7"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=67",
+          "sha256": "6a2741dad45dc974aabd70645b70ed06b399c63089b6c6ec7cf1c69164f579f8"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=61",
+          "sha256": "c9948b37b9eec40a46412dabb93d45ac6e1ba2b20e82ef18405220799668d2e4"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=47",
+          "sha256": "1cc156baef3e574aed0d545220c5fbaa9fdbdeca78d814ae524e95a8c5abdb31"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/news.html?categoryId=002",
+          "sha256": "7b9fc37039eb8d6e03f0f41554153d1be5a873ebebfb3ec24750b081ba6996e1"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/news_detail.html?sid=878",
+          "sha256": "ff165f5b82250ed40ef9cd968323bc3a7254eddf167fb10f6b5540b4b717ceda"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/news_detail.html?sid=867",
+          "sha256": "0b640550abaa3462854ea34691322a5326e96736d6a8a8c69b2abaad1db594d7"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/news_detail.html?sid=866",
+          "sha256": "5d2c226a30a0e92bddca07890b22da841bd1fd2666f0d3cbe6f6b256705c6f81"
+        },
+        {
+          "url": "https://www.ncafroc.org.tw/news_detail.html?sid=859",
+          "sha256": "b7cd41b6308a534b32b06c4356e3d7e55784798be0a23dde052dc78d103bf396"
+        }
+      ],
+      "news_scope": "官方補助訊息最新一頁；補助廣場全部相關類別"
+    }
+  ]
+}
