@@ -12,7 +12,7 @@
 
 ## 每日擷取
 GitHub Actions 每天 Europe/Berlin 09:15 執行，使用 timezone 處理夏令時間；排程可能延遲或被 GitHub 暫停，頁面顯示實際時間，可在 Actions 手動執行。
-執行順序：免費 PDF parser → 22 項私人狀態與規劃測試及 11 項官方連結測試 → 39 項 Python 擷取測試 → update_all.py → validate_data.py → 提交公開 JSON → allowlist 打包 → GitHub Pages。
+執行順序：免費 PDF parser → 22 項私人狀態與規劃測試及 13 項官方連結與更新狀態測試 → 40 項 Python 擷取測試 → update_all.py → validate_data.py → 提交公開 JSON → allowlist 打包 → GitHub Pages。
 HTTP client 使用明確 User-Agent、官方 HTTPS 網域 allowlist、robots.txt 檢查、至少一秒請求間隔與大小／逾時限制。重新導向逐一核對官方網域與 robots；禁止的入口不繞過。
 
 每個來源的範圍、啟用設定與模組在 data/sources.json。完整／部分成功、被阻擋、失敗、最後嘗試與最後完整成功都在 data/extraction_status.json。HTTP 可連線不代表徵件已核實。
@@ -56,3 +56,5 @@ python -m http.server 8765 --directory _site
 私人備份保留 officialLink、officialSnapshot；現有 version 2 紀錄相容，沒有連結的舊資料不被覆蓋。三筆既有申請由本機私人檔案經預覽、確認匯入，公開 JS／JSON 不含三筆送件內容。
 IMPACT 結果必須在官方結果標題同時確認 IMPACT、2027 與結果語句，並取得唯一正式公布日期，才顯示結果已公布；2026 標題加 2027 導覽不算。找不到完整證據只保留待核實，沒有推播或電子郵件通知。官方名單不會改變個人結果。
 新增測試：node scripts/test_linking.cjs。官方欄位仍可能只有部分已讀取，連結不代表已符合個人資格。IMPACT 的 2027 方案與 2026 送件期限分開；NCAF 海外藝遊 2026 收件與 2027 執行分開，預定面談不當成最終結果日。
+
+網站以 GitHub 免費公開 REST API 讀取最新 main 工作流程狀態（不含權杖、Cookie 或私人申請），失敗或 JSON 超過 36 小時未更新會顯示異常；API 受限時如實顯示無法讀取。不代表每個來源均完整成功，來源問題仍分別顯示。
