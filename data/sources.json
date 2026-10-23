@@ -98,7 +98,9 @@
     "city": "Stuttgart",
     "timezone": "Europe/Berlin",
     "kind": "有資助藝術駐村",
-    "scope": "官方方案資助、資格與居住要求；本期起訖日未核實不標開放"
+    "scope": "官方方案資助、資格與居住要求；本期起訖日未核實不標開放",
+    "country_code": "DE",
+    "geographic_region": "europe"
   },
   {
     "id": "camargo",
@@ -114,7 +116,9 @@
     "city": "Cassis",
     "timezone": "Europe/Paris",
     "kind": "有資助藝術駐村",
-    "scope": "官方 fellowship 現有徵件與駐村條件頁；金額未知不推測"
+    "scope": "官方 fellowship 現有徵件與駐村條件頁；金額未知不推測",
+    "country_code": "FR",
+    "geographic_region": "europe"
   },
   {
     "id": "ba-charlottenburg-wilmersdorf",
@@ -444,5 +448,166 @@
     "kind": "私人藝術基金會公告",
     "news_path": "news-detail/",
     "scope": "最新消息索引；活動參加及藝術獎提名不當成公開補助申請"
+  },
+  {
+    "id": "sam-residency",
+    "name": "Singapore Art Museum",
+    "url": "https://www.singaporeartmuseum.sg/residencies/about",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "sam",
+    "programme_name": "SAM Artist / Curatorial & Research Residencies",
+    "hosts": [
+      "www.singaporeartmuseum.sg"
+    ],
+    "region": "全球",
+    "country": "新加坡",
+    "city": "Singapore",
+    "country_code": "SG",
+    "timezone": "Asia/Singapore",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "esplanade-residency",
+    "name": "Esplanade – Theatres on the Bay",
+    "url": "https://www.esplanade.com/learn/creative-development/mentorships-and-artist-development/artist-development-platforms/contemporary-performing-arts-research-residency",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "esplanade",
+    "programme_name": "Contemporary Performing Arts Research Residency 2026",
+    "hosts": [
+      "www.esplanade.com"
+    ],
+    "region": "全球",
+    "country": "新加坡",
+    "city": "Singapore",
+    "country_code": "SG",
+    "timezone": "Asia/Singapore",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "headlands-air",
+    "name": "Headlands Center for the Arts",
+    "url": "https://www.headlands.org/programs/",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "headlands",
+    "programme_name": "Headlands Artist in Residence 2027",
+    "hosts": [
+      "www.headlands.org"
+    ],
+    "region": "全球",
+    "country": "美國",
+    "city": "Sausalito",
+    "country_code": "US",
+    "timezone": "America/Los_Angeles",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "bemis-air",
+    "name": "Bemis Center for Contemporary Arts",
+    "url": "https://www.bemiscenter.org/residency/artists-in-residence",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "bemis",
+    "programme_name": "Bemis Artist-in-Residence",
+    "hosts": [
+      "www.bemiscenter.org"
+    ],
+    "region": "全球",
+    "country": "美國",
+    "city": "Omaha",
+    "country_code": "US",
+    "timezone": "America/Chicago",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "bundanon-air",
+    "name": "Bundanon",
+    "url": "https://www.bundanon.com.au/residencies/apply/frequently-asked-questions/",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "bundanon",
+    "programme_name": "Bundanon Artists in Residence 2027",
+    "hosts": [
+      "www.bundanon.com.au"
+    ],
+    "region": "全球",
+    "country": "澳洲",
+    "city": "Shoalhaven",
+    "country_code": "AU",
+    "timezone": "Australia/Sydney",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "gas-fellowship-2025",
+    "name": "Guest Artists Space Foundation",
+    "url": "https://www.guestartistsspace.com/Portals/0/G.A.S%20Fellowship%202025%20%28Final%29.pdf",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "gas",
+    "programme_name": "G.A.S. Fellowship Award 2025（歷史方案）",
+    "hosts": [
+      "www.guestartistsspace.com"
+    ],
+    "region": "全球",
+    "country": "奈及利亞",
+    "city": "Lagos",
+    "country_code": "NG",
+    "timezone": "Africa/Lagos",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "arcus-funded-air",
+    "name": "ARCUS Project",
+    "url": "https://www.arcus-project.com/en/residence-program/artist-in-residence-program/",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "arcus",
+    "programme_name": "ARCUS funded Artist-in-Residence（非自費 Research）",
+    "hosts": [
+      "www.arcus-project.com"
+    ],
+    "region": "全球",
+    "country": "日本",
+    "city": "Moriya",
+    "country_code": "JP",
+    "timezone": "Asia/Tokyo",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
+  },
+  {
+    "id": "tokas-international",
+    "name": "Tokyo Arts and Space",
+    "url": "https://www.tokyoartsandspace.jp/en/archive/application/2026/20260430-317.html",
+    "enabled": true,
+    "module": "adapter_global_residency",
+    "residency_adapter": "tokas",
+    "programme_name": "TOKAS International Creator Residency Program 2027",
+    "hosts": [
+      "www.tokyoartsandspace.jp",
+      "tokyoartsandspace.jp"
+    ],
+    "region": "全球",
+    "country": "日本",
+    "city": "Tokyo",
+    "country_code": "JP",
+    "timezone": "Asia/Tokyo",
+    "geographic_region": "outside_europe",
+    "kind": "有資助藝術駐村",
+    "scope": "官方方案支持逐項核實；臺灣國籍、柏林居住與柏林來回機票分開判斷，不明條件不列完全符合。"
   }
 ]
