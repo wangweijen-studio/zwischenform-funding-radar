@@ -7,6 +7,9 @@ out.mkdir(exist_ok=True)
 shutil.copyfile(root/'index.html',out/'index.html')
 shutil.copyfile(root/'residencies.html',out/'residencies.html')
 (out/'data').mkdir(exist_ok=True)
-for name in ('opportunities.json','scan_status.json','sources.json','extraction_status.json'):
+for name in ('opportunities.json','scan_status.json','sources.json','extraction_status.json','changes.json'):
     shutil.copyfile(root/'data'/name,out/'data'/name)
 (out/'.nojekyll').touch()
+(out/'assets').mkdir(exist_ok=True)
+for name in ('core.js','app.js'):
+    shutil.copyfile(root/'assets'/name,out/'assets'/name)

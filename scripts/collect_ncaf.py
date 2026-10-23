@@ -92,32 +92,17 @@ def digest(value):
 
 class Fetcher:
     def __init__(self, cache_dir=None):
-        self.cache = {}
+        from official_http import OfficialHTTP
+        self.client = OfficialHTTP(['www.ncafroc.org.tw'])
         self.cache_dir = Path(cache_dir) if cache_dir else None
-        self.requests = []
-
+        self.requests = self.client.requests
     def get(self, url):
         url = canonical(url)
-        if url in self.cache:
-            return self.cache[url]
-        if self.cache:
-            time.sleep(0.25)
-        req = urllib.request.Request(urllib.parse.quote(url, safe=':/?=&%()'),
-                                     headers={'User-Agent': 'ZWISCHENFORM-FundingRadar/1.0 (daily public grant research)'})
-        with urllib.request.urlopen(req, timeout=25) as response:
-            canonical(response.url)
-            data = response.read(12_000_001)
-            if len(data) > 12_000_000:
-                raise ValueError('Official response too large')
-            if response.status != 200:
-                raise ValueError('Official source did not return HTTP 200')
+        data = self.client.get(url)
         if self.cache_dir:
             self.cache_dir.mkdir(parents=True, exist_ok=True)
             (self.cache_dir / (digest(url) + ('.pdf' if '.pdf' in url.lower() else '.html'))).write_bytes(data)
-        self.cache[url] = data
-        self.requests.append({'url': url, 'sha256': hashlib.sha256(data).hexdigest()})
         return data
-
     def html(self, url):
         return Document(self.get(url).decode('utf-8-sig')).root
 
