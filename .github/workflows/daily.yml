@@ -33,6 +33,7 @@ jobs:
         run: |
           node scripts/test_core.cjs
           node scripts/test_linking.cjs
+          node scripts/test_residencies.cjs
       - name: Test extraction and verification rules
         run: python -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Extract official sources with robots checks
