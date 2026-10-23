@@ -45,6 +45,7 @@ function select(state,id,target,snapshot={},confirmed=false,now=new Date().toISO
 }
 function today(zone='Europe/Berlin',now=Date.now()){try{return new Intl.DateTimeFormat('sv-SE',{timeZone:zone,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date(now));}catch{return new Date(now).toISOString().slice(0,10);}}
 function days(date,zone='Europe/Berlin',now=Date.now()){if(!dateOK((date||'').slice(0,10)))return null;return Math.ceil((Date.parse(date.slice(0,10)+'T00:00:00Z')-Date.parse(today(zone,now)+'T00:00:00Z'))/86400000);}
+function hasSubstantiveSupport(s={}){s=s&&typeof s==='object'?s:{};const unresolved=/待|未確認|unknown|不提供|沒有|自費|無(?:生活|津貼|藝術家費|製作|交通)|not provided|no (?:stipend|artist fee|production)|not available/i;const cash=['stipend','artist_fee','production','travel'].some(k=>![undefined,null,false,0,'','unknown','待確認','無'].includes(s[k])&&!unresolved.test(String(s[k])));const kind=['accommodation','studio'].some(k=>s[k]===true||(/免費|kostenlos|\bfree\b/i.test(s[k]||'')&&!unresolved.test(String(s[k]))&&!/非免費|不免費|not free|nicht kostenlos/i.test(String(s[k]))));return cash||kind;}
 function publicState(x,now=Date.now()){
  const day=today(x.deadline_timezone||'UTC',now),end=x.deadline;
  if(x.status==='closed'||(end&&(x.deadline_precision==='date'?day>end:Number.isFinite(Date.parse(end))&&Date.parse(end)<=now)))return 'closed';
@@ -52,7 +53,7 @@ function publicState(x,now=Date.now()){
  if(x.application_start&&day<x.application_start)return 'upcoming';
  const verified=Date.parse(x.verified_at),fresh=Number.isFinite(verified)&&verified<=now&&now-verified<=7*86400000;
  const validEnd=x.deadline_precision==='date'?dateOK(end)&&day<end:/T.*(?:Z|[+-]\d{2}:\d{2})$/.test(end||'')&&Date.parse(end)>now;
- const cash=x.type!=='residency'||Object.values(x.support||{}).some(v=>![undefined,null,false,'','unknown','待確認','無','尚未確認'].includes(v));
+ const cash=x.type!=='residency'||hasSubstantiveSupport(x.support);
  if(x.status==='open'&&x.verification_status==='verified'&&x.official_source===true&&fresh&&validEnd&&dateOK(x.application_start)&&day>=x.application_start&&x.evidence&&cash)return 'open';
  return 'needs_review';
 }
@@ -81,5 +82,5 @@ function funding(state){const buckets={};for(const a of Object.values(state.appl
  return Object.values(buckets).map(b=>({...b,duplicateCosts:b.costKeys.filter((x,i)=>b.costKeys.indexOf(x)!==i)}));}
 function conflicts(x,calendar){const start=x.residency_start||x.fields?.residencyStart,end=x.residency_end||x.fields?.residencyEnd;if(!dateOK(start)||!dateOK(end))return null;return calendar.filter(c=>start<=c.end&&end>=c.start);}
 function summary(state,rows,sources=[],now=Date.now()){const apps=Object.values(state.applications);return {sources:sources.filter(s=>s.enabled===true).length,interested:apps.filter(a=>a.personal==='interested').length,applied:apps.filter(a=>a.personal==='applied').length,upcoming:rows.filter(x=>publicState(x,now)==='open'&&days(x.deadline,x.deadline_timezone,now)>=0&&days(x.deadline,x.deadline_timezone,now)<=30&&state.applications[x.id]?.personal!=='skipped').length};}
-return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,uid,empty,normalize,read,write,select,today,days,publicState,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
+return {KEY,LEGACY,FIELDS,CHECKS,RESULTS,uid,empty,normalize,read,write,select,today,days,publicState,hasSubstantiveSupport,fit,filter,previewImport,mergeImport,funding,conflicts,summary,clone,dateOK};
 });
