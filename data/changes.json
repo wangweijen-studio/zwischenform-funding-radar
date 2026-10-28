@@ -1658,6 +1658,219 @@
         "fetch_status": "failed"
       },
       "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "ncaf-4160119685bc61ae072c",
+      "at": "2026-10-28T09:04:00.548947+00:00",
+      "field": "deadline",
+      "old_value": "2026-11-16T23:59:00+08:00",
+      "new_value": "2026-11-16",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-4160119685bc61ae072c",
+      "at": "2026-10-28T09:04:00.548947+00:00",
+      "field": "cash_support",
+      "old_value": "(1)應邀參加國際重要藝術節、藝術節慶、展會及國際著名機構交流:得考量機票、翻譯、新作材料、運輸、保險、演出及其他必要費用之總和為上限。(2)一般出國交流活動:就相當於全額或部分機票費之總和為上限。(3)參加國際競賽或人才徵選，得考量機票、運輸、當地生活費（以三個月為上限）等。(4)出國前展演映技術測試或排練之相關經費。(5)線上活動:考量人事費、研究費、翻譯費、編輯企劃費、行銷宣傳費及其他必要費用等。",
+      "new_value": "待人工核實；未推定補助額度",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-4160119685bc61ae072c",
+      "at": "2026-10-28T09:04:00.548947+00:00",
+      "field": "status",
+      "old_value": "open",
+      "new_value": "needs_review",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "camargo-a6edb6690cf084e34be6",
+      "at": "2026-10-28T09:04:00.548947+00:00",
+      "field": "residency_policy",
+      "old_value": {
+        "version": 1,
+        "region": "europe",
+        "country_code": "FR",
+        "checked_at": "2026-10-26T09:00:33.229815+00:00",
+        "components": {
+          "stipend": {
+            "status": "needs_review",
+            "text": "一般條件提及津貼，但本期支持尚未核實",
+            "url": "https://camargofoundation.org/en/residencies/residency-conditions",
+            "verified_at": "2026-10-26T09:00:33.229815+00:00"
+          },
+          "artist_fee": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "accommodation": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "studio": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "production": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "airfare": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "visa": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "other_transport": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          }
+        },
+        "eligibility": {
+          "nationality": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "residence": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "departure": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          }
+        },
+        "airfare": {
+          "coverage": "unknown",
+          "mode": "unknown",
+          "origin_rule": "unknown",
+          "berlin_eligible": false,
+          "cap": null,
+          "currency": null,
+          "conditions": "柏林／德國出發、來回範圍與報銷額度待主辦確認",
+          "possible_shortfall": "待確認；沒有即時柏林來回票價證據，不估算差額",
+          "url": "https://camargofoundation.org/en/residencies/apply",
+          "verified_at": null
+        },
+        "funding_level": "partial",
+        "full_cost_coverage_verified": false,
+        "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對",
+        "fetch_status": "failed"
+      },
+      "new_value": {
+        "version": 1,
+        "region": "europe",
+        "country_code": "FR",
+        "checked_at": "2026-10-28T09:04:00.548947+00:00",
+        "components": {
+          "stipend": {
+            "status": "needs_review",
+            "text": "一般條件提及津貼，但本期支持尚未核實",
+            "url": "https://camargofoundation.org/en/residencies/residency-conditions",
+            "verified_at": "2026-10-28T09:04:00.548947+00:00"
+          },
+          "artist_fee": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "accommodation": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "studio": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "production": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "airfare": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "visa": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "other_transport": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          }
+        },
+        "eligibility": {
+          "nationality": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "residence": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          },
+          "departure": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://camargofoundation.org/en/residencies/apply",
+            "verified_at": null
+          }
+        },
+        "airfare": {
+          "coverage": "unknown",
+          "mode": "unknown",
+          "origin_rule": "unknown",
+          "berlin_eligible": false,
+          "cap": null,
+          "currency": null,
+          "conditions": "柏林／德國出發、來回範圍與報銷額度待主辦確認",
+          "possible_shortfall": "待確認；沒有即時柏林來回票價證據，不估算差額",
+          "url": "https://camargofoundation.org/en/residencies/apply",
+          "verified_at": null
+        },
+        "funding_level": "partial",
+        "full_cost_coverage_verified": false,
+        "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對"
+      },
+      "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
     }
   ]
 }
