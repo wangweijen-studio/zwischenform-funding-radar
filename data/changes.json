@@ -1871,6 +1871,14 @@
         "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對"
       },
       "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "culture-moves-europe-843b8ec3159e57d620bf-394e2ce4",
+      "at": "2026-10-31T08:56:12.119109+00:00",
+      "field": "status",
+      "old_value": "open",
+      "new_value": "needs_review",
+      "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility"
     }
   ]
 }
