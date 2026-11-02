@@ -1903,6 +1903,22 @@
       "old_value": "needs_review",
       "new_value": "open",
       "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility"
+    },
+    {
+      "opportunity_id": "ncaf-9092672819010f98925b",
+      "at": "2026-11-02T09:21:39.574169+00:00",
+      "field": "eligibility",
+      "old_value": "待人工核實：請閱讀官方辦法",
+      "new_value": "待人工核實",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=75"
+    },
+    {
+      "opportunity_id": "ncaf-9092672819010f98925b",
+      "at": "2026-11-02T09:21:39.574169+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實：請閱讀官方辦法",
+      "new_value": "待人工核實；未推定補助額度",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=75"
     }
   ]
 }
