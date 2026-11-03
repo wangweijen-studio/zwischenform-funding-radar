@@ -1919,6 +1919,14 @@
       "old_value": "待人工核實：請閱讀官方辦法",
       "new_value": "待人工核實；未推定補助額度",
       "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=75"
+    },
+    {
+      "opportunity_id": "fonds-soziokultur-36729ca2f741214b3cd2-2026-10",
+      "at": "2026-11-03T09:06:12.723983+00:00",
+      "field": "status",
+      "old_value": "open",
+      "new_value": "closed",
+      "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick"
     }
   ]
 }
