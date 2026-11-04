@@ -1927,6 +1927,14 @@
       "old_value": "open",
       "new_value": "closed",
       "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick"
+    },
+    {
+      "opportunity_id": "fonds-soziokultur-36729ca2f741214b3cd2-2027-4",
+      "at": "2026-11-04T09:12:45.710890+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "Allgemeine Projektförderung",
+      "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick"
     }
   ]
 }
