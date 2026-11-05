@@ -1935,6 +1935,126 @@
       "old_value": null,
       "new_value": "Allgemeine Projektförderung",
       "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick"
+    },
+    {
+      "opportunity_id": "ncaf-5567e9feca5e5a47a3a8",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-02-01",
+      "new_value": "2027-02-01T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22"
+    },
+    {
+      "opportunity_id": "ncaf-5567e9feca5e5a47a3a8",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "個人申請者補助金額至多24萬元，團體申請者不在此限。",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22"
+    },
+    {
+      "opportunity_id": "ncaf-a1a337d3bee307c7998d",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-02-01",
+      "new_value": "2027-02-01T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55"
+    },
+    {
+      "opportunity_id": "ncaf-a1a337d3bee307c7998d",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "以創作費、材料、展覽、發表等為主要考量，補助經費至多100萬元。3.",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55"
+    },
+    {
+      "opportunity_id": "ncaf-b4da77dbe48a26d7de17",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-02-01",
+      "new_value": "2027-02-01T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69"
+    },
+    {
+      "opportunity_id": "ncaf-b4da77dbe48a26d7de17",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "補助內容不含非消耗性設備或器材之購置、房屋租賃及水電瓦斯等相關費用。",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69"
+    },
+    {
+      "opportunity_id": "ncaf-134919751e9691f7f175",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-06-30",
+      "new_value": "2027-06-30T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22"
+    },
+    {
+      "opportunity_id": "ncaf-134919751e9691f7f175",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "個人申請者補助金額至多24萬元，團體申請者不在此限。",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=22"
+    },
+    {
+      "opportunity_id": "ncaf-4a36b1de9892e3f6ae93",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-06-30",
+      "new_value": "2027-06-30T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=59"
+    },
+    {
+      "opportunity_id": "ncaf-4a36b1de9892e3f6ae93",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "(1)考量補助費用以業務費用及計畫執行人事費為主。(2)具跨（國）境型態者，得考量機票、運輸、翻譯、保險及其他必要費用。",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=59"
+    },
+    {
+      "opportunity_id": "ncaf-6bb354261601539c345c",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-06-30",
+      "new_value": "2027-06-30T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55"
+    },
+    {
+      "opportunity_id": "ncaf-6bb354261601539c345c",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "以創作費、材料、展覽、發表等為主要考量，補助經費至多100萬元。3.",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=55"
+    },
+    {
+      "opportunity_id": "ncaf-8a106cb5d71ff68064a2",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "deadline",
+      "old_value": "2027-06-30",
+      "new_value": "2027-06-30T23:59:00+08:00",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69"
+    },
+    {
+      "opportunity_id": "ncaf-8a106cb5d71ff68064a2",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "cash_support",
+      "old_value": "待人工核實；未推定補助額度",
+      "new_value": "補助內容不含非消耗性設備或器材之購置、房屋租賃及水電瓦斯等相關費用。",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=69"
+    },
+    {
+      "opportunity_id": "ncaf-ad91f3b520c2a6486831",
+      "at": "2026-11-05T09:17:22.208026+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "海外藝遊專案",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=64"
     }
   ]
 }
