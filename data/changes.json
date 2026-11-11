@@ -3032,6 +3032,14 @@
         "fetch_status": "failed"
       },
       "url": "https://camargofoundation.org/en/camargo-fellowship-2026-2027"
+    },
+    {
+      "opportunity_id": "taichung-b702a58d89d8d7586791",
+      "at": "2026-11-11T09:10:51.435558+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "1 【公告】116年上半年視覺藝術類活動補助審查通過名單 2026-11-10",
+      "url": "https://www.culture.taichung.gov.tw/3410921/post"
     }
   ]
 }
