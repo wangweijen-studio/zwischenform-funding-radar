@@ -3040,6 +3040,211 @@
       "old_value": null,
       "new_value": "1 【公告】116年上半年視覺藝術類活動補助審查通過名單 2026-11-10",
       "url": "https://www.culture.taichung.gov.tw/3410921/post"
+    },
+    {
+      "opportunity_id": "solitude-a8aba5b303e452e78f13",
+      "at": "2026-11-12T09:16:18.730645+00:00",
+      "field": "residency_policy",
+      "old_value": {
+        "version": 1,
+        "region": "europe",
+        "country_code": "DE",
+        "checked_at": "2026-11-11T09:10:51.435558+00:00",
+        "components": {
+          "stipend": {
+            "status": "confirmed",
+            "text": "每月 EUR 1,300 生活津貼",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "artist_fee": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "accommodation": {
+            "status": "confirmed",
+            "text": "提供居住／工作室，含水電暖氣",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "studio": {
+            "status": "confirmed",
+            "text": "提供帶家具的居住／工作室",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "production": {
+            "status": "needs_review",
+            "text": "視主辦預算另行提供，非保證核定",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "airfare": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "visa": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "other_transport": {
+            "status": "confirmed",
+            "text": "抵達與離開的交通費可一次性報銷；上限及核准方式待確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          }
+        },
+        "eligibility": {
+          "nationality": {
+            "status": "needs_review",
+            "text": "申請對象條款面向世界各地從業者；未逐項列明臺灣國籍／柏林居住條件，須按最終辦法確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "residence": {
+            "status": "needs_review",
+            "text": "申請對象條款面向世界各地從業者；未逐項列明臺灣國籍／柏林居住條件，須按最終辦法確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "departure": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          }
+        },
+        "airfare": {
+          "coverage": "unknown",
+          "mode": "unknown",
+          "origin_rule": "unknown",
+          "berlin_eligible": false,
+          "cap": null,
+          "currency": null,
+          "conditions": "柏林／德國出發、來回範圍與報銷額度待主辦確認",
+          "possible_shortfall": "待確認；沒有即時柏林來回票價證據，不估算差額",
+          "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+          "verified_at": null
+        },
+        "funding_level": "partial",
+        "full_cost_coverage_verified": false,
+        "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對"
+      },
+      "new_value": {
+        "version": 1,
+        "region": "europe",
+        "country_code": "DE",
+        "checked_at": "2026-11-11T09:10:51.435558+00:00",
+        "components": {
+          "stipend": {
+            "status": "confirmed",
+            "text": "每月 EUR 1,300 生活津貼",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "artist_fee": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "accommodation": {
+            "status": "confirmed",
+            "text": "提供居住／工作室，含水電暖氣",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "studio": {
+            "status": "confirmed",
+            "text": "提供帶家具的居住／工作室",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "production": {
+            "status": "needs_review",
+            "text": "視主辦預算另行提供，非保證核定",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "airfare": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "visa": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          },
+          "other_transport": {
+            "status": "confirmed",
+            "text": "抵達與離開的交通費可一次性報銷；上限及核准方式待確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          }
+        },
+        "eligibility": {
+          "nationality": {
+            "status": "needs_review",
+            "text": "申請對象條款面向世界各地從業者；未逐項列明臺灣國籍／柏林居住條件，須按最終辦法確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "residence": {
+            "status": "needs_review",
+            "text": "申請對象條款面向世界各地從業者；未逐項列明臺灣國籍／柏林居住條件，須按最終辦法確認",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": "2026-11-11T09:10:51.435558+00:00"
+          },
+          "departure": {
+            "status": "needs_review",
+            "text": "官方未明確核實",
+            "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+            "verified_at": null
+          }
+        },
+        "airfare": {
+          "coverage": "unknown",
+          "mode": "unknown",
+          "origin_rule": "unknown",
+          "berlin_eligible": false,
+          "cap": null,
+          "currency": null,
+          "conditions": "柏林／德國出發、來回範圍與報銷額度待主辦確認",
+          "possible_shortfall": "待確認；沒有即時柏林來回票價證據，不估算差額",
+          "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
+          "verified_at": null
+        },
+        "funding_level": "partial",
+        "full_cost_coverage_verified": false,
+        "other_eligibility": "年齡、年資、語言、在學狀態、實際在場及入境文件仍須人工核對",
+        "fetch_status": "failed"
+      },
+      "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-a204d5951cd253abadce",
+      "at": "2026-11-12T09:16:18.730645+00:00",
+      "field": "eligibility",
+      "old_value": "Voraussetzung ist ein Bildungspartner aus dem Bereich Bildung bzw. Kunst/Kultur. Die maximale Förderhöhe für ein Projekt beträgt 5.000 Euro.",
+      "new_value": "Voraussetzung ist ein Bildungspartner aus dem Bereich Bildung bzw. Kunst/Kultur.",
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/projektfonds-kulturelle-bildung/"
+    },
+    {
+      "opportunity_id": "ba-lichtenberg-a204d5951cd253abadce",
+      "at": "2026-11-12T09:16:18.730645+00:00",
+      "field": "cash_support",
+      "old_value": "Voraussetzung ist ein Bildungspartner aus dem Bereich Bildung bzw. Kunst/Kultur. Die maximale Förderhöhe für ein Projekt beträgt 5.000 Euro.",
+      "new_value": null,
+      "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/kulturfoerderung/projektfonds-kulturelle-bildung/"
     }
   ]
 }
