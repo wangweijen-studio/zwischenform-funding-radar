@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-13T09:14:56.367399+00:00",
+  "generated_at": "2026-11-14T09:01:56.376133+00:00",
   "timezone": "Europe/Berlin",
-  "local_date": "2026-11-13",
+  "local_date": "2026-11-14",
   "sources": [
     {
       "source_id": "ncaf",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "status": "success",
       "programs_discovered": 14,
       "programs_checked": 14,
@@ -113,12 +113,12 @@
         }
       ],
       "news_scope": "官方補助訊息最新一頁；補助廣場全部相關類別",
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "moc",
       "status": "blocked",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "last_success_at": null,
       "errors": [
         {
@@ -130,7 +130,7 @@
     {
       "source_id": "taipei",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 2,
       "links_discovered": 2,
@@ -139,50 +139,87 @@
       "requests": [
         {
           "url": "https://eculture.gov.taipei/artgrants/zh-tw/news",
-          "sha256": "cd362b3856757b90598932a7883c624f0319bd9a6cbaea19aab55bbcfe40e4a9"
+          "sha256": "0f642f26fde1d4ba5099c62c93a3eec37e6a4ff5d43500e540ff6a518ad74e2f"
         },
         {
           "url": "https://eculture.gov.taipei/artgrants/zh-tw",
-          "sha256": "e630d0d2cd789ad2472ab8c8c6d75c120797fdebe37b5292eae098d10710f23a"
+          "sha256": "5fc734058e3f99d48d6876fb6839e09c77f5c512e7aced0cfbae82fe703633e4"
         },
         {
           "url": "https://eculture.gov.taipei/artgrants/zh-tw/news/1092",
-          "sha256": "ac12917ee5224a2f006c763b0439087605fe2c511e5f17ec738ab9bcb0c6d590"
+          "sha256": "3f9b765b73723617cfaef15cc44d76ac8019fadf8de71ff26a9958545bb75d7a"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "taichung",
-      "status": "failed",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
-      "last_success_at": "2026-11-12T09:16:18.730645+00:00",
-      "errors": [
+      "status": "success",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
+      "errors": [],
+      "records": 8,
+      "links_discovered": 13,
+      "detail_pages_checked": 8,
+      "scope": "最新索引頁，最多 8 個相關官方細節頁；未核實欄位不推測",
+      "requests": [
         {
-          "error": "TimeoutError: The read operation timed out"
+          "url": "https://www.culture.taichung.gov.tw/2104994/Lpsimplelist",
+          "sha256": "c5c72acde37b58158ae6701bc1a16d88a6b0b8aafcb9b1bf146c1a2bdaaf3483"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/2061062/2083995/2085944?PageSize=30&type=07",
+          "sha256": "afd07c22280fb02259cd70c2d8c5a7a02748c26afb904dba469ed75b04c40275"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/2105761/Lpsimplelist",
+          "sha256": "7ca5fe5eb6309856b0717771bc152f953488c3ebf69457f675ac4f156bc035ca"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/3410921/post",
+          "sha256": "e363040145526838aef4c1693f0adb2a7203ff1acf62b9216346a6f9d695ad9b"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/3384611/post",
+          "sha256": "14697c08053bea09e7aad05dbf8a4ea3c5c65fed2ef471f7cbe2c108fb96c27b"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/2189670/post",
+          "sha256": "930ce71d23b26aa685f976b59b51aa0d169569b3115c8a9ebb8f2cc8538efd0e"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/2105090/post",
+          "sha256": "1dc9dddcc8960efdd8698e566b4dd458b4c202deee0454ddebc72af6de97a3f1"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/2105094/post",
+          "sha256": "c380bfd9b4edaa2b09b8ce92933f21bd12e1c28dbdf697f44d2676561ae77dfc"
+        },
+        {
+          "url": "https://www.culture.taichung.gov.tw/2105074/post",
+          "sha256": "88a54982109e6a655f707f67225d7e5652448a482a0afc1783953c5d2df8bd7b"
         }
       ],
-      "requests": []
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "fonds-soziokultur",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "一般計畫補助單一官方辦法頁；團體資格與 BKM 共同補助限制已列示",
       "requests": [
         {
           "url": "https://www.fonds-soziokultur.de/de/projektfoerderung/ueberblick",
-          "sha256": "9f1dcd78d150d93021d48fd0c6663f847940e9abb804861824fa069f8cac79b5"
+          "sha256": "afb2892bc59e21a13f75deed07e7f88f9665b504b77afacc12fbff32bd57c88a"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "berlin-kultur",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 16,
       "links_discovered": 12,
@@ -222,16 +259,20 @@
           "sha256": "bc487fdf92978640e49a09d9a50db872896c1efba3aad913687c22f9f9137a9d"
         },
         {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/",
-          "sha256": "3d5f547bd6fff9aab257aab1233da283ba0cee3ddc5b29b8d4f5281321bc1920"
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/diversitaetsfonds-impact-foerderung/",
+          "sha256": "bc487fdf92978640e49a09d9a50db872896c1efba3aad913687c22f9f9137a9d"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/",
           "sha256": "3d5f547bd6fff9aab257aab1233da283ba0cee3ddc5b29b8d4f5281321bc1920"
         },
         {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kuenstlerinnenfoerderung/",
-          "sha256": "43855dcce9d220fe75a302094d1ee5c46d9578b7c1ba4533967d7d64c04bdf6e"
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/",
+          "sha256": "3d5f547bd6fff9aab257aab1233da283ba0cee3ddc5b29b8d4f5281321bc1920"
+        },
+        {
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/",
+          "sha256": "3d5f547bd6fff9aab257aab1233da283ba0cee3ddc5b29b8d4f5281321bc1920"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kuenstlerinnenfoerderung/",
@@ -250,8 +291,8 @@
           "sha256": "a9b4c891d8f838bc29ce8cac8aa3f3b4e6540b615c0f2e2f57aa1797dd3fd9a1"
         },
         {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/",
-          "sha256": "50ec6707cd4a2b1754f4a68b309b0602b584295cfb80a1f1283f10f121c9abb1"
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/projektfonds-zeitgeschichte-und-erinnerungskultur/",
+          "sha256": "a9b4c891d8f838bc29ce8cac8aa3f3b4e6540b615c0f2e2f57aa1797dd3fd9a1"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/",
@@ -264,18 +305,6 @@
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.59934.php",
           "sha256": "a1767c841b896d50d44b9e3fc357950664923bf5f2735d081a963439881787dd"
-        },
-        {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.59934.php",
-          "sha256": "a1767c841b896d50d44b9e3fc357950664923bf5f2735d081a963439881787dd"
-        },
-        {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.59934.php",
-          "sha256": "a1767c841b896d50d44b9e3fc357950664923bf5f2735d081a963439881787dd"
-        },
-        {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.467404.php",
-          "sha256": "5f93f629ca6735d7c28340faa2ad8feadb8f9bd23406cef6ec03f52fb7316313"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.467404.php",
@@ -294,8 +323,8 @@
           "sha256": "2510677c35b392137220bfcc10f943e3dddaf1e59c8c4f7c3db136afc44cc50e"
         },
         {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.60220.php",
-          "sha256": "1aedd5f05307d247178a944d809d25d9cffbeb72242f380bc21913401c3e6186"
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.836301.php",
+          "sha256": "2510677c35b392137220bfcc10f943e3dddaf1e59c8c4f7c3db136afc44cc50e"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/bildende-kunst/artikel.60220.php",
@@ -314,16 +343,20 @@
           "sha256": "b01c3359c45f4a26c247bcb2c922ef7d406e67e2c04cd35b1dd2c2487ddc2017"
         },
         {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82023.php",
-          "sha256": "903b701f763502d6225799678b42fa219d2be462ad2945f6020741d503902f86"
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/",
+          "sha256": "b01c3359c45f4a26c247bcb2c922ef7d406e67e2c04cd35b1dd2c2487ddc2017"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82023.php",
           "sha256": "903b701f763502d6225799678b42fa219d2be462ad2945f6020741d503902f86"
         },
         {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82059.php",
-          "sha256": "80c694f3324f622b4f00c89999549b150143f993baf639bebc1aee8d95f68907"
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82023.php",
+          "sha256": "903b701f763502d6225799678b42fa219d2be462ad2945f6020741d503902f86"
+        },
+        {
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82023.php",
+          "sha256": "903b701f763502d6225799678b42fa219d2be462ad2945f6020741d503902f86"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/internationaler-kulturaustausch/artikel.82059.php",
@@ -342,6 +375,14 @@
           "sha256": "d6a7c9ba9c658a161865547ef89332ec847ae4dc345566158679765ef4995559"
         },
         {
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kofinanzierungsfonds/artikel.1563270.php",
+          "sha256": "d6a7c9ba9c658a161865547ef89332ec847ae4dc345566158679765ef4995559"
+        },
+        {
+          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kunst-im-stadtraum-und-kunst-am-bau/",
+          "sha256": "372486eca37e5fc63edcd7e59abb25ec554e63e0e104fb85875de2fe96349097"
+        },
+        {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/kunst-im-stadtraum-und-kunst-am-bau/",
           "sha256": "372486eca37e5fc63edcd7e59abb25ec554e63e0e104fb85875de2fe96349097"
         },
@@ -360,10 +401,6 @@
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/spartenoffene-foerderung/",
           "sha256": "5cf295818f56e4a7000fe5e42c0f82707d34b1ddda76f25e8d0a1e2acb31b73e"
-        },
-        {
-          "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php",
-          "sha256": "61be4cbffa26fb0f7c6005f5f7e06207acb3c85c292ed4d3bfeeb7de64a8d257"
         },
         {
           "url": "https://www.berlin.de/sen/kultur/foerderung/foerderprogramme/interkulturelle-projekte/artikel.82020.php",
@@ -374,27 +411,27 @@
           "sha256": "61be4cbffa26fb0f7c6005f5f7e06207acb3c85c292ed4d3bfeeb7de64a8d257"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "solitude",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "Solitude 官方方案頁；核實津貼、工作室與在場要求，不推定徵件日期",
       "requests": [
         {
           "url": "https://www.akademie-solitude.de/en/fellowship/solitude-fellowship/",
-          "sha256": "d7132ef45beaf7c79c5aaaf81ceb47cb7747b23b6eb96c2b524c9a1c16db0811"
+          "sha256": "00c9a5fa3a8c530acff0aa77039141eadb734676ab141c12359ef04a5c360bb1"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "camargo",
       "status": "failed",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "last_success_at": "2026-11-09T09:27:52.966778+00:00",
       "errors": [
         {
@@ -410,35 +447,32 @@
     },
     {
       "source_id": "ba-charlottenburg-wilmersdorf",
-      "status": "partial",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
-      "errors": [
-        {
-          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/artikel.1015147.php",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/kulturbeirat/",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "error": "本次官方補助索引未辨識到可解析公告；不代表沒有徵件，須人工核對"
-        }
-      ],
-      "records": 0,
+      "status": "success",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
+      "errors": [],
+      "records": 2,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
       "culture_indexes": [],
       "programme_pages": [
         "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/artikel.1015147.php",
         "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/kulturbeirat/"
       ],
-      "requests": [],
-      "last_success_at": "2026-11-12T09:16:18.730645+00:00"
+      "requests": [
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/artikel.1015147.php",
+          "sha256": "b9478e215716e6d5d15be863526868e112d11f673d53f488c8825bf16dd40de4"
+        },
+        {
+          "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/verwaltung/aemter/weiterbildung-und-kultur/kunst-und-kultur/kulturfoerderung/kulturbeirat/",
+          "sha256": "6652fb8c30f5f0c947192e1b78db839ab068bad883b775da259ea1eb3ecdf066"
+        }
+      ],
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-friedrichshain-kreuzberg",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 6,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -449,39 +483,39 @@
       "requests": [
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderung/",
-          "sha256": "1437b47bbadae0554b772444f1f3189176b897026e70d6457f2d600e6b0420f7"
+          "sha256": "99e2caa44ca43417ad099c5c23171eb79c2b18c1a6f9d1aa202f8a7d0677d657"
         },
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderfonds/projektfonds-kulturfoerderung/",
-          "sha256": "1b8f4e5acf2233be27bc30e56f16c2d8449626a6b77ec44784cc65ee7a29f04f"
+          "sha256": "bf8eeaa96270be719a6c6c47bf2ca49677e9232ae3c570d54681de23bc335a1f"
         },
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderfonds/projektfonds-kulturelle-bildung-foerdersaeule-3/",
-          "sha256": "62fb5173e7e4cb40140cff8fbef7df5ff94fc7450451f69f4d3f81854f43a9f9"
+          "sha256": "9a43dee89a9a68d66098e76297a8e14d5e1f20d9706afbbc77f565075c41b364"
         },
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderfonds/projektfonds-kinder-jugend-und-puppentheater-kia-programm/",
-          "sha256": "a4a660ba196bddcdbd5b1322b0141174a665fa58c655e8e1425a3722634f3254"
+          "sha256": "147f045bd19051ca374b828b36b346dbd1c2eeecfb9c09cd8777ca27ee6f60c3"
         },
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderfonds/frixfonds/",
-          "sha256": "785b2b97eb37f98a21da3dd7f7e8e24388e72b37b937c3fe3f53ba9814e293ba"
+          "sha256": "8116bda6bfb42570e44f308641ed1904f17ebfece94e402873ea44fd77f16000"
         },
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderfonds/berliner-autorinnenlesefonds/",
-          "sha256": "117d7336db7624a300c8455990e845f437bc5a819ba5160e45e1e7b6204f9a28"
+          "sha256": "9a40ff523985e5c0c8200cca59342f0246b2856fce95af3b92b4f99b238f6af4"
         },
         {
           "url": "https://kultur-friedrichshain-kreuzberg.de/foerderfonds/projektfonds-kultur-zum-1-mai/",
-          "sha256": "a03a997891206039263796ad2f3ae9481d761fec53644f4ee82aaf7db8e101f6"
+          "sha256": "fed62f48edc17b065ba1697d919d8b36c4806493e956588db5d4a707ae653188"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-lichtenberg",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 4,
       "scope": "區公所導覽中的藝術文化／補助入口及有界線的子索引；非全站完整爬取",
@@ -512,15 +546,15 @@
         },
         {
           "url": "https://www.berlin.de/ba-lichtenberg/auf-einen-blick/freizeit/kultur/",
-          "sha256": "856b666c88e978446f8473500a88611a52f7796465fb3ae9e7cff2e0819f22a6"
+          "sha256": "67f34f148bbf2f3fcf5580db9fc08079d85dcae91c49fb936bf0e1b3df81abd3"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-marzahn-hellersdorf",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 5,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -558,13 +592,18 @@
           "sha256": "17ebe92f9c1707159401feeed714b9fece2a4999ec3a8f45c4631862883b31f9"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-mitte",
-      "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
-      "errors": [],
+      "status": "partial",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
+      "errors": [
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/",
+          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+        }
+      ],
       "records": 4,
       "scope": "區公所導覽中的藝術文化／補助入口及有界線的子索引；非全站完整爬取",
       "culture_indexes": [
@@ -589,16 +628,16 @@
           "sha256": "cff54ab018039d774f2d564a6ab228e753b7707647d41e7dd5323e85b2ce21b3"
         },
         {
-          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/",
-          "sha256": "4ed8408ea51463b0b91928fd7c3776b730c1556be935cae6deae30a55d37d1c8"
-        },
-        {
           "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/programmfonds-kulturelle-bildung/",
           "sha256": "56cbac61d0f0ea2153fd3216a7d374e63d36088a29cb297908ed1311b7198e63"
         },
         {
           "url": "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
           "sha256": "1fe3a09eb74f7127a1d493ce7a23b07253e3a098e4c3f6230751fc0ef97875a2"
+        },
+        {
+          "url": "https://www.berlin.de/kunst-und-kultur-mitte/foerderung/projektfonds-kulturelle-bildung/",
+          "sha256": "4ed8408ea51463b0b91928fd7c3776b730c1556be935cae6deae30a55d37d1c8"
         }
       ],
       "last_success_at": "2026-11-13T09:14:56.367399+00:00"
@@ -606,7 +645,7 @@
     {
       "source_id": "ba-neukoelln",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 6,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -646,12 +685,12 @@
           "sha256": "0fde63a5a97460f336b65a0f01c9ff68b3158c929b2de4d9d9738ff433006d6b"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-pankow",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 7,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -693,18 +732,14 @@
         {
           "url": "https://www.berlin.de/kunst-und-kultur-pankow/foerderung/projektfoerderung/informationen-antragstellung/",
           "sha256": "635c9a28296bd661c59f58ae116809c915ef0256645dedb11cf30f1df6498c50"
-        },
-        {
-          "url": "https://www.berlin.de/kunst-und-kultur-pankow/foerderung/projektfoerderung/informationen-antragstellung/",
-          "sha256": "635c9a28296bd661c59f58ae116809c915ef0256645dedb11cf30f1df6498c50"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-reinickendorf",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -718,12 +753,12 @@
           "sha256": "4747f387c8e5aa312f9655ec5dfe2e082d7787d36dbb792f89520adccdb60355"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-spandau",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 2,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -745,12 +780,12 @@
           "sha256": "3345c2a0245245e2a32ff800fea8b35e08c7edb5f9fcfbd8dcf367f5ba9a9ab9"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-steglitz-zehlendorf",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 2,
       "scope": "區公所導覽中的藝術文化／補助入口及有界線的子索引；非全站完整爬取",
@@ -761,15 +796,15 @@
       "requests": [
         {
           "url": "https://www.berlin.de/ba-steglitz-zehlendorf/",
-          "sha256": "bc4246a3ea5857bdfa4f60c49ece868268e90e9cd26ef6506a10ba7f3334227b"
+          "sha256": "4d758b7e2f0ffb43b281c338561662bc0a484b7d844c863ccefb808ca4b0cb98"
         },
         {
           "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/",
-          "sha256": "240011ff9d1898e5a9d4bba0aa81c20fa9be70491c48731a5577a772e9e0ec36"
+          "sha256": "69991b771fd292dec066249d36643b965aa12c2328c4da1b8e1c487b0e3367cf"
         },
         {
           "url": "https://www.berlin.de/ba-steglitz-zehlendorf/auf-einen-blick/kultur/",
-          "sha256": "240011ff9d1898e5a9d4bba0aa81c20fa9be70491c48731a5577a772e9e0ec36"
+          "sha256": "69991b771fd292dec066249d36643b965aa12c2328c4da1b8e1c487b0e3367cf"
         },
         {
           "url": "https://www.berlin.de/ba-steglitz-zehlendorf/bildung-familie-und-freizeit/kultur/service/foerderung/",
@@ -780,12 +815,12 @@
           "sha256": "11efe2271386bd3ecaf51a34bebbb8dbcd060319690536866982bac2ff74f714"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-tempelhof-schoeneberg",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "由區公所官方連結核對的文化補助專用入口，最多2個索引及2個指定方案頁；未完整核實不標開放",
@@ -805,26 +840,14 @@
           "sha256": "a3e0f37035c5fd5b94508e8eb51a1b19e04fb7879d4ae8ece4d0d05786fad939"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "ba-treptow-koepenick",
-      "status": "partial",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
-      "errors": [
-        {
-          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/artikel.90669.php",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
-        },
-        {
-          "error": "本次未辨識可解析的區級藝術補助公告；不代表沒有徵件，仍須人工核對"
-        }
-      ],
-      "records": 0,
+      "status": "success",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
+      "errors": [],
+      "records": 4,
       "scope": "區公所導覽中的藝術文化／補助入口及有界線的子索引；非全站完整爬取",
       "culture_indexes": [
         "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/artikel.90669.php",
@@ -834,14 +857,38 @@
         {
           "url": "https://www.berlin.de/ba-treptow-koepenick/",
           "sha256": "615371ede56c1cf93b954457afc7bd45d4241fbf04b3bf67e5cc91a2eb63090f"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/kultur/artikel.90669.php",
+          "sha256": "b990e6c7d764427d11082753a3ce3005b3e0c5180bd51e154f621e2d3a8b0f00"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/wirtschaftsfoerderung/",
+          "sha256": "b2d2fc946ed927fd61958e2927309482fd8e7efc2b1cd7719f46c7b5c1ec622c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-soziales/artikel.83345.php",
+          "sha256": "dff316db4ee72308d8f94d8fcd59fde5dd40bd746031a465003f924f0de12cff"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/sozialraumorientierte-planungskoordination/kiezkassen-foerderprogramme/artikel.940953.php",
+          "sha256": "de96076c39385550c0df6bc229e7b0a1136de6484f5d283592a60f3215b5804c"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/service-und-organisationseinheiten/qualitaetsentwicklung-planung-und-koordination-des-oeffentlichen-gesundheitsdienstes/artikel.87793.php",
+          "sha256": "e8d6e8d71551f188c978cc69f2eeeb3733279204455b15bb69b2cb389f2f3a7e"
+        },
+        {
+          "url": "https://www.berlin.de/ba-treptow-koepenick/politik-und-verwaltung/aemter/amt-fuer-weiterbildung-und-kultur/",
+          "sha256": "3f54a866db57aea981a8e237348e60036e9fe5bf9fe7a771cbf009155c762c8e"
         }
       ],
-      "last_success_at": "2026-11-11T09:10:51.435558+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "kunstfonds",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "官方單一方案文字；本期完整申請日期未經專用解析器驗證，一律待人工核實",
@@ -851,39 +898,42 @@
           "sha256": "d87d9ba597ed6b4cc2f5707f214d35e3d44b9e1d7e7c335e612cccafdffa5d05"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "kulturstiftung-bund",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "官方單一方案文字；本期完整申請日期未經專用解析器驗證，一律待人工核實",
       "requests": [
         {
           "url": "https://www.kulturstiftung-des-bundes.de/de/themen_foerderschwerpunkte/allgemeine_projektfoerderung.html",
-          "sha256": "36b72cf6600df7ce528f13e6e55bfd3c4f956844b19779bd35c2c0b7571973db"
+          "sha256": "a3eab4583d4803881efec31496a79f2051305bef931afa27d8d88c069c7cde81"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "culture-moves-europe",
-      "status": "failed",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
-      "last_success_at": "2026-11-12T09:16:18.730645+00:00",
-      "errors": [
+      "status": "success",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
+      "errors": [],
+      "records": 1,
+      "scope": "歐盟官方本期 semantic call component 與明確年度的 monthly timeline；不將月生活費／日生活費當總額",
+      "requests": [
         {
-          "error": "HTTPError: HTTP Error 429: Too Many Requests"
+          "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility",
+          "sha256": "e41cff91d9542da47fa37f43b3c34a08276c85e003e084d9fad2c81aaa530f42"
         }
       ],
-      "requests": []
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "hong-foundation",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 3,
       "scope": "已知藝術支持方案，或最新一頁消息標題；提名制及活動參加不當成開放補助",
@@ -908,12 +958,12 @@
           "sha256": "06871cc6340436ce69ced33678ca01adc3a7824dec3f9b45970a600cce877831"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "taishin-art",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 0,
       "scope": "已知藝術支持方案，或最新一頁消息標題；提名制及活動參加不當成開放補助",
@@ -923,60 +973,60 @@
       "requests": [
         {
           "url": "https://www.taishinart.org.tw/news.html",
-          "sha256": "18d9a081162cf391d99c64d33edbfa1ba858e40af956eb98f6136bc64450f175"
+          "sha256": "923e7fa15fdc388e724623a5c98cda21b2f621f756f76f65a8e5247553f33d09"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "sam-residency",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
       "requests": [
         {
           "url": "https://www.singaporeartmuseum.sg/residencies/about",
-          "sha256": "90ff22571e17b430712005656f8c4f6fbd21aed938e3d1231352785993da9490"
+          "sha256": "e73982f788816fcb84ce7ebda3d5f096dd219ab8d6640fda3f4a6fdcee181e39"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "esplanade-residency",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
       "requests": [
         {
           "url": "https://www.esplanade.com/learn/creative-development/mentorships-and-artist-development/artist-development-platforms/contemporary-performing-arts-research-residency",
-          "sha256": "b2d3a2ba612177bc8557f617c772dea8a966ff444a4c8e87cc3026ec2c717664"
+          "sha256": "2b0e8a3a785a02a74c7a17f49d8ae0f50ea830fa8dc85441cbb879b1598cd9f9"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "headlands-air",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
       "requests": [
         {
           "url": "https://www.headlands.org/programs/",
-          "sha256": "a8f45e7947459e3a2df7aa180697564b92ce6d5c95ea36cd6e7992f80450a3a4"
+          "sha256": "ec612827da342604af74735bf37ce92abe4625792391ed7ef307fd6e094200e0"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "bemis-air",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 0,
       "scope": "已讀取官方方案；尚未證實柏林申請者可取得實質支持，因此不收錄於有資助清單。",
@@ -984,34 +1034,34 @@
       "requests": [
         {
           "url": "https://www.bemiscenter.org/residency/artists-in-residence",
-          "sha256": "4cb76acb109b8ec43bd4d4b915612939ee40820c5decb54b4a265e8da3689ada"
+          "sha256": "fe2cc5222016671831655961645c4b1926b6ba0251455b2303acd88b869e8535"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "bundanon-air",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
       "requests": [
         {
           "url": "https://www.bundanon.com.au/residencies/apply/frequently-asked-questions/",
-          "sha256": "abccaccb0389e1941018bcb1cb8b23a1f75d753b95280466dd9c903b4343f7f4"
+          "sha256": "455ebbb9cdddb8a74aa7f376514c4315751749eec350c18a07ab859c4447c45e"
         },
         {
           "url": "https://www.bundanon.com.au/residencies/apply/",
-          "sha256": "3c6ff4f0d1d6ddd5ac52a7f93484100005724bb9e26185f9ef4aadab6a3632a4"
+          "sha256": "3dc4ac37fde0009ad7a38218801c1346a321c56b9fff22a1f72067d327059f69"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "gas-fellowship-2025",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
@@ -1021,12 +1071,12 @@
           "sha256": "0f25ccb28ac649a6f0f4c844939743fadd4e5ecf8f2830486eb8a493418be3a9"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "arcus-funded-air",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
@@ -1036,12 +1086,12 @@
           "sha256": "eaf01521f765fceb83acf8fdd874468279c1056856d0b307c716cd24b249ed72"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     },
     {
       "source_id": "tokas-international",
       "status": "success",
-      "checked_at": "2026-11-13T09:14:56.367399+00:00",
+      "checked_at": "2026-11-14T09:01:56.376133+00:00",
       "errors": [],
       "records": 1,
       "scope": "專用官方駐村條款核對；全球地域不設限制；分開查資助、國籍、居住與柏林出發。",
@@ -1051,7 +1101,7 @@
           "sha256": "ef8cfb33d3604ce806a5cc8ffe205b238da837a510bfccc51e5859ecc0de0e64"
         }
       ],
-      "last_success_at": "2026-11-13T09:14:56.367399+00:00"
+      "last_success_at": "2026-11-14T09:01:56.376133+00:00"
     }
   ]
 }
