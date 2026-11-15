@@ -3450,6 +3450,14 @@
       "old_value": "needs_review",
       "new_value": "open",
       "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility"
+    },
+    {
+      "opportunity_id": "culture-moves-europe-843b8ec3159e57d620bf-394e2ce4",
+      "at": "2026-11-15T09:02:03.366171+00:00",
+      "field": "status",
+      "old_value": "open",
+      "new_value": "needs_review",
+      "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility"
     }
   ]
 }
