@@ -3466,6 +3466,14 @@
       "old_value": "needs_review",
       "new_value": "open",
       "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility"
+    },
+    {
+      "opportunity_id": "ncaf-da3dcfbe9e5f6837fb54",
+      "at": "2026-11-17T09:18:42.101574+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國)",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
     }
   ]
 }
