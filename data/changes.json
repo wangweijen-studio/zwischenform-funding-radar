@@ -3474,6 +3474,14 @@
       "old_value": null,
       "new_value": "各類別國際文化交流(出國)",
       "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ba-reinickendorf-ff6b658cce959591c1e4",
+      "at": "2026-11-21T09:01:43.540894+00:00",
+      "field": "status",
+      "old_value": "needs_review",
+      "new_value": "closed",
+      "url": "https://www.berlin.de/ba-reinickendorf/aktuelles/pressemitteilungen/2026/pressemitteilung.1717204.php"
     }
   ]
 }
