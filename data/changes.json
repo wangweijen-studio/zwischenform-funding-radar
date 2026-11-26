@@ -3498,6 +3498,54 @@
       "old_value": "needs_review",
       "new_value": "open",
       "url": "https://culture.ec.europa.eu/it/culture-moves-europe/call-for-individual-mobility"
+    },
+    {
+      "opportunity_id": "ncaf-844e2e7d25194afc1598",
+      "at": "2026-11-26T18:27:41.241013+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國) · 116年 第1期",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-ff03e50554e69c2f350d",
+      "at": "2026-11-26T18:27:41.241013+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國) · 116年 第2期",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-1548155729474f2564d8",
+      "at": "2026-11-26T18:27:41.241013+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國) · 116年 第3期",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-e0d1357e323262241b43",
+      "at": "2026-11-26T18:27:41.241013+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國) · 116年 第4期",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-b944d48ab286e34e794e",
+      "at": "2026-11-26T18:27:41.241013+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國) · 116年 第5期",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
+    },
+    {
+      "opportunity_id": "ncaf-aa4d937cafe378865311",
+      "at": "2026-11-26T18:27:41.241013+00:00",
+      "field": "new_announcement",
+      "old_value": null,
+      "new_value": "各類別國際文化交流(出國) · 116年 第6期",
+      "url": "https://www.ncafroc.org.tw/founding_detail.html?sid=46"
     }
   ]
 }
